@@ -1,0 +1,51 @@
+digraph {
+    rankdir="LR"
+    val_int [label="Valor intermediário"]
+    cont [label="Continuidade"]
+    conj_lim [label="Conjunto limitado"]
+    supr_inf [label="Supremo e ínfimo"]
+    vizin [label="Vizinhança"]
+    conj_ab_fech [label="Conjunto aberto e fechado"]
+    conj_comp [label="Conjunto compacto"]
+    max_min [label="Máximo e mínimo"]
+    weierstrass [label="Weierstrass"]
+    propo_2_10 [label="Proposição 2.10"]
+    seq_converg [label="Sequência convergente"]
+    teor_2_4 [label="Teorema 2.4"]
+    propo_2_8 [label="Proposição 2.8"]
+    propo_2_9 [label="Proposição 2.9"]
+    teor_2_6 [label="Teorema 2.6"]
+    fun_comp [label="Função composta"]
+    teor_2_5 [label="Teorema 2.5"]
+    fun_arit [label="Aritmética de funções"]
+    lim_prop [label="Propriedades de limites"]
+
+    conj_lim -> supr_inf
+    supr_inf -> vizin
+    vizin -> val_int
+    cont -> conj_ab_fech
+    conj_ab_fech -> val_int
+    cont -> conj_comp
+    cont -> max_min
+    conj_comp -> weierstrass
+    #propo_2_9 -> max_min
+    teor_2_4 -> weierstrass
+    cont -> propo_2_10
+    propo_2_8 -> conj_comp
+    #propo_2_8 -> seq_converg
+    seq_converg -> propo_2_10
+    conj_comp -> propo_2_10
+    teor_2_4 -> propo_2_10
+    seq_converg -> propo_2_8
+    teor_2_4 -> seq_converg
+    conj_comp -> propo_2_9
+    max_min -> propo_2_9
+    #cont -> teor_2_6
+    teor_2_6 -> cont
+    fun_comp -> teor_2_6
+    cont -> teor_2_5
+    seq_converg -> teor_2_5
+    fun_arit -> teor_2_5
+    teor_2_4 -> teor_2_5
+    lim_prop -> teor_2_5
+}

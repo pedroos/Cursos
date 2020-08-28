@@ -1,0 +1,5095 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="HTMLFiles/pmathml.xsl"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+ <title>
+  Limites e continuidade
+ </title>
+ <link href="HTMLFiles/Limites e continuidade.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Section">
+ p. 46
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>p</mi>
+  <mo>=</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mn>2</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mi>x</mi>
+    </mrow>
+    <mo>+</mo>
+    <mn>4</mn>
+   </mrow>
+   <mrow>
+    <mi>x</mi>
+    <mo>-</mo>
+    <mn>3</mn>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mn>4</mn>
+   <mo>+</mo>
+   <mrow>
+    <mn>2</mn>
+    <mo>&InvisibleTimes;</mo>
+    <mi>x</mi>
+   </mrow>
+  </mrow>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>3</mn>
+   </mrow>
+   <mo>+</mo>
+   <mi>x</mi>
+  </mrow>
+ </mfrac>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Reduce</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>p</mi>
+   <mo>&lt;</mo>
+   <mn>0</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mo>-</mo>
+   <mn>2</mn>
+  </mrow>
+  <mo>&lt;</mo>
+  <mi>x</mi>
+  <mo>&lt;</mo>
+  <mn>3</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Limites e continuidade_1.gif" alt="Limites e continuidade_1.gif" width="100" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>p</mi>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mrow>
+      <mo>-</mo>
+      <mn>10</mn>
+     </mrow>
+     <mo>,</mo>
+     <mn>10</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotTheme</mi>
+    <mo>&rightarrow;</mo>
+    <ms>Minimal</ms>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Small</mi>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_2.gif" alt="Limites e continuidade_2.gif" width="180" height="112" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>d</mi>
+  <mo>=</mo>
+  <mrow>
+   <mi>D</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>p</mi>
+    <mo>,</mo>
+    <mi>x</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mfrac>
+   <mn>2</mn>
+   <mrow>
+    <mrow>
+     <mo>-</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>+</mo>
+    <mi>x</mi>
+   </mrow>
+  </mfrac>
+  <mo>-</mo>
+  <mfrac>
+   <mrow>
+    <mn>4</mn>
+    <mo>+</mo>
+    <mrow>
+     <mn>2</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mi>x</mi>
+    </mrow>
+   </mrow>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mrow>
+       <mo>-</mo>
+       <mn>3</mn>
+      </mrow>
+      <mo>+</mo>
+      <mi>x</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Simplify</mi>
+  <mo>[</mo>
+  <mi>d</mi>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>-</mo>
+  <mfrac>
+   <mn>10</mn>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mrow>
+       <mo>-</mo>
+       <mn>3</mn>
+      </mrow>
+      <mo>+</mo>
+      <mi>x</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>d</mi>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mrow>
+      <mo>-</mo>
+      <mn>10</mn>
+     </mrow>
+     <mo>,</mo>
+     <mn>10</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotTheme</mi>
+    <mo>&rightarrow;</mo>
+    <ms>Minimal</ms>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Small</mi>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_3.gif" alt="Limites e continuidade_3.gif" width="180" height="112" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='border-left: 0px;border-right: 0px;border-top: 2px;border-bottom: 0px;border-style: solid;border-color: #000000;'>
+ Invers&atilde;o do sinal do expoente da vari&aacute;vel independente.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>p</mi>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mrow>
+      <mo>-</mo>
+      <mn>10</mn>
+     </mrow>
+     <mo>,</mo>
+     <mn>10</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotTheme</mi>
+    <mo>-&gt;</mo>
+    <ms>Default</ms>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Small</mi>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_4.gif" alt="Limites e continuidade_4.gif" width="180" height="111" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>pi</mi>
+  <mo>=</mo>
+  <msup>
+   <mi>p</mi>
+   <mrow>
+    <mo>-</mo>
+    <mn>1</mn>
+   </mrow>
+  </msup>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>3</mn>
+   </mrow>
+   <mo>+</mo>
+   <mi>x</mi>
+  </mrow>
+  <mrow>
+   <mn>4</mn>
+   <mo>+</mo>
+   <mrow>
+    <mn>2</mn>
+    <mo>&InvisibleTimes;</mo>
+    <mi>x</mi>
+   </mrow>
+  </mrow>
+ </mfrac>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>pi</mi>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mrow>
+      <mo>-</mo>
+      <mn>10</mn>
+     </mrow>
+     <mo>,</mo>
+     <mn>10</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotTheme</mi>
+    <mo>&rightarrow;</mo>
+    <ms>Default</ms>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Small</mi>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_5.gif" alt="Limites e continuidade_5.gif" width="180" height="108" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='border-left: 0px;border-right: 0px;border-top: 2px;border-bottom: 0px;border-style: solid;border-color: #000000;'>
+ Derivadas s&atilde;o limites.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>f</mi>
+  <mo>=</mo>
+  <mrow>
+   <msup>
+    <mi>x</mi>
+    <mn>2</mn>
+   </msup>
+   <mo>+</mo>
+   <mn>2</mn>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mn>2</mn>
+  <mo>+</mo>
+  <msup>
+   <mi>x</mi>
+   <mn>2</mn>
+  </msup>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>,</mo>
+     <mn>11</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mrow>
+      <mo>-</mo>
+      <mn>10</mn>
+     </mrow>
+     <mo>,</mo>
+     <mn>10</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Small</mi>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotRange</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>10</mn>
+        </mrow>
+        <mo>,</mo>
+        <mn>10</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>20</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_6.gif" alt="Limites e continuidade_6.gif" width="180" height="125" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f</mi>
+   <mo>,</mo>
+   <mtext> </mtext>
+   <mrow>
+    <mi>x</mi>
+    <mtext> </mtext>
+    <mo>-&gt;</mo>
+    <mtext> </mtext>
+    <mn>3</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>11</mn>
+</math>
+</p>
+
+<p class="Code">
+ <img src="HTMLFiles/Limites e continuidade_7.gif" alt="Limites e continuidade_7.gif" width="42" height="89" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>2304</mn>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>315</mn>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>45</mn>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>27</mn>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>21</mn>
+</math>
+</p>
+
+<p class='Text' style='border-left: 0px;border-right: 0px;border-top: 1px;border-bottom: 0px;border-style: solid;border-color: #000000;'>
+ Computa&ccedil;&atilde;o do difference quotient.
+</p>
+
+
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdq</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x0_</mi>
+    <mo>,</mo>
+    <mi>x1_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>x0</mi>
+      <mo>+</mo>
+      <mi>x1</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mi>x0</mi>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+   <mrow>
+    <mi>x0</mi>
+    <mo>+</mo>
+    <mi>x1</mi>
+    <mo>-</mo>
+    <mi>x0</mi>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>f1</mi>
+   <mo>[</mo>
+   <mi>x_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo>^</mo>
+   <mn>2</mn>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ <span style='font-size: 36px;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mfrac>
+  <mrow>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mn>3</mn>
+      <mo>+</mo>
+      <msub>
+       <mi>x</mi>
+       <mn>1</mn>
+      </msub>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+   <mo>-</mo>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mn>3</mn>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>1</mn>
+  </msub>
+ </mfrac>
+</math></span></span>
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f1</mi>
+   <mo>,</mo>
+   <mn>3</mn>
+   <mo>,</mo>
+   <mi>x</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>9</mn>
+   </mrow>
+   <mo>+</mo>
+   <msup>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mn>3</mn>
+      <mo>+</mo>
+      <mi>x</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mi>x</mi>
+ </mfrac>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f1</mi>
+   <mo>,</mo>
+   <mn>3</mn>
+   <mo>,</mo>
+   <mn>0</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/Limites e continuidade_8.gif" alt="Limites e continuidade_8.gif" width="234" height="32" style="vertical-align:middle;" usemap="#map_8" />
+<map name="map_8">
+<area shape="rect" coords="0,21,20,8" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/Limites e continuidade_9.gif" alt="Limites e continuidade_9.gif" width="347" height="13" style="vertical-align:middle;" usemap="#map_9" />
+<map name="map_9">
+<area shape="rect" coords="0,13,20,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f1</mi>
+     <mo>,</mo>
+     <mn>3</mn>
+     <mo>,</mo>
+     <mi>x</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>6</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f1</mi>
+   <mo>,</mo>
+   <mn>3</mn>
+   <mo>,</mo>
+   <mn>1</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>7</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f1</mi>
+     <mo>,</mo>
+     <mn>3</mn>
+     <mo>,</mo>
+     <mi>x</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>1</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>7</mn>
+</math>
+</p>
+
+<p class="Text">
+ f_1(x) = If(3 &lt; x &lt; 5, (0.2x - 1)&sup3; + 5, (0.2x - 1)&sup3; + 3)
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Clear</mi>
+  <mo>[</mo>
+  <mi>f2</mi>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>f2</mi>
+   <mo>[</mo>
+   <mi>x_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>Piecewise</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mrow>
+        <mrow>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mn>0.2</mn>
+            <mi>x</mi>
+           </mrow>
+           <mo>-</mo>
+           <mn>1</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mo>^</mo>
+         <mn>3</mn>
+        </mrow>
+        <mo>+</mo>
+        <mn>5</mn>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mn>3</mn>
+        <mo>&lt;</mo>
+        <mi>x</mi>
+        <mo>&lt;</mo>
+        <mn>5</mn>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mrow>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mrow>
+         <mn>0.2</mn>
+         <mi>x</mi>
+        </mrow>
+        <mo>-</mo>
+        <mn>1</mn>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mo>^</mo>
+      <mn>3</mn>
+     </mrow>
+     <mo>+</mo>
+     <mn>3</mn>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>f2</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info243748009313-6828539"></a>
+ Global`f2
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>f2</mi>
+   <mo>[</mo>
+   <mi>x_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>Piecewise</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mrow>
+        <msup>
+         <mrow>
+          <mo>(</mo>
+          <mrow>
+           <mrow>
+            <mn>0.2</mn>
+            <mtext> </mtext>
+            <mi>x</mi>
+           </mrow>
+           <mo>-</mo>
+           <mn>1</mn>
+          </mrow>
+          <mo>)</mo>
+         </mrow>
+         <mn>3</mn>
+        </msup>
+        <mo>+</mo>
+        <mn>5</mn>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mn>3</mn>
+        <mo>&lt;</mo>
+        <mi>x</mi>
+        <mo>&lt;</mo>
+        <mn>5</mn>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mrow>
+         <mn>0.2</mn>
+         <mtext> </mtext>
+         <mi>x</mi>
+        </mrow>
+        <mo>-</mo>
+        <mn>1</mn>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>3</mn>
+     </msup>
+     <mo>+</mo>
+     <mn>3</mn>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mrow>
+      <mo>-</mo>
+      <mn>5</mn>
+     </mrow>
+     <mo>,</mo>
+     <mn>10</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotRange</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>5</mn>
+        </mrow>
+        <mo>,</mo>
+        <mn>10</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mrow>
+         <mo>-</mo>
+         <mn>1</mn>
+        </mrow>
+        <mo>,</mo>
+        <mn>6</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_10.gif" alt="Limites e continuidade_10.gif" width="360" height="232" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mn>2</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mn>3</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mn>4</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mn>5</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mn>6</mn>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>2.784</mn>
+   <mo>,</mo>
+   <mn>2.936</mn>
+   <mo>,</mo>
+   <mn>4.992</mn>
+   <mo>,</mo>
+   <mn>3.</mn>
+   <mo>,</mo>
+   <mn>3.008</mn>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>ratio</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mrow>
+    <mi>f</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>/</mo>
+   <mi>x</mi>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>ratio</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info463748012727-6828539"></a>
+ Global`ratio
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>ratio</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mfrac>
+   <mrow>
+    <mi>f</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mi>x</mi>
+  </mfrac>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>ratio</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mi>x</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mrow>
+    <mo>(</mo>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mo>&#62305;</mo>
+      </mtd>
+      <mtd>
+       <mtable>
+        <mtr>
+         <mtd>
+          <mrow>
+           <mn>5</mn>
+           <mo>+</mo>
+           <msup>
+            <mrow>
+             <mo>(</mo>
+             <mrow>
+              <mrow>
+               <mo>-</mo>
+               <mn>1</mn>
+              </mrow>
+              <mo>+</mo>
+              <mrow>
+               <mn>0.2</mn>
+               <mtext> </mtext>
+               <mi>x</mi>
+              </mrow>
+             </mrow>
+             <mo>)</mo>
+            </mrow>
+            <mn>3</mn>
+           </msup>
+          </mrow>
+         </mtd>
+         <mtd>
+          <mrow>
+           <mn>3</mn>
+           <mo>&lt;</mo>
+           <mi>x</mi>
+           <mo>&lt;</mo>
+           <mn>5</mn>
+          </mrow>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd>
+          <mrow>
+           <mn>3</mn>
+           <mo>+</mo>
+           <msup>
+            <mrow>
+             <mo>(</mo>
+             <mrow>
+              <mrow>
+               <mo>-</mo>
+               <mn>1</mn>
+              </mrow>
+              <mo>+</mo>
+              <mrow>
+               <mn>0.2</mn>
+               <mtext> </mtext>
+               <mi>x</mi>
+              </mrow>
+             </mrow>
+             <mo>)</mo>
+            </mrow>
+            <mn>3</mn>
+           </msup>
+          </mrow>
+         </mtd>
+         <mtd>
+          <mi>True</mi>
+         </mtd>
+        </mtr>
+       </mtable>
+      </mtd>
+     </mtr>
+    </mtable>
+    <mo>)</mo>
+   </mrow>
+   <mo>[</mo>
+   <mi>x</mi>
+   <mo>]</mo>
+  </mrow>
+  <mi>x</mi>
+ </mfrac>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mi>ratio</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>2</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ratio</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ratio</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>4</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ratio</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>5</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ratio</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>6</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>1.392</mn>
+   <mo>,</mo>
+   <mn>0.9786666666666666</mn>
+   <mo>,</mo>
+   <mn>1.248</mn>
+   <mo>,</mo>
+   <mn>0.6000000000000001</mn>
+   <mo>,</mo>
+   <mn>0.5013333333333333</mn>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f2</mi>
+   <mo>,</mo>
+   <mn>2</mn>
+   <mo>,</mo>
+   <mi>x1</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.784</mn>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mo>(</mo>
+    <mtable>
+     <mtr>
+      <mtd>
+       <mo>&#62305;</mo>
+      </mtd>
+      <mtd>
+       <mtable>
+        <mtr>
+         <mtd>
+          <mrow>
+           <mn>5</mn>
+           <mo>+</mo>
+           <msup>
+            <mrow>
+             <mo>(</mo>
+             <mrow>
+              <mrow>
+               <mo>-</mo>
+               <mn>1</mn>
+              </mrow>
+              <mo>+</mo>
+              <mrow>
+               <mn>0.2</mn>
+               <mtext> </mtext>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <mn>2</mn>
+                 <mo>+</mo>
+                 <mi>x1</mi>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
+              </mrow>
+             </mrow>
+             <mo>)</mo>
+            </mrow>
+            <mn>3</mn>
+           </msup>
+          </mrow>
+         </mtd>
+         <mtd>
+          <mrow>
+           <mn>3</mn>
+           <mo>&lt;</mo>
+           <mrow>
+            <mn>2</mn>
+            <mo>+</mo>
+            <mi>x1</mi>
+           </mrow>
+           <mo>&lt;</mo>
+           <mn>5</mn>
+          </mrow>
+         </mtd>
+        </mtr>
+        <mtr>
+         <mtd>
+          <mrow>
+           <mn>3</mn>
+           <mo>+</mo>
+           <msup>
+            <mrow>
+             <mo>(</mo>
+             <mrow>
+              <mrow>
+               <mo>-</mo>
+               <mn>1</mn>
+              </mrow>
+              <mo>+</mo>
+              <mrow>
+               <mn>0.2</mn>
+               <mtext> </mtext>
+               <mrow>
+                <mo>(</mo>
+                <mrow>
+                 <mn>2</mn>
+                 <mo>+</mo>
+                 <mi>x1</mi>
+                </mrow>
+                <mo>)</mo>
+               </mrow>
+              </mrow>
+             </mrow>
+             <mo>)</mo>
+            </mrow>
+            <mn>3</mn>
+           </msup>
+          </mrow>
+         </mtd>
+         <mtd>
+          <mi>True</mi>
+         </mtd>
+        </mtr>
+       </mtable>
+      </mtd>
+     </mtr>
+    </mtable>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mi>x1</mi>
+ </mfrac>
+</math>
+</p>
+
+<p class="Text">
+ A derivada &eacute; conforme <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <msub>
+  <mi>x</mi>
+  <mn>1</mn>
+ </msub>
+</math></span></span> (e n&atilde;o <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <msub>
+  <mi>x</mi>
+  <mn>0</mn>
+ </msub>
+</math></span></span>) tende a zero.<br />Os seguintes limites s&atilde;o limites da <span style='font-weight: bold;'>fun&ccedil;&atilde;o difference quotient</span> da fun&ccedil;&atilde;o original.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f2</mi>
+   <mo>,</mo>
+   <mn>2.9</mn>
+   <mo>,</mo>
+   <mn>1</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>2.0634400000000004</mn>
+</math>
+</p>
+
+<p class="Text">
+ <span><em>y</em></span> em <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>0</mn>
+ </mrow>
+</math></span></span> n&atilde;o existe...
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f2</mi>
+   <mo>,</mo>
+   <mn>2.9</mn>
+   <mo>,</mo>
+   <mn>0</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/Limites e continuidade_11.gif" alt="Limites e continuidade_11.gif" width="238" height="32" style="vertical-align:middle;" usemap="#map_11" />
+<map name="map_11">
+<area shape="rect" coords="0,21,20,8" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/Limites e continuidade_12.gif" alt="Limites e continuidade_12.gif" width="351" height="13" style="vertical-align:middle;" usemap="#map_12" />
+<map name="map_12">
+<area shape="rect" coords="0,13,20,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Text">
+ O limite onde <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>&NotEqual;</mo>
+  <mn>0</mn>
+ </mrow>
+</math></span></span> &eacute; igual a <span><em>y</em></span>...
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>2.9</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>1</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>2.0634400000000004</mn>
+</math>
+</p>
+
+<p class="Text">
+ O limite em <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>0</mn>
+ </mrow>
+</math></span></span> existe.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>2.9</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>0.10584</mn>
+</math>
+</p>
+
+<p class="Text">
+ (Este &eacute; o slope da derivada em <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>2.9</mn>
+ </mrow>
+</math></span></span>.)<br />A derivada existe pois existe um limite completo em <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>2.9</mn>
+ </mrow>
+</math></span></span>.<br />Em <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>3</mn>
+ </mrow>
+</math></span></span>, n&atilde;o existe limite completo (s&oacute; existe limite &agrave; esquerda).
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>f2</mi>
+  <mo>[</mo>
+  <mn>3</mn>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>2.936</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>f2</mi>
+   <mo>,</mo>
+   <mn>3</mn>
+   <mo>,</mo>
+   <mn>0</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/Limites e continuidade_13.gif" alt="Limites e continuidade_13.gif" width="234" height="32" style="vertical-align:middle;" usemap="#map_13" />
+<map name="map_13">
+<area shape="rect" coords="0,21,20,8" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Message">
+ <img src="HTMLFiles/Limites e continuidade_14.gif" alt="Limites e continuidade_14.gif" width="351" height="13" style="vertical-align:middle;" usemap="#map_14" />
+<map name="map_14">
+<area shape="rect" coords="0,13,20,0" title="Dynamic[RawBoxes[FEPrivate`FrontEndResource[FEStrings, messageMenuTooltip]]]" nohref="" />
+</map>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>3</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Text">
+ Em <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>&gt;</mo>
+  <mn>3</mn>
+ </mrow>
+</math></span></span>, ele j&aacute; existe...
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>3.1</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>0.08664000000000001</mn>
+</math>
+</p>
+
+<p class="Text">
+ Mesmo em <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>5</mn>
+ </mrow>
+</math></span></span>.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>5</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f2</mi>
+     <mo>,</mo>
+     <mn>4.9</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>0.00024000000000000003</mn>
+</math>
+</p>
+
+<p class="Text">
+ Estes limites n&atilde;o existem, mantendo o denominador zero.<br />N&atilde;o temos os valores dos limites mesmo existindo <span><em>y</em></span>:
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>3</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>2.9</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>2.925912</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>5</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>Indeterminate</mi>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>f2</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>5.1</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>3.000008</mn>
+</math>
+</p>
+
+<p class="Text">
+ Testar a cria&ccedil;&atilde;o de descontinuidade, limite e derivada sem ponto, mas primeiro com ponto (deslocado).
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>If</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info63748095673-4473287"></a>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <semantics>
+   <mrow>
+    <mrow>
+     <mi>If</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>condition</mi>
+      <mo>,</mo>
+      <mi>t</mi>
+      <mo>,</mo>
+      <mi>f</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mtext> gives </mtext>
+    <mi>t</mi>
+    <mtext> if </mtext>
+    <mi>condition</mi>
+    <mtext> evaluates to True, and </mtext>
+    <mi>f</mi>
+    <mtext> if it evaluates to False. &NewLine;</mtext>
+    <mrow>
+     <mi>If</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>condition</mi>
+      <mo>,</mo>
+      <mi>t</mi>
+      <mo>,</mo>
+      <mi>f</mi>
+      <mo>,</mo>
+      <mi>u</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mtext> gives </mtext>
+    <mi>u</mi>
+    <mtext> if </mtext>
+    <mi>condition</mi>
+    <mtext> evaluates to neither True nor False. </mtext>
+   </mrow>
+   <annotation encoding='Mathematica'>&quot;\\!\\(\\*RowBox[{\\\&quot;If\\\&quot;, \\\&quot;[\\\&quot;, RowBox[{StyleBox[\\\&quot;condition\\\&quot;, \\\&quot;TI\\\&quot;], \\\&quot;,\\\&quot;, StyleBox[\\\&quot;t\\\&quot;, \\\&quot;TI\\\&quot;], \\\&quot;,\\\&quot;, StyleBox[\\\&quot;f\\\&quot;, \\\&quot;TI\\\&quot;]}], \\\&quot;]\\\&quot;}]\\) gives \\!\\(\\*StyleBox[\\\&quot;t\\\&quot;, \\\&quot;TI\\\&quot;]\\) if \\!\\(\\*StyleBox[\\\&quot;condition\\\&quot;, \\\&quot;TI\\\&quot;]\\) evaluates to True, and \\!\\(\\*StyleBox[\\\&quot;f\\\&quot;, \\\&quot;TI\\\&quot;]\\) if it evaluates to False. \n\\!\\(\\*RowBox[{\\\&quot;If\\\&quot;, \\\&quot;[\\\&quot;, RowBox[{StyleBox[\\\&quot;condition\\\&quot;, \\\&quot;TI\\\&quot;], \\\&quot;,\\\&quot;, StyleBox[\\\&quot;t\\\&quot;, \\\&quot;TI\\\&quot;], \\\&quot;,\\\&quot;, StyleBox[\\\&quot;f\\\&quot;, \\\&quot;TI\\\&quot;], \\\&quot;,\\\&quot;, StyleBox[\\\&quot;u\\\&quot;, \\\&quot;TI\\\&quot;]}], \\\&quot;]\\\&quot;}]\\) gives \\!\\(\\*StyleBox[\\\&quot;u\\\&quot;, \\\&quot;TI\\\&quot;]\\) if \\!\\(\\*StyleBox[\\\&quot;condition\\\&quot;, \\\&quot;TI\\\&quot;]\\) evaluates to neither True nor False. &quot;</annotation>
+  </semantics>
+  <mtext>&NonBreakingSpace;</mtext>
+  <maction actiontype='highlight'>
+   <mo>&#63330;</mo>
+  </maction>
+ </mrow>
+</math>
+</p>
+
+<p class="Code">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdesl</mi>
+   <mo>[</mo>
+   <mi>x_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>If</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>x</mi>
+     <mo>&NotEqual;</mo>
+     <mn>2</mn>
+    </mrow>
+    <mo>,</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>x</mi>
+       <mo>-</mo>
+       <mn>3</mn>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mo>,</mo>
+    <mn>3</mn>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mi>fdesl</mi>
+    <mo>[</mo>
+    <mn>1.9</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>fdesl</mi>
+    <mo>[</mo>
+    <mn>2</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>fdesl</mi>
+    <mo>[</mo>
+    <mn>2.1</mn>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>1.2100000000000002</mn>
+   <mo>,</mo>
+   <mn>3</mn>
+   <mo>,</mo>
+   <mn>0.8099999999999998</mn>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mi>Limit</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mi>fdesl</mi>
+      <mo>[</mo>
+      <mi>x</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo>&rightarrow;</mo>
+      <mn>1.9</mn>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>Limit</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mi>fdesl</mi>
+      <mo>[</mo>
+      <mi>x</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo>&rightarrow;</mo>
+      <mn>2</mn>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>Limit</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mi>fdesl</mi>
+      <mo>[</mo>
+      <mi>x</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo>&rightarrow;</mo>
+      <mn>2.1</mn>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>1.2100000000000002</mn>
+   <mo>,</mo>
+   <mn>1</mn>
+   <mo>,</mo>
+   <mn>0.8099999999999998</mn>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdesl</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mn>1</mn>
+     <mo>,</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>Epilog</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mi>PointSize</mi>
+       <mo>[</mo>
+       <mtext>.03</mtext>
+       <mo>]</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>Point</mi>
+       <mo>[</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mn>2</mn>
+           <mo>,</mo>
+           <mrow>
+            <mi>fdesl</mi>
+            <mo>[</mo>
+            <mn>2</mn>
+            <mo>]</mo>
+           </mrow>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mn>2</mn>
+           <mo>,</mo>
+           <mrow>
+            <mi>Limit</mi>
+            <mo>[</mo>
+            <mrow>
+             <mrow>
+              <mi>fdesl</mi>
+              <mo>[</mo>
+              <mi>x</mi>
+              <mo>]</mo>
+             </mrow>
+             <mo>,</mo>
+             <mrow>
+              <mi>x</mi>
+              <mo>&rightarrow;</mo>
+              <mn>2</mn>
+             </mrow>
+            </mrow>
+            <mo>]</mo>
+           </mrow>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Small</mi>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_15.gif" alt="Limites e continuidade_15.gif" width="180" height="118" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>fdq</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info463748096766-4473287"></a>
+ Global`fdq
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdq</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x0_</mi>
+    <mo>,</mo>
+    <mi>x1_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>x0</mi>
+      <mo>+</mo>
+      <mi>x1</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mi>x0</mi>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+   <mrow>
+    <mi>x0</mi>
+    <mo>+</mo>
+    <mi>x1</mi>
+    <mo>-</mo>
+    <mi>x0</mi>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Simplify</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>fdq</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>fdesl</mi>
+    <mo>,</mo>
+    <mn>2</mn>
+    <mo>,</mo>
+    <mi>x1</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>&#62305;</span></td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mo>-</mo>
+   <mn>2</mn>
+  </mrow>
+  <mo>-</mo>
+  <mfrac>
+   <mn>2</mn>
+   <mi>x1</mi>
+  </mfrac>
+  <mo>+</mo>
+  <mi>x1</mi>
+ </mrow>
+</math></span></td>
+  <td style='text-align: left;'><span>x1&ne;0</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>0</span></td>
+  <td style='text-align: left;'><span>True</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>,</mo>
+     <mn>1.5</mn>
+     <mo>,</mo>
+     <mi>x</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>-</mo>
+  <mn>3.</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>0.5</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>1</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>1.5</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>1.9</mn>
+    <mo>]</mo>
+   </mrow>
+   <mtext> </mtext>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>2</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>2.1</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>2.5</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>3</mn>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>'</mo>
+    </mrow>
+    <mo>[</mo>
+    <mn>3.5</mn>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mtext> </mtext>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>5.</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>4</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>3.</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.2</mn>
+   </mrow>
+   <mo>,</mo>
+   <mn>0</mn>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.7999999999999998</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.</mn>
+   </mrow>
+   <mo>,</mo>
+   <mn>0</mn>
+   <mo>,</mo>
+   <mn>1.</mn>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>ListPlot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>0.5</mn>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>1</mn>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>1.5</mn>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>1.9</mn>
+      <mo>]</mo>
+     </mrow>
+     <mtext> </mtext>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>2</mn>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>2.1</mn>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>2.5</mn>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>3</mn>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mn>3.5</mn>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mtext> </mtext>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotStyle</mi>
+    <mo>-&gt;</mo>
+    <mrow>
+     <mi>PointSize</mi>
+     <mo>[</mo>
+     <mn>0.02</mn>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_16.gif" alt="Limites e continuidade_16.gif" width="360" height="219" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Ou seja, a derivada <span><em>0</em></span> em <span><em>2</em></span> est&aacute; &ldquo;diferente&rdquo;.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdesl</mi>
+   <mo>'</mo>
+  </mrow>
+  <mo>[</mo>
+  <mi>x</mi>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>If</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>x</mi>
+    <mo>&NotEqual;</mo>
+    <mn>2</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mn>2</mn>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo>-</mo>
+      <mn>3</mn>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>,</mo>
+   <mn>0</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mrow>
+      <mi>fdesl</mi>
+      <mo>[</mo>
+      <mi>x</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mi>x</mi>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mn>1</mn>
+     <mo>,</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>Epilog</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mi>PointSize</mi>
+       <mo>[</mo>
+       <mn>0.02</mn>
+       <mo>]</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>Point</mi>
+       <mo>[</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mn>2</mn>
+           <mo>,</mo>
+           <mrow>
+            <mi>fdesl</mi>
+            <mo>[</mo>
+            <mn>2</mn>
+            <mo>]</mo>
+           </mrow>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mn>2</mn>
+           <mo>,</mo>
+           <mrow>
+            <mrow>
+             <mi>fdesl</mi>
+             <mo>'</mo>
+            </mrow>
+            <mo>[</mo>
+            <mn>2</mn>
+            <mo>]</mo>
+           </mrow>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_17.gif" alt="Limites e continuidade_17.gif" width="360" height="219" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Todas as &ldquo;derivadas em pontos n&atilde;o-cont&iacute;nuos&rdquo; s&atilde;o zero ou essa derivada realmente &eacute; zero?&#8232;N&atilde;o importa, vamos tentar tomar a derivada no limite.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>,</mo>
+     <mn>2.1</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>-</mo>
+  <mn>1.8</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdesl</mi>
+    <mo>[</mo>
+    <mi>x</mi>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>2</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>1</mn>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>fdesl</mi>
+   <mo>,</mo>
+   <mn>2</mn>
+   <mo>,</mo>
+   <mi>x1</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>3</mn>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mi>If</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mrow>
+       <mn>2</mn>
+       <mo>+</mo>
+       <mi>x1</mi>
+      </mrow>
+      <mo>&NotEqual;</mo>
+      <mn>2</mn>
+     </mrow>
+     <mo>,</mo>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mn>2</mn>
+          <mo>+</mo>
+          <mi>x1</mi>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>-</mo>
+        <mn>3</mn>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>,</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mi>x1</mi>
+ </mfrac>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>fdq</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info1243748103279-7411580"></a>
+ Global`fdq
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdq</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x0_</mi>
+    <mo>,</mo>
+    <mi>x1_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>x0</mi>
+      <mo>+</mo>
+      <mi>x1</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mi>x0</mi>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+   <mrow>
+    <mi>x0</mi>
+    <mo>+</mo>
+    <mi>x1</mi>
+    <mo>-</mo>
+    <mi>x0</mi>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdq</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>fdesl</mi>
+   <mo>,</mo>
+   <mrow>
+    <mi>Limit</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mi>fdesl</mi>
+      <mo>[</mo>
+      <mi>x0</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>x0</mi>
+      <mo>-&gt;</mo>
+      <mn>2</mn>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mi>x1</mi>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>4</mn>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mi>If</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mrow>
+       <mn>1</mn>
+       <mo>+</mo>
+       <mi>x1</mi>
+      </mrow>
+      <mo>&NotEqual;</mo>
+      <mn>2</mn>
+     </mrow>
+     <mo>,</mo>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mn>1</mn>
+          <mo>+</mo>
+          <mi>x1</mi>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>-</mo>
+        <mn>3</mn>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>,</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mi>x1</mi>
+ </mfrac>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>,</mo>
+     <mrow>
+      <mi>Limit</mi>
+      <mo>[</mo>
+      <mrow>
+       <mrow>
+        <mi>fdesl</mi>
+        <mo>[</mo>
+        <mi>x0</mi>
+        <mo>]</mo>
+       </mrow>
+       <mo>,</mo>
+       <mrow>
+        <mi>x0</mi>
+        <mo>-&gt;</mo>
+        <mn>2</mn>
+       </mrow>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>-</mo>
+  <mn>4</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Isso deveria ser igual &agrave; derivada da fun&ccedil;&atilde;o sem a descontinuidade.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>fdesl</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info1283748103438-7411580"></a>
+ Global`fdesl
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdesl</mi>
+   <mo>[</mo>
+   <mi>x_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>If</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>x</mi>
+     <mo>&NotEqual;</mo>
+     <mn>2</mn>
+    </mrow>
+    <mo>,</mo>
+    <msup>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mi>x</mi>
+       <mo>-</mo>
+       <mn>3</mn>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mn>2</mn>
+    </msup>
+    <mo>,</mo>
+    <mn>3</mn>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdeslfix</mi>
+   <mo>[</mo>
+   <mi>x_</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <msup>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>-</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mn>2</mn>
+  </msup>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mrow>
+      <mi>fdeslfix</mi>
+      <mo>[</mo>
+      <mi>x</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mrow>
+       <mi>fdeslfix</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mi>x</mi>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mn>1</mn>
+     <mo>,</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>Epilog</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mi>PointSize</mi>
+       <mo>[</mo>
+       <mn>0.02</mn>
+       <mo>]</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>Point</mi>
+       <mo>[</mo>
+       <mrow>
+        <mo>{</mo>
+        <mrow>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mn>2</mn>
+           <mo>,</mo>
+           <mrow>
+            <mi>fdeslfix</mi>
+            <mo>[</mo>
+            <mn>2</mn>
+            <mo>]</mo>
+           </mrow>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+         <mo>,</mo>
+         <mrow>
+          <mo>{</mo>
+          <mrow>
+           <mn>2</mn>
+           <mo>,</mo>
+           <mrow>
+            <mrow>
+             <mi>fdeslfix</mi>
+             <mo>'</mo>
+            </mrow>
+            <mo>[</mo>
+            <mn>2</mn>
+            <mo>]</mo>
+           </mrow>
+          </mrow>
+          <mo>}</mo>
+         </mrow>
+        </mrow>
+        <mo>}</mo>
+       </mrow>
+       <mo>]</mo>
+      </mrow>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Medium</mi>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_18.gif" alt="Limites e continuidade_18.gif" width="360" height="219" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdeslfix</mi>
+   <mo>'</mo>
+  </mrow>
+  <mo>[</mo>
+  <mn>2</mn>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>-</mo>
+  <mn>2</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdq</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>fdeslfix</mi>
+     <mo>,</mo>
+     <mn>2</mn>
+     <mo>,</mo>
+     <mi>x1</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>x1</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>-</mo>
+  <mn>2</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Provavelmente o <span><span>fdq</span></span> em <span><span>fdesl</span></span> est&aacute; lendo um <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>y</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mn>3</mn>
+ </mrow>
+</math></span></span> ao inv&eacute;s de <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>y</mi>
+   <mn>0</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+   <msub>
+    <mi>lim</mi>
+    <mrow>
+     <msub>
+      <mi>x</mi>
+      <mn>0</mn>
+     </msub>
+     <mo>&rightarrow;</mo>
+     <mn>0</mn>
+    </mrow>
+   </msub>
+   <mn>2</mn>
+  </mrow>
+ </mrow>
+</math></span></span>.<br />Precisar&iacute;amos reconstruir o <span><span>fdq</span></span>.
+</p>
+
+
+
+<p class="Text">
+ Eu consigo tomar qualquer limite em um ponto? (Sim, eu j&aacute; havia tomado este limite acima.)
+</p>
+
+
+
+<p class="Text">
+ <span style='font-size: 36px;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <msub>
+    <mi>lim</mi>
+    <mrow>
+     <mi>&Delta;x</mi>
+     <mo>&rightarrow;</mo>
+     <mn>0</mn>
+    </mrow>
+   </msub>
+   <mfrac>
+    <mrow>
+     <mrow>
+      <mi>f</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>x</mi>
+       <mo>+</mo>
+       <mi>&Delta;x</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>-</mo>
+     <mrow>
+      <mi>f</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>x</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mi>&Delta;x</mi>
+   </mfrac>
+  </mrow>
+  <mo>&#62755;</mo>
+  <mrow>
+   <msub>
+    <mi>lim</mi>
+    <mrow>
+     <mi>&Delta;x</mi>
+     <mo>&rightarrow;</mo>
+     <mn>0</mn>
+    </mrow>
+   </msub>
+   <mfrac>
+    <mrow>
+     <mrow>
+      <mi>f</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>x</mi>
+       <mo>+</mo>
+       <mi>&Delta;x</mi>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>-</mo>
+     <mrow>
+      <msub>
+       <mi>lim</mi>
+       <mrow>
+        <msub>
+         <mi>x</mi>
+         <mn>1</mn>
+        </msub>
+        <mo>&rightarrow;</mo>
+        <mn>0</mn>
+       </mrow>
+      </msub>
+      <mrow>
+       <mi>f</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mrow>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msub>
+         <mi>x</mi>
+         <mn>1</mn>
+        </msub>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+     </mrow>
+    </mrow>
+    <mi>&Delta;x</mi>
+   </mfrac>
+  </mrow>
+ </mrow>
+</math></span></span>.
+</p>
+
+
+
+<p class="Text">
+ Este &eacute; o novo fdq... (Nota: aparentemente eu estava usando <span style='font-size: 18px;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <msub>
+  <mi>x</mi>
+  <mn>1</mn>
+ </msub>
+</math></span></span> erroneamente como <span style='font-size: 18px;'>&Delta;x</span>, quando <span style='font-size: 18px;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>x</mi>
+   <mn>1</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo>+</mo>
+   <mi>&Delta;x</mi>
+  </mrow>
+ </mrow>
+</math></span></span>.
+</p>
+
+
+
+<p class="Text">
+ Primeiro s&oacute; a parte do limite sobre uma fun&ccedil;&atilde;o.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Limites e continuidade_19.gif" alt="Limites e continuidade_19.gif" width="272" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>funclim</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info413748275165-2858419"></a>
+ Global`funclim
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>funclim</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <munder>
+    <mi>&#62520;</mi>
+    <mrow>
+     <mi>xa</mi>
+     <mo>&rightarrow;</mo>
+     <mi>x</mi>
+    </mrow>
+   </munder>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>f</mi>
+    <mo>[</mo>
+    <mi>xa</mi>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>funclim</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>fdesl</mi>
+   <mo>,</mo>
+   <mn>2</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mn>1</mn>
+</math>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Limites e continuidade_20.gif" alt="Limites e continuidade_20.gif" width="352" height="52" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>fdqlim</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info523748275672-2858419"></a>
+ Global`fdqlim
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>fdqlim</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x0_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>x0</mi>
+      <mo>+</mo>
+      <mi>&Delta;x</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <munder>
+      <mi>&#62520;</mi>
+      <mrow>
+       <mi>xa</mi>
+       <mo>&rightarrow;</mo>
+       <mi>x0</mi>
+      </mrow>
+     </munder>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>f</mi>
+      <mo>[</mo>
+      <mi>xa</mi>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mi>&Delta;x</mi>
+  </mfrac>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Text">
+ Este seria o limite final (gen&eacute;rico):
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdqlim</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>,</mo>
+     <mi>x0</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>&Delta;x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <munder>
+   <mi>&#62520;</mi>
+   <mrow>
+    <mi>&Delta;x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </munder>
+  <mo>&InvisibleTimes;</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>f</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>x0</mi>
+      <mo>+</mo>
+      <mi>&Delta;x</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <munder>
+      <mi>&#62520;</mi>
+      <mrow>
+       <mi>xa</mi>
+       <mo>&rightarrow;</mo>
+       <mi>x0</mi>
+      </mrow>
+     </munder>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>f</mi>
+      <mo>[</mo>
+      <mi>xa</mi>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mi>&Delta;x</mi>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Para <span><em>f</em></span>:
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdqlim</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>,</mo>
+     <mi>x0</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>&Delta;x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<table class='Output'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>&#62305;</span></td>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>2 (-3+x0)</span></td>
+  <td style='text-align: left;'><span>x0&isin;<span style='font-family: Times;'><span class="doublestruck">R</span></span>&amp;&amp;x0&ne;2</span></td>
+ </tr>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span>Indeterminate</span></td>
+  <td style='text-align: left;'><span>True</span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Text">
+ Para <span><em>f</em></span> e <span><em>2</em></span> sem limite:
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>fdqlim</mi>
+  <mo>[</mo>
+  <mrow>
+   <mi>fdesl</mi>
+   <mo>,</mo>
+   <mn>2</mn>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mfrac>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mn>1</mn>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mi>If</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mrow>
+       <mn>2</mn>
+       <mo>+</mo>
+       <mi>&Delta;x</mi>
+      </mrow>
+      <mo>&NotEqual;</mo>
+      <mn>2</mn>
+     </mrow>
+     <mo>,</mo>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mrow>
+         <mo>(</mo>
+         <mrow>
+          <mn>2</mn>
+          <mo>+</mo>
+          <mi>&Delta;x</mi>
+         </mrow>
+         <mo>)</mo>
+        </mrow>
+        <mo>-</mo>
+        <mn>3</mn>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>,</mo>
+     <mn>3</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+  <mi>&Delta;x</mi>
+ </mfrac>
+</math>
+</p>
+
+<p class="Text">
+ Para <span><em>f</em></span> e <span><em>2</em></span> com limite:
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Limit</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mi>fdqlim</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>fdesl</mi>
+     <mo>,</mo>
+     <mn>2</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>&Delta;x</mi>
+    <mo>&rightarrow;</mo>
+    <mn>0</mn>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>-</mo>
+  <mn>2</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Funcionou.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>dlim</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x0_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <mi>Limit</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>fdqlim</mi>
+     <mo>[</mo>
+     <mrow>
+      <mi>f</mi>
+      <mo>,</mo>
+      <mi>x0</mi>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mi>&Delta;x</mi>
+     <mo>&rightarrow;</mo>
+     <mn>0</mn>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>?</mo>
+  <mi>dlim</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Print">
+ <a id="Info613748277418-9288095"></a>
+ Global`dlim
+</p>
+
+
+
+<table class='Print'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><table class='Inline'>
+ <tr style='vertical-align: baseline;'>
+  <td style='text-align: left;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>dlim</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>f_</mi>
+    <mo>,</mo>
+    <mi>x0_</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>:=</mo>
+  <mrow>
+   <munder>
+    <mi>&#62520;</mi>
+    <mrow>
+     <mi>&Delta;x</mi>
+     <mo>&rightarrow;</mo>
+     <mn>0</mn>
+    </mrow>
+   </munder>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>fdqlim</mi>
+    <mo>[</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>,</mo>
+     <mi>x0</mi>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math></span></td>
+ </tr>
+</table>
+
+</td>
+ </tr>
+</table>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>ListPlot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>0.5</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>1</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>1.5</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>1.9</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>2</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>2.1</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>2.5</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>3</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mi>dlim</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>fdesl</mi>
+       <mo>,</mo>
+       <mn>3.5</mn>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mtext> </mtext>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>PlotStyle</mi>
+    <mo>-&gt;</mo>
+    <mrow>
+     <mi>PointSize</mi>
+     <mo>[</mo>
+     <mn>0.02</mn>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_21.gif" alt="Limites e continuidade_21.gif" width="360" height="219" style="vertical-align:middle" />
+</p>
+
+<p class='Text' style='border-left: 0px;border-right: 0px;border-top: 1px;border-bottom: 0px;border-style: solid;border-color: #000000;'>
+ O que &eacute; essa p*? <span><span>dq</span></span> seria <span style='font-size: 18px;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>f</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mi>&Delta;x</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>x</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mi>&Delta;x</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>&Delta;x</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>+</mo>
+     <mn>2</mn>
+     <mo>-</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>+</mo>
+       <mn>2</mn>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mi>&Delta;x</mi>
+   </mfrac>
+   <mo>=</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <msup>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <mrow>
+       <mn>2</mn>
+       <mo>&InvisibleTimes;</mo>
+       <mi>x&Delta;x</mi>
+      </mrow>
+      <mo>+</mo>
+      <msup>
+       <mi>&Delta;x</mi>
+       <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <mn>2</mn>
+      <mo>-</mo>
+      <msup>
+       <mi>x</mi>
+       <mn>2</mn>
+      </msup>
+      <mo>-</mo>
+      <mn>2</mn>
+     </mrow>
+     <mi>&Delta;x</mi>
+    </mfrac>
+    <mo>=</mo>
+    <mrow>
+     <mfrac>
+      <mrow>
+       <mi>&Delta;x</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mrow>
+        <mrow>
+         <mn>2</mn>
+         <mo>&InvisibleTimes;</mo>
+         <mi>x</mi>
+        </mrow>
+        <mo>+</mo>
+        <mi>&Delta;x</mi>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mi>&Delta;x</mi>
+     </mfrac>
+     <mo>=</mo>
+     <mrow>
+      <mrow>
+       <mn>2</mn>
+       <mo>&InvisibleTimes;</mo>
+       <mi>x</mi>
+      </mrow>
+      <mo>+</mo>
+      <mi>&Delta;x</mi>
+     </mrow>
+    </mrow>
+   </mrow>
+  </mrow>
+ </mrow>
+</math></span></span>, que tende a <span><span><span style='font-size: 18px;'>2x</span></span></span> conforme <span><span>&Delta;x</span></span> tende a zero.
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Plot</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>f</mi>
+     <mo>,</mo>
+     <mrow>
+      <mn>2</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>x</mi>
+     </mrow>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>{</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>,</mo>
+     <mrow>
+      <mo>-</mo>
+      <mn>10</mn>
+     </mrow>
+     <mo>,</mo>
+     <mn>10</mn>
+    </mrow>
+    <mo>}</mo>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mi>ImageSize</mi>
+    <mo>&rightarrow;</mo>
+    <mi>Small</mi>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Limites e continuidade_22.gif" alt="Limites e continuidade_22.gif" width="180" height="108" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ <span style='background-color: #FFFF00;'>Na verdade, preciso tender isso a zero, n&atilde;o a </span><span style='background-color: #FFFF00;'><em>3</em></span><span style='background-color: #FFFF00;'>. E tamb&eacute;m... o limite constante &eacute; ponto, n&atilde;o reta.</span>
+</p>
+
+
+
+<p class="Text">
+ <span style='font-style: italic;'>(Observando que a raz&atilde;o &mdash;difference quotient [Silverman]&mdash;implica uma aritm&eacute;tica, mas neste caso, de execu&ccedil;&otilde;es de fun&ccedil;&otilde;es.)</span>
+</p>
+
+
+
+<p class="Text">
+ <span style='font-size: 16px;'>A aritm&eacute;tica da fun&ccedil;&atilde;o difference quotient explica a redu&ccedil;&atilde;o de grau da derivada.</span> A difference quotient &eacute; uma fun&ccedil;&atilde;o que &ldquo;tira um grau&rdquo; de uma fun&ccedil;&atilde;o. &Eacute; uma fun&ccedil;&atilde;o composta? Com como par&acirc;metro uma fun&ccedil;&atilde;o? Necessariamente com denominador de um grau a menos que o numerador. Portanto um tipo de objeto espec&iacute;fico.
+</p>
+
+
+
+<p class="Chapter">
+ Temas
+</p>
+
+
+
+<p class="Item">
+ p. 69 continuidade de opera&ccedil;&otilde;es sobre fun&ccedil;&otilde;es. 2.64 o que a continuidade implica para polin&ocirc;mios como somas/subtra&ccedil;&otilde;es de fun&ccedil;&otilde;es (e racionais como divis&otilde;es?).
+</p>
+
+
+
+<p class="Item">
+ p. 68 continuidade em um ponto implica que o limite naquela ponto &eacute; igual ao valor naquele ponto. Portanto podemos us&aacute;-los de forma intercambi&aacute;vel, para, por exemplo:
+</p>
+
+
+
+<p class="Subitem">
+ Teorema sobre opera&ccedil;&otilde;es sobre fun&ccedil;&otilde;es com (?)
+</p>
+
+
+
+<p class="Item">
+ p. 66 o teorema das opera&ccedil;&otilde;es sobre fun&ccedil;&otilde;es com limites (calculados), advindo da defini&ccedil;&atilde;o formal, &eacute; usado para &ldquo;dividir&rdquo; fun&ccedil;&otilde;es em subfun&ccedil;&otilde;es para calcular os limites compostos.
+</p>
+
+
+
+<p class="Subitem">
+ p.67 isso inclui fun&ccedil;&otilde;es polinomiais, como somas/subtra&ccedil;&otilde;es de fun&ccedil;&otilde;es... isso implicaria que polinomiais s&atilde;o por defini&ccedil;&atilde;o opera&ccedil;&otilde;es sobre &ldquo;sub&rdquo;-fun&ccedil;&otilde;es?
+</p>
+
+
+
+<p class="Section">
+ AD2
+</p>
+
+
+
+<p class="Item">
+ Dada <span style='font-size: 18px;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mi>f</mi>
+   <mo>&ApplyFunction;</mo>
+   <mo>(</mo>
+   <mi>x</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mfrac>
+   <mn>1</mn>
+   <mrow>
+    <mi>x</mi>
+    <mo>+</mo>
+    <mn>1</mn>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math></span></span>:
+</p>
+
+
+
+<p class="Subitem">
+ Calcule <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mstyle mathsize='24pt'>
+  <mrow>
+   <mrow>
+    <munder>
+     <mi>lim</mi>
+     <mrow>
+      <mi>x</mi>
+      <mo>&rightarrow;</mo>
+      <mrow>
+       <mo>-</mo>
+       <msup>
+        <mn>1</mn>
+        <mo>+</mo>
+       </msup>
+      </mrow>
+     </mrow>
+    </munder>
+    <mrow>
+     <mi>f</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>x</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>,</mo>
+   <mtext> </mtext>
+   <mrow>
+    <munder>
+     <mi>lim</mi>
+     <mrow>
+      <mi>x</mi>
+      <mo>&rightarrow;</mo>
+      <mrow>
+       <mo>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </mrow>
+    </munder>
+    <mrow>
+     <mi>f</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>x</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>,</mo>
+   <mtext> </mtext>
+   <mrow>
+    <munder>
+     <mi>lim</mi>
+     <mrow>
+      <mi>x</mi>
+      <mo>&rightarrow;</mo>
+      <mrow>
+       <mo>+</mo>
+       <mi>&infin;</mi>
+      </mrow>
+     </mrow>
+    </munder>
+    <mrow>
+     <mi>f</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>x</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>,</mo>
+   <mtext> </mtext>
+   <mrow>
+    <munder>
+     <mi>lim</mi>
+     <mrow>
+      <mi>x</mi>
+      <mo>&rightarrow;</mo>
+      <mrow>
+       <mo>-</mo>
+       <mi>&infin;</mi>
+      </mrow>
+     </mrow>
+    </munder>
+    <mrow>
+     <mi>f</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>x</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+ </mstyle>
+</math></span></span>.
+</p>
+
+
+
+<p class="Text">
+ Racional com ass&iacute;ntota em <span><span>x=-1</span></span>. Justamente est&aacute; pedindo o <span><em>y</em></span> <span style='font-size: 16px;'>(isso &eacute; computar o limite - &eacute; no outro eixo)</span>. Agora, o que tem a ver a fun&ccedil;&atilde;o difference quotient com isso?
+</p>
+
+
+
+<p class="Text">
+ A n&atilde;o ser que seja tomando os pontos... <span><span>f(-3)=-0.5,f(-2)=-1, f(0)=1,f(1)=0.5</span></span>. O limite tem de ser infinito superior mesmo. Vindo da esquerda, &eacute; <span><em>-</em><em>&infin;</em></span> (mas n&atilde;o foi perguntado). O limite central n&atilde;o existe.
+</p>
+
+
+
+<p class="Text">
+ Agora, o limite conforme <span><em>x</em></span> tende a infinito. <span style='font-weight: bold;'>Esse</span> parece ser o do difference quotient.<br />Porque o que &eacute; o difference quotient? &Eacute; tomar o grau de tend&ecirc;ncia em rela&ccedil;&atilde;o a um ponto fixo, de qualquer outro ponto. (Isso &eacute; feito usando o enunciado da fun&ccedil;&atilde;o...)<br />O que est&aacute; confundindo &eacute; que <span><em>y</em></span> tende ao infinito em certo <span><em>x</em></span>, mas tamb&eacute;m a um finito em outro <span><em>x</em></span>. E <span style='font-size: 18px;'>(neste caso) </span><span style='font-size: 18px;'><em>y</em></span><span style='font-size: 18px;'> tende a um infinito em um </span><span style='font-size: 18px;'><em>x</em></span><span style='font-size: 18px;'> finito, e tende a um finito em um </span><span style='font-size: 18px;'><em>x</em></span><span style='font-size: 18px;'> infinito</span>. <span style='background-color: #FFFF00;'>(&Uacute;nica combina&ccedil;&atilde;o poss&iacute;vel?)</span> Agora, para tomar a quanto <span><em>y</em></span> tende em <span><em>x</em><em>=</em><em>&infin;</em></span>, n&atilde;o &eacute; poss&iacute;vel...<br /><span style='font-size: 14px;'>O lance &eacute; que no </span><span style='font-size: 14px;'><em>x</em></span><span style='font-size: 14px;'> finito, eu ainda tomei </span><span style='font-size: 14px;'><em>y</em><em>=</em><em>&infin;</em></span><span style='font-size: 14px;'> por intui&ccedil;&atilde;o... e n&atilde;o por f&oacute;rmula</span>. Que &eacute; o que o livro (Unisul) come&ccedil;a ensinando: tabelar e plotar e visualizar isto. A&iacute;, ele segue ditando &ldquo;propriedades&rdquo; dos limites para <span style='font-weight: bold;'>n&atilde;o uso</span> do teorema formal dos limites. <span style='background-color: #FFFF00;'>(Mas seria poss&iacute;vel resolver pelo teorema formal?)</span>
+</p>
+
+
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>

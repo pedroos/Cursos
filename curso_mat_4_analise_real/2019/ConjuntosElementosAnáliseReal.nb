@@ -1,0 +1,974 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     36360,        966]
+NotebookOptionsPosition[     28016,        836]
+NotebookOutlinePosition[     28440,        853]
+CellTagsIndexPosition[     28397,        850]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Cap\[IAcute]tulo 1 - N\[UAcute]meros reais", "Section",
+ FontSize->18,ExpressionUUID->"9c1e55ff-cc70-4fbf-9df3-4d6e3a2329bd"],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 1 - Conjuntos num\[EAcute]ricos", "Section",
+ FontSize->18,ExpressionUUID->"379f0d38-d570-4457-a738-98496709c640"],
+
+Cell[CellGroupData[{
+
+Cell["Analisando os conjuntos num\[EAcute]ricos", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"71b141ed-f228-4187-a76b-4c9d4020d1cc"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Injetiva: N\[ATilde]o h\[AAcute] elementos no dom\[IAcute]nio que \
+\[OpenCurlyDoubleQuote]apontam\[CloseCurlyDoubleQuote] para o mesmo elemento \
+na imagem.\
+\>", "Item1",
+ FontSize->18,ExpressionUUID->"8904d4d8-38fe-4932-b597-a05498300777"],
+
+Cell["\<\
+Sobrejetiva: N\[ATilde]o h\[AAcute] elementos na imagem sem elementos no dom\
+\[IAcute]nio (mas pode ser n\[ATilde]o-injetiva).\
+\>", "Item1",
+ FontSize->18,ExpressionUUID->"286e5a73-4d31-42a8-8766-c76dffa2cd00"],
+
+Cell["\<\
+Bijetiva: injetiva e sobrejetiva, n\[ATilde]o sobra no dom\[IAcute]nio e n\
+\[ATilde]o duplica tamb\[EAcute]m, um-para-um.\
+\>", "Item1",
+ FontSize->18,ExpressionUUID->"2f8962eb-7950-4a37-aaa9-92271d333157"]
+}, Open  ]],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox["\[Subset]", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"78a05330-0aa9-4711-a630-bcb0ce4dc247"],
+ ": est\[AAcute] contido, \[EAcute] um subset. ",
+ Cell[BoxData[
+  FormBox["\[Superset]", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"f9af5c4f-7b58-4d6e-b546-7112c04769b7"],
+ ": cont\[EAcute]m, \[EAcute] um superset."
+}], "Text",
+ FontSize->18,ExpressionUUID->"d15ce3f0-2bd7-42fa-9355-02bbb4383128"],
+
+Cell["\<\
+Defini\[CCedilla]\[ATilde]o formal dos n\[UAcute]meros naturais em tr\[EHat]s \
+proposi\[CCedilla]\[OTilde]es (Peano).\
+\>", "Text",
+ FontSize->18,ExpressionUUID->"e2afb4c4-63ea-4a35-9a9b-194e9f5eb060"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "A \[OpenCurlyDoubleQuote]rela\[CCedilla]\[ATilde]o\[CloseCurlyDoubleQuote] \
+de ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e463ad60-d740-47bd-8462-4b39f07c636a"],
+ " com o sucessor de ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"d0532de5-b7f3-4a70-a371-d5c0c382f072"],
+ " (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "+", "1"}], "=", "o"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"5c633666-eada-4b42-9bb4-b973c7df154c"],
+ ") como uma fun\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[DoubleStruckCapitalN]", "\[Rule]", "\[DoubleStruckCapitalN]"}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"2cfe094f-2870-4ba4-ab89-7a8b54259587"],
+ " denominada ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"s", "(", "n", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"26766444-5fdc-4cbf-97b6-ce994f391dfc"],
+ ".\[LineSeparator]A fun\[CCedilla]\[ATilde]o \[EAcute] injetiva. Ou seja, \
+cada ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "+", "1"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"dc4216e8-3c0c-418d-a991-f1eee16cca49"],
+ " tem um \[UAcute]nico ",
+ Cell[BoxData[
+  FormBox["o", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"84686e37-5096-47de-af9a-fede9be8143a"],
+ "."
+}], "Item1",
+ FontSize->18,ExpressionUUID->"cbc1acc1-c668-4cca-8646-7791efd0c2a0"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox["1", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"60b0d9de-908d-4ffb-acb1-ea98ea0ab9bd"],
+ " como um \[UAcute]nico elemento ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"bebf25d5-2b76-4c74-b3e0-e02fd7624aae"],
+ " em ",
+ Cell[BoxData[
+  FormBox["\[DoubleStruckCapitalN]", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"ae9109a4-e192-44f8-a8cc-fa03aa22ce8d"],
+ " que n\[ATilde]o \[EAcute] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "+", "1"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"04c474b0-e19d-4322-83b6-b83badbf1822"],
+ " de ningu\[EAcute]m. (Sua exist\[EHat]ncia.)"
+}], "Item1",
+ FontSize->18,ExpressionUUID->"9971e78b-3010-4972-861e-1f861fdfab47"],
+
+Cell[TextData[{
+ "Princ\[IAcute]pio da indu\[CCedilla]\[ATilde]o: se um conjunto ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"ad9cab9b-6590-4c67-a949-8cbcda7c3538"],
+ " contido nos naturais ",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"d4c0bd01-1c25-48ab-b585-68094af6a005"],
+ " cont\[EAcute]m ",
+ Cell[BoxData[
+  FormBox["1", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"36135dc6-d85e-438c-9c05-d5c232b06e6f"],
+ " e cont\[EAcute]m as imagens ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"s", "(", "n", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b18d88a5-0823-47f5-935c-adaec27be3bd"],
+ " de todos ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"12fb4ba1-f84a-4fb4-97e6-c05e6c76ba81"],
+ " que cont\[EAcute]m, ent\[ATilde]o este conjunto ser\[AAcute] igual aos \
+naturais. F\[OAcute]rmula: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"X", "\[Subset]", "N"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b300f4cb-9fd8-422b-a412-f4e38d7d08cd"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "\[Element]", "X"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a13f889b-1a43-459a-a0db-e190feeada92"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ForAll]", 
+    RowBox[{"n", ":", 
+     RowBox[{
+      RowBox[{"n", "\[Element]", "X"}], "\[Implies]", 
+      RowBox[{
+       RowBox[{"s", "(", "n", ")"}], "\[Element]", "X"}]}]}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"cd18add9-f382-4195-935a-088abde437ed"],
+ "."
+}], "Item1",
+ FontSize->18,ExpressionUUID->"885755ee-ed15-404a-b545-6f4c57adca78"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Princ\[IAcute]pio da indu\[CCedilla]\[ATilde]o \[EAcute] a \
+defini\[CCedilla]\[ATilde]o (novamente) de indu\[CCedilla]\[ATilde]o, pela \
+qual se ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"P", "(", "1", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e5929a9f-e2a4-4727-ac0a-47a21b706293"],
+ " (propriedade \[EAcute] v\[AAcute]lida para o elemento) e ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"P", "(", "n", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e4231c91-d996-4978-b26d-00387c69caa4"],
+ ", ent\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"P", "(", 
+    RowBox[{"n", "+", "1"}], ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"7ebabd51-3f7b-4df3-b05c-e5990b044e68"],
+ ". Usado para provas sobre os naturais pois implica abrang\[EHat]ncia em \
+todo ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "\[Element]", "\[DoubleStruckCapitalN]"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"dbd8b2ce-bbc5-42d6-8ea4-3d154fd31052"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"1babe858-c185-4af5-b0e6-2bdcdf4cc190"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[ForAll]", 
+     RowBox[{"n", ":", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"1", "\[Element]", "X"}], "\[And]", 
+        RowBox[{"n", "\[Element]", "X"}], "\[And]", 
+        RowBox[{"[", 
+         RowBox[{
+          RowBox[{"P", "(", "n", ")"}], "\[Implies]", 
+          RowBox[{"P", "(", 
+           RowBox[{"n", "+", "1"}], ")"}]}], "]"}]}], "\[Implies]", "X"}]}]}],
+     "=", "\[DoubleStruckCapitalN]"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"8cb407b3-2095-42cf-ba2c-31fb4d439f07"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"e4e94f40-5576-40b6-b234-2442959b29fd"],
+
+Cell[TextData[{
+ "Adi\[CCedilla]\[ATilde]o e multiplica\[CCedilla]\[ATilde]o como duas opera\
+\[CCedilla]\[OTilde]es que associam a cada par ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", 
+    RowBox[{"m", ",", "n"}], ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a1eece7b-24ab-4f8e-99aa-b2c66c69e542"],
+ " um ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"o", "=", 
+    RowBox[{"m", "+", "n"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e64737d2-284a-4110-97d9-52d7c3e32dee"],
+ " ou ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"o", "=", 
+    RowBox[{"m", "\[Times]", "n"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"4dcb783a-aba5-4d20-af18-37d915701a69"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"6a9636e3-0166-41fb-b9a5-c70db12d64d0"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", 
+    RowBox[{
+     RowBox[{"1", "\[Implies]", 
+      RowBox[{"m", "+", "n"}]}], "=", 
+     RowBox[{"s", "(", "m", ")"}]}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"33d2c6c5-d537-4417-8d9d-5218dcdf2a28"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"1567bcc6-3451-4cf0-803a-019f82b47711"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"m", "+", 
+     RowBox[{"s", "(", "n", ")"}]}], "=", 
+    RowBox[{"s", "(", 
+     RowBox[{"m", "+", "n"}], ")"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"5554738c-8169-4d7c-9784-36e9e145d176"],
+ ". A aplica\[CCedilla]\[ATilde]o de ",
+ Cell[BoxData[
+  FormBox["s", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"0b849e07-7de4-4235-88ca-29358fc2bf1e"],
+ " sobre um argumento de uma soma \[EAcute] a aplica\[CCedilla]\[ATilde]o de ",
+ Cell[BoxData[
+  FormBox["s", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"8a122719-a2d7-4a59-b33b-54224216b391"],
+ " sobre a soma."
+}], "Text",
+ FontSize->18,ExpressionUUID->"8788db32-aac1-4c78-a045-32b7757b319c"],
+
+Cell["\<\
+A adi\[CCedilla]\[ATilde]o \[EAcute] associativa, distributiva (com a soma) e \
+comutativa. A multiplica\[CCedilla]\[ATilde]o \[EAcute] associativa e \
+comutativa.\
+\>", "Text",
+ FontSize->18,ExpressionUUID->"ab8b4137-7f70-468b-a57e-bb05a21d5e5e"],
+
+Cell[TextData[{
+ "Princ\[IAcute]pio da boa ordena\[CCedilla]\[ATilde]o: todo subconjunto n\
+\[ATilde]o vazio ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "\[Subset]", "\[DoubleStruckCapitalN]"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"4e76c98b-314b-4eaa-9747-97cf68202f38"],
+ " possui um menor elemento, isto \[EAcute], um elemento ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "0"], "\[Element]", "A"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"9cd90564-6215-476b-b8da-1cd03c7d8da6"],
+ " tal que ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["n", "0"], "<=", "n"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"0b721c86-88f5-488e-a3cb-b8473591f937"],
+ " para todo ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "\[Element]", "A"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"76a6ac06-cedf-4ae0-beec-e2fb974d98a3"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"397e3bb3-e163-466c-bb52-36cff9a924ab"],
+
+Cell[CellGroupData[{
+
+Cell["Exemplo 1. Demonstrar o princ\[IAcute]pio da boa ordena\[CCedilla]\
+\[ATilde]o.", "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"2e907ccf-dd76-4e1c-83f8-0fddcd471528"],
+
+Cell[TextData[{
+ "Exemplo 2. Usando indu\[CCedilla]\[ATilde]o, provar que a soma dos ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e4696781-69b5-4970-8292-6535652bcaad"],
+ " primeiros n\[UAcute]meros naturais \[EAcute] igual a ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox[
+    RowBox[{"n", "(", 
+     RowBox[{"n", "+", "1"}], ")"}], "2"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"14a5b7b8-9e72-4631-8096-7dd9cb79efe5"],
+ "."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"9d662307-5c7a-466e-ab37-8de1d7574b82"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conjuntos finitos", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"0c6e49db-8429-43fa-905c-9de3303abff9"],
+
+Cell[TextData[{
+ "Defini\[CCedilla]\[ATilde]o 1.1: Um conjunto ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"04a1adfd-4080-412c-ab5b-92cfe81ba08b"],
+ " \[EAcute] dito ",
+ StyleBox["finito",
+  FontWeight->"Bold"],
+ " se \[EAcute] vazio ou se, para algum ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"675ae50f-b43d-4c75-8031-f31c78d9b42e"],
+ ", existe uma bije\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", 
+     SubscriptBox["I", "n"]}], "\[Rule]", "X"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"0c41b681-1c61-4f84-b3bc-ca22a92f6ba9"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"da305ef3-2cf3-4d6e-b5b4-796d18c7f7f5"],
+
+Cell[TextData[{
+ "Defini\[CCedilla]\[ATilde]o 1.2: Quando um conjunto ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"d41b1458-b647-4953-ad48-21d01883bc8b"],
+ " tem ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"1456d10c-fac0-43e8-8ae1-3d6f4ba8319d"],
+ " elementos, dizemos que a ",
+ StyleBox["cardinalidade",
+  FontWeight->"Bold"],
+ " de ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"53eff4dd-4157-4d41-b6e9-5e8d478e1e76"],
+ " \[EAcute] igual a ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"dcee11c1-63a4-461c-927c-45837ca72bd7"],
+ ". A bije\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", 
+     SubscriptBox["I", "n"]}], "\[Rule]", "X"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"40ddf9a7-b1fb-4e4a-b177-2891f85dc879"],
+ " tamb\[EAcute]m \[EAcute] chamada de contagem dos elementos de ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"053e94b8-0f5a-4077-9487-991052cfa5d0"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"1303e469-1fd8-44ae-8a3c-e787dd6b4d8d"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Exemplo 1. Seja ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"X", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"x", "\[Element]", "\[DoubleStruckCapitalR]"}], "|", 
+       RowBox[{"\[LeftBracketingBar]", 
+        RowBox[{
+         RowBox[{"5", "x"}], "-", "3"}], "\[RightBracketingBar]"}]}], "=", 
+      "7"}], "}"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"74b9b6ed-c23c-46f5-85ef-5cee6ead0d12"],
+ ". Qual a cardinalidade de ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a9afb109-62a6-4b34-b570-2e60f8335727"],
+ "?"
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"0b4fde26-0e9b-4f43-896e-9644d8d54c42"],
+
+Cell[TextData[{
+ "Exemplo 2. Estabelecer a cardinalidade de ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"x", "\[Element]", "\[DoubleStruckCapitalZ]"}], "|", 
+      RowBox[{"2", "\[LessEqual]", 
+       RowBox[{
+        RowBox[{"2", "x"}], "+", "9"}], "\[LessEqual]", "8"}]}], "}"}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"7aed93a5-4bee-47f0-b14f-92e610043bae"],
+ "."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"3d905bca-78e8-46b3-be35-a79041959341"],
+
+Cell[TextData[{
+ "Exemplo 3. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"B", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"x", "|", 
+       RowBox[{"x", "\[Element]", "\[DoubleStruckCapitalR]"}]}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"x", "(", 
+         RowBox[{"x", "-", "2"}], ")"}], 
+        RowBox[{"(", 
+         RowBox[{"x", "+", "3"}], ")"}], 
+        RowBox[{"(", 
+         RowBox[{"x", "+", "7"}], ")"}]}], "=", "0"}]}], "}"}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"2aefa62f-f9c4-4ead-8e89-a679bce68c69"],
+ " tem cardinalidade ",
+ Cell[BoxData[
+  FormBox["4", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a5e47bba-5106-4855-bd55-b9c8d02ca5a4"],
+ "."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"e5b59a62-9d94-4e15-87c7-1d2ac1547ac5"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Teorema 1.1. Se ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"d4ca69bf-9449-41f3-b850-e8955cb01302"],
+ " \[EAcute] ",
+ StyleBox["subconjunto pr\[OAcute]prio",
+  FontColor->GrayLevel[0]],
+ " de ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["I", "n"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"f2ad34ad-bb8e-4e84-b423-65f7cfd53337"],
+ ", n\[ATilde]o pode existir uma bije\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "A"}], "\[Rule]", 
+    SubscriptBox["I", "n"]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a139c04d-112c-49ca-a9f9-961339a9f4fa"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"3cdc5a29-6eba-4825-b2ce-bc4c15d0d709"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Corol\[AAcute]rio 1. Se ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", 
+     SubscriptBox["I", "m"]}], "\[Rule]", "X"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"584136ee-ad8d-45b1-8c94-b5f0103c297e"],
+ " e ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"g", ":", 
+     SubscriptBox["I", "n"]}], "\[Rule]", "X"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"76bf90a9-5486-4bcb-af1c-3e05efc72e82"],
+ " s\[ATilde]o bije\[CCedilla]\[OTilde]es ent\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "=", "n"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a591d993-732f-4411-8b20-5cbad533b544"],
+ "."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"8aa04759-e055-4727-bb58-01c0e8223e73"],
+
+Cell[TextData[{
+ "Corol\[AAcute]rio 2. Seja ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b679f555-aa8e-4d2c-ac34-ae3efe01f12a"],
+ " um conjunto finito. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "X"}], "\[Rule]", "X"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"c0695f6a-829d-4870-b6ad-216d0ab99721"],
+ " \[EAcute] injetiva se, e somente se, \[EAcute] sobrejetiva."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"cbfa47b3-2fbc-40d7-93e9-0900a678087c"],
+
+Cell["\<\
+Corol\[AAcute]rio 3. N\[ATilde]o existe bije\[CCedilla]\[ATilde]o entre um \
+conjunto finito e uma parte pr\[OAcute]pria.\
+\>", "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"f7db564e-7b94-440b-bb1a-c5bb15da9910"]
+}, Open  ]],
+
+Cell["\<\
+Teorema 1.2. Todo subconjunto de um conjunto finito \[EAcute] finito.\
+\>", "Text",
+ FontSize->18,ExpressionUUID->"d4992b5f-f0df-421a-b137-9a9c99abd907"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Corol\[AAcute]rio 1. Dada ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "X"}], "\[Rule]", "Y"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b39666d6-559e-4f0b-8a87-aaf688295869"],
+ ", se ",
+ Cell[BoxData[
+  FormBox["Y", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"9b426559-41dd-4742-909f-5c56f38d43e2"],
+ " \[EAcute] finito e ",
+ Cell[BoxData[
+  FormBox["f", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b787ef97-8f52-46d0-bcf0-95733129c4d9"],
+ " \[EAcute] injetiva ent\[ATilde]o ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"14b3d95d-9e2f-44f4-8653-717362fde002"],
+ " \[EAcute] finito."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"c8e765d3-9698-4b7e-b83f-e9d3393a3ff2"],
+
+Cell[TextData[{
+ "Corol\[AAcute]rio 2. Dada ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "X"}], "\[Rule]", "Y"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"4316ce0c-f9ef-4aa6-be09-35591c10ea55"],
+ ", se ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"3d678f3c-86cf-40d9-98c2-42d5b8edeb43"],
+ " \[EAcute] finito e ",
+ Cell[BoxData[
+  FormBox["f", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e8c65838-16ba-4882-bc56-34fdd4eb10b6"],
+ " \[EAcute] sobrejetiva ent\[ATilde]o ",
+ Cell[BoxData[
+  FormBox["Y", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"fad651d6-5043-4cac-a89e-1a7e7647afa2"],
+ " \[EAcute] finito."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"d2d005d6-360d-4fbb-a773-b6c05d5b923b"],
+
+Cell[TextData[{
+ "Corol\[AAcute]rio 3. Um subconjunto ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"X", "\[Subset]", "\[DoubleStruckCapitalN]"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"caffa1d3-80c7-4155-b8d6-b5d43f6c916a"],
+ " \[EAcute] finito se, e somente se, \[EAcute] limitado."
+}], "Item1Paragraph",
+ FontSize->18,ExpressionUUID->"7bc919d9-bdc0-4c0c-8405-b052edc0ee7c"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conjuntos infinitos", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"9bca7467-9910-4848-901b-7e2c7a8076c3"],
+
+Cell[TextData[{
+ "N\[ATilde]o \[EAcute] finito. Formalmente, quando n\[ATilde]o \[EAcute] \
+vazio e n\[ATilde]o existe uma bije\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", 
+     SubscriptBox["I", "n"]}], "\[Rule]", "X"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"4bed327c-254c-4b6d-947d-0e745d4b5958"],
+ " para nenhum ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "\[Element]", "\[DoubleStruckCapitalN]"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e2288fa6-bafb-4551-8fec-fd070cc72224"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"dc175e16-1a76-4ffc-ac5c-e30b39b5098f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conjuntos enumer\[AAcute]veis", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"8473a21e-0ef3-4a8a-bf9c-8b3563661ef6"],
+
+Cell[TextData[{
+ "Defini\[CCedilla]\[ATilde]o 1.3. Um conjunto ",
+ Cell[BoxData[
+  FormBox["X", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"de54ae5b-9d3d-419c-814d-57a5da093f91"],
+ " \[EAcute] dito enumer\[AAcute]vel quando \[EAcute] ",
+ "finito",
+ " ou quando existe uma bije\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"f", ":", "\[DoubleStruckCapitalN]"}], "\[Rule]", "X"}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"1bbd8720-956c-4f31-b7ce-f17cb3787ab4"],
+ "."
+}], "Text",
+ FontSize->18,ExpressionUUID->"8dcd262c-b20c-4057-9b27-53d372b4dd8a"]
+}, Open  ]],
+
+Cell["Conjuntos n\[ATilde]o-enumer\[AAcute]veis", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"b59fe755-922a-4eb9-8c95-35585fe8bc24"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 2 - Conjunto dos n\[UAcute]meros reais", \
+"Section",
+ FontSize->18,ExpressionUUID->"4b136dab-dcec-430d-98e8-ecf738f7f51e"],
+
+Cell[CellGroupData[{
+
+Cell["Corpos ordenados", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"b705cd09-4606-4e53-92ff-3fa03b89c8f9"],
+
+Cell["\<\
+Corpo = campo (field). Reais e racionais (naturais e inteiros n\[ATilde]o).\
+\>", "Text",
+ FontSize->18,ExpressionUUID->"35eb2575-d811-4ed7-acaf-3e8544d7c325"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Supremo e \[IAcute]nfimo", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"72164144-296c-45af-8475-5fffba77bd95"],
+
+Cell["\<\
+Menor quota superior e maior quota inferior (upper/lower bound).\
+\>", "Text",
+ FontSize->18,ExpressionUUID->"7fdaaa9e-d679-4abe-8892-69c804c755a3"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 3 - Corpos ordenados completos (n\[UAcute]meros \
+racionais)", "Section",
+ FontSize->18,ExpressionUUID->"a148fa8e-eef9-44ad-9a2c-486ce5aab210"],
+
+Cell["Proposi\[CCedilla]\[OTilde]es", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"72882e68-d6a5-4086-93a0-0084a9d5e5ec"],
+
+Cell["Defini\[CCedilla]\[ATilde]o de corpo ordenado completo", \
+"Subsubsubsection",
+ FontSize->18,ExpressionUUID->"562d675e-493f-4f7b-a188-e8f8afbfce01"],
+
+Cell["O corpo ordenado completo dos n\[UAcute]meros reais", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"ab4312dc-a7e9-4731-9676-b4dc6ba9fe7c"],
+
+Cell["Princ\[IAcute]pio dos intervalos encaixados", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"a985db1f-aba4-4856-945c-846d90333899"]
+}, Open  ]],
+
+Cell["Cap\[IAcute]tulo 2 - Topologia da reta e fun\[CCedilla]\[OTilde]es cont\
+\[IAcute]nuas", "Section",
+ FontSize->18,ExpressionUUID->"c2554921-5fd1-495d-bb96-60286f02d54b"],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 1 - Conjuntos abertos e fechados", "Section",
+ FontSize->18,ExpressionUUID->"4486d2a0-eee6-4b0e-a2b2-14721cc041ca"],
+
+Cell["Defini\[CCedilla]\[ATilde]o e exemplos de conjuntos abertos", \
+"Subsubsubsection",
+ FontSize->18,ExpressionUUID->"707259a7-d392-47ec-b5c4-7bd9f76ccc9a"],
+
+Cell["Vizinhan\[CCedilla]as e ponto interior de um conjunto", \
+"Subsubsubsection",
+ FontSize->18,ExpressionUUID->"25cafbf7-becc-448c-802c-dfd8ba89cbbc"],
+
+Cell["Defini\[CCedilla]\[ATilde]o e exemplos de conjuntos fechados", \
+"Subsubsubsection",
+ FontSize->18,ExpressionUUID->"47909a54-e177-4b5e-a37c-229aee20920a"],
+
+Cell["Pontos de ader\[EHat]ncia e fecho de um conjunto", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"3946bf1a-6fe5-419c-a3d8-9062448a4a04"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Se\[CCedilla]\[ATilde]o 2 - Pontos de acumula\[CCedilla]\[ATilde]o e Teorema \
+de Bolzano-Weierstrass\
+\>", "Section",
+ FontSize->18,ExpressionUUID->"673aa23b-3b7b-404d-804b-6ec6f79add8e"],
+
+Cell["Pontos de acumula\[CCedilla]\[ATilde]o", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"1578a11e-04f4-4958-aa6c-c6714c88c813"],
+
+Cell["Teorema de Bolzano - Weierstrass", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"fef0ab1f-bed3-4def-ad46-e585f714186a"],
+
+Cell["Pontos isolados", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"57397c61-47da-42f2-9fcf-084302ff3f10"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 3 - Conjuntos compactos", "Section",
+ FontSize->18,ExpressionUUID->"04cc7ac9-a277-441c-a938-3b7a1b191c43"],
+
+Cell["Cobertura de um conjunto", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"76e2bc8a-c67c-4fe5-9e62-7461bff954a1"],
+
+Cell["Proposi\[CCedilla]\[OTilde]es e teoremas", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"342c0113-4722-4f68-bf7c-583f5fb7717b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 4 - Fun\[CCedilla]\[OTilde]es \
+cont\[IAcute]nuas", "Section",
+ FontSize->18,ExpressionUUID->"3ba99508-409d-4245-a37a-4118aa4cff75"],
+
+Cell["Defini\[CCedilla]\[ATilde]o, exemplos e propriedades", \
+"Subsubsubsection",
+ FontSize->18,ExpressionUUID->"a35d08a4-8818-4e6c-862e-aac879860a06"],
+
+Cell["Fun\[CCedilla]\[OTilde]es cont\[IAcute]nuas em dom\[IAcute]nios \
+compactos", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"02fd0769-b732-4593-8ab3-36efb50f063d"]
+}, Open  ]],
+
+Cell["Cap\[IAcute]tulo 3 - Derivadas", "Section",
+ FontSize->18,ExpressionUUID->"e614ad9a-db12-4f70-8922-e834ab120e9b"],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 1 - A no\[CCedilla]\[ATilde]o de derivada e as \
+regras operacionais", "Section",
+ FontSize->18,ExpressionUUID->"b356edca-9742-4fb0-a4c0-01ab7345393a"],
+
+Cell["Defini\[CCedilla]\[ATilde]o de derivada", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"c09e1cd8-90e5-4fd2-af18-226165ab6e01"],
+
+Cell["Continuidade e derivada", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"fa08c2eb-ec1d-406b-9a16-780af9239621"],
+
+Cell["As regras da soma, produto e quociente", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"2360df34-9f9a-4987-9c92-4412c03b734a"],
+
+Cell["A regra da cadeia", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"b3a0f6f0-22aa-4088-b859-32a0387063f8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 2 - Teorema sobre derivadas", "Section",
+ FontSize->18,ExpressionUUID->"54d6210b-9ad0-4596-8856-88b30cce1db1"],
+
+Cell["Teorema da derivada da fun\[CCedilla]\[ATilde]o inversa", \
+"Subsubsubsection",
+ FontSize->18,ExpressionUUID->"f2e7001e-c725-4900-a739-8e798d23dbe7"],
+
+Cell["Teorema do valor m\[EAcute]dio", "Subsubsubsection",
+ FontSize->18,ExpressionUUID->"0215babd-5280-4e05-bced-3320e8675698"]
+}, Open  ]]
+},
+WindowSize->{944, 992},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification->0.75,
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->FrontEnd`FileName[{"Book"}, "Textbook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 131, 1, 45, "Section",ExpressionUUID->"9c1e55ff-cc70-4fbf-9df3-4d6e3a2329bd"],
+Cell[CellGroupData[{
+Cell[714, 25, 144, 1, 31, "Section",ExpressionUUID->"379f0d38-d570-4457-a738-98496709c640"],
+Cell[CellGroupData[{
+Cell[883, 30, 139, 1, 21, "Subsubsubsection",ExpressionUUID->"71b141ed-f228-4187-a76b-4c9d4020d1cc"],
+Cell[CellGroupData[{
+Cell[1047, 35, 252, 5, 19, "Item1",ExpressionUUID->"8904d4d8-38fe-4932-b597-a05498300777"],
+Cell[1302, 42, 222, 4, 19, "Item1",ExpressionUUID->"286e5a73-4d31-42a8-8766-c76dffa2cd00"],
+Cell[1527, 48, 217, 4, 19, "Item1",ExpressionUUID->"2f8962eb-7950-4a37-aaa9-92271d333157"]
+}, Open  ]],
+Cell[1759, 55, 451, 10, 26, "Text",ExpressionUUID->"d15ce3f0-2bd7-42fa-9355-02bbb4383128"],
+Cell[2213, 67, 212, 4, 22, "Text",ExpressionUUID->"e2afb4c4-63ea-4a35-9a9b-194e9f5eb060"],
+Cell[CellGroupData[{
+Cell[2450, 75, 1416, 39, 44, "Item1",ExpressionUUID->"cbc1acc1-c668-4cca-8646-7791efd0c2a0"],
+Cell[3869, 116, 754, 19, 23, "Item1",ExpressionUUID->"9971e78b-3010-4972-861e-1f861fdfab47"],
+Cell[4626, 137, 1646, 46, 44, "Item1",ExpressionUUID->"885755ee-ed15-404a-b545-6f4c57adca78"]
+}, Open  ]],
+Cell[6287, 186, 1072, 27, 49, "Text",ExpressionUUID->"1babe858-c185-4af5-b0e6-2bdcdf4cc190"],
+Cell[7362, 215, 660, 19, 26, "Text",ExpressionUUID->"e4e94f40-5576-40b6-b234-2442959b29fd"],
+Cell[8025, 236, 765, 22, 26, "Text",ExpressionUUID->"6a9636e3-0166-41fb-b9a5-c70db12d64d0"],
+Cell[8793, 260, 365, 11, 26, "Text",ExpressionUUID->"1567bcc6-3451-4cf0-803a-019f82b47711"],
+Cell[9161, 273, 734, 19, 26, "Text",ExpressionUUID->"8788db32-aac1-4c78-a045-32b7757b319c"],
+Cell[9898, 294, 257, 5, 22, "Text",ExpressionUUID->"ab8b4137-7f70-468b-a57e-bb05a21d5e5e"],
+Cell[10158, 301, 965, 26, 49, "Text",ExpressionUUID->"397e3bb3-e163-466c-bb52-36cff9a924ab"],
+Cell[CellGroupData[{
+Cell[11148, 331, 175, 2, 19, "Item1Paragraph",ExpressionUUID->"2e907ccf-dd76-4e1c-83f8-0fddcd471528"],
+Cell[11326, 335, 563, 14, 31, "Item1Paragraph",ExpressionUUID->"9d662307-5c7a-466e-ab37-8de1d7574b82"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11938, 355, 115, 1, 21, "Subsubsubsection",ExpressionUUID->"0c6e49db-8429-43fa-905c-9de3303abff9"],
+Cell[12056, 358, 812, 23, 26, "Text",ExpressionUUID->"da305ef3-2cf3-4d6e-b5b4-796d18c7f7f5"],
+Cell[12871, 383, 1390, 39, 49, "Text",ExpressionUUID->"1303e469-1fd8-44ae-8a3c-e787dd6b4d8d"],
+Cell[CellGroupData[{
+Cell[14286, 426, 695, 20, 25, "Item1Paragraph",ExpressionUUID->"0b4fde26-0e9b-4f43-896e-9644d8d54c42"],
+Cell[14984, 448, 528, 15, 25, "Item1Paragraph",ExpressionUUID->"3d905bca-78e8-46b3-be35-a79041959341"],
+Cell[15515, 465, 796, 25, 25, "Item1Paragraph",ExpressionUUID->"e5b59a62-9d94-4e15-87c7-1d2ac1547ac5"]
+}, Open  ]],
+Cell[16326, 493, 744, 22, 26, "Text",ExpressionUUID->"3cdc5a29-6eba-4825-b2ce-bc4c15d0d709"],
+Cell[CellGroupData[{
+Cell[17095, 519, 755, 22, 23, "Item1Paragraph",ExpressionUUID->"8aa04759-e055-4727-bb58-01c0e8223e73"],
+Cell[17853, 543, 525, 13, 23, "Item1Paragraph",ExpressionUUID->"cbfa47b3-2fbc-40d7-93e9-0900a678087c"],
+Cell[18381, 558, 225, 4, 19, "Item1Paragraph",ExpressionUUID->"f7db564e-7b94-440b-bb1a-c5bb15da9910"]
+}, Open  ]],
+Cell[18621, 565, 163, 3, 22, "Text",ExpressionUUID->"d4992b5f-f0df-421a-b137-9a9c99abd907"],
+Cell[CellGroupData[{
+Cell[18809, 572, 773, 21, 23, "Item1Paragraph",ExpressionUUID->"c8e765d3-9698-4b7e-b83f-e9d3393a3ff2"],
+Cell[19585, 595, 776, 21, 23, "Item1Paragraph",ExpressionUUID->"d2d005d6-360d-4fbb-a773-b6c05d5b923b"],
+Cell[20364, 618, 382, 8, 23, "Item1Paragraph",ExpressionUUID->"7bc919d9-bdc0-4c0c-8405-b052edc0ee7c"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20795, 632, 117, 1, 21, "Subsubsubsection",ExpressionUUID->"9bca7467-9910-4848-901b-7e2c7a8076c3"],
+Cell[20915, 635, 633, 16, 26, "Text",ExpressionUUID->"dc175e16-1a76-4ffc-ac5c-e30b39b5098f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21585, 656, 127, 1, 21, "Subsubsubsection",ExpressionUUID->"8473a21e-0ef3-4a8a-bf9c-8b3563661ef6"],
+Cell[21715, 659, 596, 16, 26, "Text",ExpressionUUID->"8dcd262c-b20c-4057-9b27-53d372b4dd8a"]
+}, Open  ]],
+Cell[22326, 678, 139, 1, 21, "Subsubsubsection",ExpressionUUID->"b59fe755-922a-4eb9-8c95-35585fe8bc24"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22502, 684, 153, 2, 45, "Section",ExpressionUUID->"4b136dab-dcec-430d-98e8-ecf738f7f51e"],
+Cell[CellGroupData[{
+Cell[22680, 690, 114, 1, 21, "Subsubsubsection",ExpressionUUID->"b705cd09-4606-4e53-92ff-3fa03b89c8f9"],
+Cell[22797, 693, 169, 3, 22, "Text",ExpressionUUID->"35eb2575-d811-4ed7-acaf-3e8544d7c325"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23003, 701, 122, 1, 21, "Subsubsubsection",ExpressionUUID->"72164144-296c-45af-8475-5fffba77bd95"],
+Cell[23128, 704, 158, 3, 22, "Text",ExpressionUUID->"7fdaaa9e-d679-4abe-8892-69c804c755a3"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23335, 713, 173, 2, 45, "Section",ExpressionUUID->"a148fa8e-eef9-44ad-9a2c-486ce5aab210"],
+Cell[23511, 717, 127, 1, 21, "Subsubsubsection",ExpressionUUID->"72882e68-d6a5-4086-93a0-0084a9d5e5ec"],
+Cell[23641, 720, 154, 2, 20, "Subsubsubsection",ExpressionUUID->"562d675e-493f-4f7b-a188-e8f8afbfce01"],
+Cell[23798, 724, 149, 1, 20, "Subsubsubsection",ExpressionUUID->"ab4312dc-a7e9-4731-9676-b4dc6ba9fe7c"],
+Cell[23950, 727, 141, 1, 20, "Subsubsubsection",ExpressionUUID->"a985db1f-aba4-4856-945c-846d90333899"]
+}, Open  ]],
+Cell[24106, 731, 175, 2, 45, "Section",ExpressionUUID->"c2554921-5fd1-495d-bb96-60286f02d54b"],
+Cell[CellGroupData[{
+Cell[24306, 737, 145, 1, 31, "Section",ExpressionUUID->"4486d2a0-eee6-4b0e-a2b2-14721cc041ca"],
+Cell[24454, 740, 159, 2, 21, "Subsubsubsection",ExpressionUUID->"707259a7-d392-47ec-b5c4-7bd9f76ccc9a"],
+Cell[24616, 744, 153, 2, 20, "Subsubsubsection",ExpressionUUID->"25cafbf7-becc-448c-802c-dfd8ba89cbbc"],
+Cell[24772, 748, 160, 2, 20, "Subsubsubsection",ExpressionUUID->"47909a54-e177-4b5e-a37c-229aee20920a"],
+Cell[24935, 752, 146, 1, 20, "Subsubsubsection",ExpressionUUID->"3946bf1a-6fe5-419c-a3d8-9062448a4a04"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25118, 758, 198, 4, 45, "Section",ExpressionUUID->"673aa23b-3b7b-404d-804b-6ec6f79add8e"],
+Cell[25319, 764, 136, 1, 21, "Subsubsubsection",ExpressionUUID->"1578a11e-04f4-4958-aa6c-c6714c88c813"],
+Cell[25458, 767, 130, 1, 20, "Subsubsubsection",ExpressionUUID->"fef0ab1f-bed3-4def-ad46-e585f714186a"],
+Cell[25591, 770, 113, 1, 20, "Subsubsubsection",ExpressionUUID->"57397c61-47da-42f2-9fcf-084302ff3f10"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25741, 776, 136, 1, 45, "Section",ExpressionUUID->"04cc7ac9-a277-441c-a938-3b7a1b191c43"],
+Cell[25880, 779, 122, 1, 21, "Subsubsubsection",ExpressionUUID->"76e2bc8a-c67c-4fe5-9e62-7461bff954a1"],
+Cell[26005, 782, 138, 1, 20, "Subsubsubsection",ExpressionUUID->"342c0113-4722-4f68-bf7c-583f5fb7717b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26180, 788, 162, 2, 45, "Section",ExpressionUUID->"3ba99508-409d-4245-a37a-4118aa4cff75"],
+Cell[26345, 792, 152, 2, 21, "Subsubsubsection",ExpressionUUID->"a35d08a4-8818-4e6c-862e-aac879860a06"],
+Cell[26500, 796, 173, 2, 20, "Subsubsubsection",ExpressionUUID->"02fd0769-b732-4593-8ab3-36efb50f063d"]
+}, Open  ]],
+Cell[26688, 801, 119, 1, 45, "Section",ExpressionUUID->"e614ad9a-db12-4f70-8922-e834ab120e9b"],
+Cell[CellGroupData[{
+Cell[26832, 806, 181, 2, 31, "Section",ExpressionUUID->"b356edca-9742-4fb0-a4c0-01ab7345393a"],
+Cell[27016, 810, 137, 1, 21, "Subsubsubsection",ExpressionUUID->"c09e1cd8-90e5-4fd2-af18-226165ab6e01"],
+Cell[27156, 813, 121, 1, 20, "Subsubsubsection",ExpressionUUID->"fa08c2eb-ec1d-406b-9a16-780af9239621"],
+Cell[27280, 816, 136, 1, 20, "Subsubsubsection",ExpressionUUID->"2360df34-9f9a-4987-9c92-4412c03b734a"],
+Cell[27419, 819, 115, 1, 20, "Subsubsubsection",ExpressionUUID->"b3a0f6f0-22aa-4088-b859-32a0387063f8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27571, 825, 140, 1, 45, "Section",ExpressionUUID->"54d6210b-9ad0-4596-8856-88b30cce1db1"],
+Cell[27714, 828, 155, 2, 21, "Subsubsubsection",ExpressionUUID->"f2e7001e-c725-4900-a739-8e798d23dbe7"],
+Cell[27872, 832, 128, 1, 20, "Subsubsubsection",ExpressionUUID->"0215babd-5280-4e05-bced-3320e8675698"]
+}, Open  ]]
+}
+]
+*)
+

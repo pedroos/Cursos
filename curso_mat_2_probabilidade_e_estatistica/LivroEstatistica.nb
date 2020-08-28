@@ -1,0 +1,1212 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     43894,       1204]
+NotebookOptionsPosition[     35723,       1057]
+NotebookOutlinePosition[     36106,       1073]
+CellTagsIndexPosition[     36063,       1070]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["1 - Estat\[IAcute]stica Descritiva", "Chapter",ExpressionUUID->"7375e78e-5993-48d5-999d-896caa44e1f4"],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 1 - Introdu\[CCedilla]\[ATilde]o", "Subchapter",ExpressionUUID->"dcc11e11-954b-4563-98c2-92cf11029eab"],
+
+Cell[CellGroupData[{
+
+Cell["Tipo de estat\[IAcute]stica", "Subsection",ExpressionUUID->"82284c95-1e78-4b88-a490-083b6e052d94"],
+
+Cell["Descritiva e indutiva.", "Text",ExpressionUUID->"a622335a-8663-4a4b-b73b-238ac39436b4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Pesquisa", "Subsection",ExpressionUUID->"fb9c43e2-058d-48d0-8c00-e5b894c348a0"],
+
+Cell["Defini\[CCedilla]\[ATilde]o, planejamento, coleta, apura\[CCedilla]\
+\[ATilde]o, an\[AAcute]lise.", "Text",ExpressionUUID->"e21e8be1-e97f-4a62-\
+b0f5-697bafd99801"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Popula\[CCedilla]\[ATilde]o e amostra", "Subsection",ExpressionUUID->"28fa17bf-b800-4735-b9b0-eaae96ea1726"],
+
+Cell[TextData[{
+ "Popula\[CCedilla]\[ATilde]o finita ou infinita, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["N",
+     FontSize->24], "="}], TraditionalForm]],ExpressionUUID->
+  "738855ab-1bdf-401e-8386-2efcc773be7d"],
+ " n\[UAcute]mero de elementos da popula\[CCedilla]\[ATilde]o, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    StyleBox["n",
+     FontSize->24], "="}], TraditionalForm]],ExpressionUUID->
+  "36e67d87-8163-46a8-9aa0-4d551f5916e6"],
+ " n\[UAcute]mero de elementos da amostra."
+}], "Text",ExpressionUUID->"fe33487f-e7fb-40ce-9a84-96cdd2fb21be"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Processos estat\[IAcute]sticos de abordagem", "Subsection",ExpressionUUID->"03cc6567-5ca5-4988-83aa-4e1922223761"],
+
+Cell["\<\
+Censo, par\[AHat]metro (percentagem, m\[EAcute]dia, etc.), estima\[CCedilla]\
+\[ATilde]o (c\[AAcute]lculo de probabilidades com amostra), estimativa (valor \
+assumido pela estat\[IAcute]stica).\
+\>", "Text",ExpressionUUID->"c214a5ed-3b9c-42b5-85a9-8b026e34ffed"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Amostragem", "Subsection",ExpressionUUID->"8deca6a2-2fea-44ca-b576-59119f1b5b21"],
+
+Cell[TextData[{
+ "Popula\[CCedilla]\[ATilde]o e amostra, estat\[IAcute]stica (percentagem, m\
+\[EAcute]dia, etc.), ",
+ StyleBox["erro amostral (diferen\[CCedilla]a m\[AAcute]xima entre a m\
+\[EAcute]dia da popula\[CCedilla]\[ATilde]o e m\[EAcute]dia da amostra - p. \
+15), n\[IAcute]vel de confian\[CCedilla]a (percentual quantas vezes o \
+percentual real da popula\[CCedilla]\[ATilde]o encontra-se dentro do \
+intervalo de confian\[CCedilla]a)",
+  FontSize->16,
+  FontWeight->"Bold"],
+ "."
+}], "Text",ExpressionUUID->"07278e4f-1c1c-4902-b8e0-c64d838bf544"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Vari\[AAcute]veis", "Subsection",ExpressionUUID->"7d42074b-d333-48dd-8d47-f7a769f9ecab"],
+
+Cell["\<\
+Caracter\[IAcute]sticas medidas na popula\[CCedilla]\[ATilde]o ou amostra. \
+Qualitativas nominais ou ordinais, quantitativas discretas ou \
+cont\[IAcute]nuas.\
+\>", "Text",ExpressionUUID->"c5360d3e-1a9f-4c60-8086-71f5b3889c35"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dados", "Subsection",ExpressionUUID->"8999a700-33c2-46b8-9274-5520fc76e2bd"],
+
+Cell[TextData[{
+ "Medida do dado em popula\[CCedilla]\[ATilde]o ou amostra. Prim\[AAcute]rios \
+ou secund\[AAcute]rios, absolutos (dados puros) ou relativos (dados de outros \
+dados - ",
+ StyleBox["percentagens, coeficientes, taxas e \[IAcute]ndices",
+  FontSize->16,
+  FontWeight->"Bold"],
+ StyleBox["). ",
+  FontSize->16],
+ StyleBox["Frequ\[EHat]ncia relativa (0 a 100)",
+  FontSize->16,
+  FontWeight->"Bold"],
+ StyleBox[".",
+  FontWeight->"Bold"]
+}], "Text",ExpressionUUID->"99b73861-0a66-4aa0-b90d-92a4f50e9623"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 2 - Distribui\[CCedilla]\[ATilde]o de frequ\
+\[EHat]ncia", "Subchapter",ExpressionUUID->"8e7192b9-bd30-4c3f-9bdb-\
+868d3bf67584"],
+
+Cell[CellGroupData[{
+
+Cell["Dados brutos e agrupados", "Subsection",ExpressionUUID->"aa5332fa-7c4a-45b7-a26c-b89e709cb56c"],
+
+Cell[TextData[{
+ "Tabelas. Agrupados: ordena\[CCedilla]\[ATilde]o por semelhan\[CCedilla]a \
+(qualitativas) ou ordena\[CCedilla]\[ATilde]o num\[EAcute]rica (quantitativas \
+- rol). Rol: cria\[CCedilla]\[ATilde]o da coluna ",
+ StyleBox["frequ\[EHat]ncia simples",
+  FontWeight->"Bold"],
+ " com a soma ",
+ StyleBox["frequ\[EHat]ncia total",
+  FontWeight->"Bold"],
+ " abaixo. ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["x", "i"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"fa03a97d-7c54-4497-b085-d343afce86b5"],
+ " s\[ATilde]o os valores, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["f", "i"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"d9bbab6f-799d-4c5a-ae24-6db25fc2e8ca"],
+ " a frequ\[EHat]ncia simples, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Sum]", 
+    SubscriptBox["f", "i"]}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"4744b928-21a3-44f3-9302-aa8c05e942e8"],
+ " (soma de frequ\[EHat]ncias simples)/",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],ExpressionUUID->
+  "fde139ce-d3a0-47a1-a882-40b3b931fc54"],
+ " (tamanho da popula\[CCedilla]\[ATilde]o)/",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],ExpressionUUID->
+  "39a6a696-706c-417d-8ba2-fc64227a66ec"],
+ " (tamanho da amostra) a soma."
+}], "Text",ExpressionUUID->"6e8a4457-2089-404e-8bdf-792bdab66d46"],
+
+Cell[TextData[{
+ "Tabela para vari\[AAcute]vel quantitativa cont\[IAcute]nua: muitas \
+\[OpenCurlyDoubleQuote]classes\[CloseCurlyDoubleQuote] diferentes, criamos \
+nossos pr\[OAcute]prios intervalos. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"k", "="}], TraditionalForm]],ExpressionUUID->
+  "2efeace7-2544-40b2-bbaa-85c0d0e3809c"],
+ " n\[UAcute]mero de intervalos, crit\[EAcute]rio ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"k", "=", 
+    SqrtBox["n"]}], TraditionalForm]],ExpressionUUID->
+  "630eb206-b174-460e-9d26-636196f8b43b"],
+ " ou Sturges ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"k", "=", 
+    RowBox[{"1", "+", 
+     RowBox[{"3.3", "log", " ", "n"}]}]}], TraditionalForm]],ExpressionUUID->
+  "244a4868-9a00-40c1-b8ce-3f36a796edac"],
+ " ou pr\[EAcute]-definido, ideal 4 a 20 intervalos. ",
+ Cell[BoxData[
+  FormBox["AT", TraditionalForm]],
+  FontSize->18,ExpressionUUID->"32b4c613-0c58-497f-a312-d6f5b1348ade"],
+ " amplitude da distribui\[CCedilla]\[ATilde]o, ",
+ Cell[BoxData[
+  FormBox["h", TraditionalForm]],
+  FontSize->18,ExpressionUUID->"b254692f-0b9d-401f-98d8-6ba750210f0a"],
+ " amplitude do intervalo, intervalos denotados ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"a", "\[RightTee]", "b"}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"6ae2f210-2869-4bfa-90c4-89129947070d"],
+ ", por exemplo, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"15.90", "\[RightTee]", "18.70"}], TraditionalForm]],
+  FontSize->18,ExpressionUUID->"080da697-62b4-4a67-81b9-68203fdfc1a1"],
+ ", significando fechado \[AGrave] esquerda e aberto \[AGrave] direita."
+}], "Text",ExpressionUUID->"6357fb41-e083-46ce-9df1-68bd7b8b63ca"],
+
+Cell[TextData[{
+ "Frequ\[EHat]ncia acumulada (ir somando), frequ\[EHat]ncia relativa (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"0.0", "n"}], TraditionalForm]],ExpressionUUID->
+  "e6799716-f33d-4fed-8b17-d9f9fbfbe8fc"],
+ "), frequ\[EHat]ncia percentual (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"n", "%"}], "="}], TraditionalForm]],ExpressionUUID->
+  "eb34e7a7-e288-466d-bcd4-2e8e95fd08f3"],
+ " relativa ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CenterDot]", " ", "100"}], TraditionalForm]],ExpressionUUID->
+  "f16d711d-038f-4e12-996d-64281bd9b36b"],
+ ")."
+}], "Text",ExpressionUUID->"404bc1df-76c5-4200-ac12-7101b47393d8"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 3 - Representa\[CCedilla]\[ATilde]o \
+gr\[AAcute]fica", "Subchapter",ExpressionUUID->"47034a34-66a5-4844-9c0c-\
+615a2514f5ab"],
+
+Cell[TextData[{
+ "Colunas, barras, linhas, setores/pizza, colunas/barras m\[UAcute]ltiplas, \
+cartograma, pictograma, ",
+ StyleBox["histograma: a altura de cada ret\[AHat]ngulo \[EAcute] \
+proporcional \[AGrave] frequ\[EHat]ncia simples da classe",
+  FontSize->16,
+  FontWeight->"Bold"],
+ ". Escala horizontal cont\[IAcute]nua (o que n\[ATilde]o ocorre no de \
+barras)."
+}], "Text",ExpressionUUID->"487b6389-a6c6-4053-ba4f-785c183b7690"],
+
+Cell["Pol\[IAcute]gono de frequ\[EHat]ncias: linhas dos centros dos \
+ret\[AHat]ngulos.", "Text",ExpressionUUID->"945a51f2-8f8a-4733-bb72-\
+f7d4c5317503"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["2 - Medidas de posi\[CCedilla]\[ATilde]o e dispers\[ATilde]o", "Chapter",ExpressionUUID->"71619580-ee0f-446e-945e-1ad7f0125c86"],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 1 - Medidas de posi\[CCedilla]\[ATilde]o", \
+"Subchapter",ExpressionUUID->"8988c524-c77d-4a2c-9ba7-e2236c44ceda"],
+
+Cell[TextData[{
+ "M\[EAcute]dia ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["x", "_"], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"4bc8d266-8ebc-410d-bf96-3501a9ea2134"],
+ " amostra e ",
+ Cell[BoxData[
+  FormBox["\[Mu]", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"670c861a-3376-4618-b558-d18fca3ca1c8"],
+ " popula\[CCedilla]\[ATilde]o.\nM\[EAcute]dia aritm\[EAcute]tica dados \
+brutos: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["x", "_"], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      SubscriptBox["x", "i"]}], "n"]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"d37bbabb-5d58-4c14-be1a-433074e23604"],
+ ". Dados agrupados sem intervalos (vari\[AAcute]vel discreta): ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["x", "_"], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      RowBox[{
+       SubscriptBox["x", "i"], 
+       SubscriptBox["f", "i"]}]}], 
+     RowBox[{"\[Sum]", 
+      SubscriptBox["f", "i"]}]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"c90ff7a6-1164-4f80-a5c6-4b4342a7bca8"],
+ "(soma de todos os ",
+ StyleBox["valores",
+  FontSlant->"Italic"],
+ " multiplicados por sua frequ\[EHat]ncia simples dividida pela soma das \
+frequ\[EHat]ncias). Dados agrupados com intervalos (vari\[AAcute]vel cont\
+\[IAcute]nua): ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["x", "_"], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      RowBox[{"PM", "\[CenterDot]", 
+       SubscriptBox["f", "i"]}]}], 
+     RowBox[{"\[Sum]", 
+      SubscriptBox["f", "i"]}]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"1f13b749-2c4f-46af-9d97-99bfcbedfe43"],
+ " (soma de todos os ",
+ StyleBox["pontos m\[EAcute]dios",
+  FontSize->18,
+  FontWeight->"Bold",
+  FontSlant->"Italic"],
+ " multiplicados por sua frequ\[EHat]ncia simples, dividida pela soma das \
+frequ\[EHat]ncias)."
+}], "Text",ExpressionUUID->"9d642324-109d-4ce3-ac8e-7044e9b30e99"],
+
+Cell[TextData[{
+ "Mediana: valor que divide a s\[EAcute]rie em dois, se \[IAcute]mpar o valor \
+de cima. Em dados com classes de valor discreto: valor da classe que divide a \
+s\[EAcute]rie em dois. Dados com classes de valor cont\[IAcute]nuo: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Me", "=", 
+    RowBox[{
+     SubscriptBox["L", "i"], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"n", "/", "2"}], "-", 
+         SubscriptBox["F", "a"]}], 
+        SubscriptBox["F", "i"]], ")"}], "\[CenterDot]", "h"}]}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"cccd281c-930d-483c-9ac0-7aa7351f1376"],
+ ", em que ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["L", "i"], "="}], TraditionalForm]],ExpressionUUID->
+  "8a6ac6e2-3244-4189-8ddf-1f07e642bd98"],
+ " limite inferor da classe que cont\[EAcute]m a mediana, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["F", "a"], "="}], TraditionalForm]],ExpressionUUID->
+  "6906fe6f-3bb7-405e-a457-c338e77198f5"],
+ " frequ\[EHat]ncia acumulada anterior, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"h", "="}], TraditionalForm]],ExpressionUUID->
+  "cc95587d-df33-47b2-95fb-bbfeb53fd5bb"],
+ " amplitude do intervalo de classe."
+}], "Text",ExpressionUUID->"ea028d0f-5bd4-4854-bae0-405563460a4f"],
+
+Cell[TextData[{
+ "Moda: valor que mais se repete. Para dados agrupados, Czuber: leva em \
+considera\[CCedilla]\[ATilde]o as varia\[CCedilla]\[OTilde]es das \
+frequ\[EHat]ncias das classes anterior e posterior em \
+rela\[CCedilla]\[ATilde]o \[AGrave] frequ\[EHat]ncia modal (da classe modal). \
+",
+ StyleBox["Classe modal: classe com a maior frequ\[EHat]ncia. ",
+  FontWeight->"Bold"],
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Mo", "=", 
+    RowBox[{
+     SubscriptBox["L", "i"], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       FractionBox[
+        SubscriptBox["d", "1"], 
+        RowBox[{
+         SubscriptBox["d", "1"], "+", 
+         SubscriptBox["d", "2"]}]], ")"}], "\[CenterDot]", "h"}]}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"47427edd-43ee-40ae-86fe-ddeb89ec79e1"],
+ ", em que ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["d", "1"], "="}], TraditionalForm]],ExpressionUUID->
+  "df732539-c557-4941-9639-b39cb846b6d3"],
+ " diferen\[CCedilla]a entre a frequ\[EHat]ncia de ",
+ StyleBox["(da?)",
+  Background->RGBColor[1, 1, 0]],
+ " classe modal e a da anterior, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["d", "2"], "="}], TraditionalForm]],ExpressionUUID->
+  "25c8f79d-ff07-4917-a9a4-c76397b3d98c"],
+ " diferen\[CCedilla]a entre a frequ\[EHat]ncia de classe modal e a da pr\
+\[OAcute]xima."
+}], "Text",ExpressionUUID->"211b071c-3986-48c0-814b-00fcce0ada88"],
+
+Cell[TextData[{
+ "Separatrizes: quartil, decil, percentil. Como a mediana, mas dividindo em \
+outros locais que n\[ATilde]o 0.5. Quartil e decil achar a classe \
+manualmente, como a mediana; percentil ",
+ Cell[BoxData[
+  FormBox[
+   StyleBox[
+    RowBox[{"Pos", "=", 
+     FractionBox[
+      RowBox[{"i", "(", 
+       RowBox[{"n", "+", "1"}], ")"}], "100"]}],
+    FontSize->24], TraditionalForm]],ExpressionUUID->
+  "ef063740-6fc7-4763-b982-9800c4781f5f"],
+ ", onde ",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FontSize->18,ExpressionUUID->"b4595c98-d5c1-4648-be4f-c3821a9d66b9"],
+ " \[EAcute] o percentil."
+}], "Text",ExpressionUUID->"c89ac2dc-91d3-45a1-b2aa-c88c281e6b14"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 2 - Medidas de dispers\[ATilde]o", "Subchapter",ExpressionUUID->"a155b41a-2430-4a50-9672-b7e7ebbf9666"],
+
+Cell[CellGroupData[{
+
+Cell["Vari\[AHat]ncia", "Subsection",ExpressionUUID->"73845ffa-dcc1-49fe-84ad-4b4b9a00b8c2"],
+
+Cell["M\[EAcute]dia dos quadrados dos desvios com rela\[CCedilla]\[ATilde]o \
+\[AGrave] m\[EAcute]dia.", "Text",ExpressionUUID->"2d5f9de3-cba4-42b4-bf24-\
+7dadbe11eea4"],
+
+Cell[TextData[{
+ "Dados brutos: popula\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "2"], "(", "x", ")"}], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox["x", "i"], "-", "\[Mu]"}], ")"}], "2"]}], "n"]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"433b46d9-4b9f-4167-84f8-4596432b15db"],
+ " e amostra ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox[
+      StyleBox["S",
+       FontColor->RGBColor[1, 0, 0]], "2"], "(", "x", ")"}], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox["x", "i"], "-", 
+         OverscriptBox["x", "_"]}], ")"}], "2"]}], 
+     RowBox[{"n", "-", "1"}]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"086c329d-f5f3-4cd5-b8e8-483c9707fc76"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "-", "1"}], TraditionalForm]],ExpressionUUID->
+  "4c9b0197-c0b2-43e0-9c59-d937498e3c7f"],
+ " ",
+ StyleBox["pela variabilidade maior dos (menos) dados da amostra",
+  FontSlant->"Italic"],
+ " (\[OpenCurlyDoubleQuote]irrelevante para amostras com mais de 30 elementos\
+\[CloseCurlyDoubleQuote])."
+}], "Text",ExpressionUUID->"db33d07c-b257-47e5-802b-19202d233ffc"],
+
+Cell[TextData[{
+ "Dados agrupados sem intervalos: popula\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "2"], "(", "x", ")"}], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["x", "i"], "-", "\[Mu]"}], ")"}], "2"], "\[CenterDot]", 
+       SubscriptBox["f", "i"]}]}], 
+     RowBox[{"\[Sum]", 
+      SubscriptBox["f", "i"]}]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"46ce10f2-beea-4144-b231-02a088294ab5"],
+ " e amostra ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "2"], "(", "x", ")"}], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["x", "i"], "-", 
+          OverscriptBox["x", "_"]}], ")"}], "2"], "\[CenterDot]", 
+       SubscriptBox["f", "i"]}]}], 
+     RowBox[{
+      RowBox[{"\[Sum]", 
+       SubscriptBox["f", "i"]}], "-", "1"}]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"718e8dae-a554-4a8b-8564-bf38d36fb8be"],
+ "."
+}], "Text",ExpressionUUID->"eae15469-7ae5-413f-889f-7d6d7a0ffb24"],
+
+Cell[TextData[{
+ "Dados agrupados com intervalos (vari\[AAcute]vel cont\[IAcute]nua): popula\
+\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "2"], "(", "x", ")"}], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["PM", "i"], "-", "\[Mu]"}], ")"}], "2"], 
+       "\[CenterDot]", 
+       SubscriptBox["f", "i"]}]}], 
+     RowBox[{"\[Sum]", 
+      SubscriptBox["f", "i"]}]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"967d2a96-91e9-43b3-88ed-8eb7b0d15d6c"],
+ ", amostra ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["\[Sigma]", "2"], "(", "x", ")"}], "=", 
+    FractionBox[
+     RowBox[{"\[Sum]", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{"PM", "-", 
+          OverscriptBox["x", "_"]}], ")"}], "2"], "\[CenterDot]", 
+       SubscriptBox["f", "i"]}]}], 
+     RowBox[{
+      RowBox[{"\[Sum]", 
+       SubscriptBox["f", "i"]}], "-", "1"}]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"45b0c600-b410-4cf6-8920-746ac5a0ea8f"],
+ "."
+}], "Text",ExpressionUUID->"abbde52a-a19c-482a-88d3-4c41838d2d5c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Desvio padr\[ATilde]o", "Subsection",ExpressionUUID->"df8b14e6-978b-48c2-9a46-a5908f47f03a"],
+
+Cell[TextData[{
+ "Raiz da vari\[AHat]ncia para ficar na mesma magnitude que a m\[EAcute]dia. ",
+ StyleBox["Quanto maior o desvio padr\[ATilde]o, mais dispersos est\[ATilde]o \
+os valores (mais distantes da m\[EAcute]dia).",
+  FontSlant->"Italic"]
+}], "Text",ExpressionUUID->"757c0435-7408-4971-bdd9-490f0202cc8f"],
+
+Cell[TextData[{
+ "O desvio padr\[ATilde]o \[EAcute] sempre apenas a raiz da vari\[AHat]ncia e \
+denotado por ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Sigma]", "(", "x", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b854ebd4-ab29-452f-a272-e1f219ca9352"],
+ " para popula\[CCedilla]\[ATilde]o e ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"s", "(", "x", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b1d7e642-d63e-4084-b564-adc2f9009729"],
+ " para amostra."
+}], "Text",ExpressionUUID->"e32b11ca-d627-4a8a-a5c6-bedabe5dc641"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Curva normal", "Subsection",ExpressionUUID->"8b84930c-b461-44f8-bccc-0e2aee61fe37"],
+
+Cell[TextData[{
+ "Sim\[EAcute]trica, assint\[OAcute]tica e unimodal (uma moda): \
+m\[EAcute]dia, moda e mediana no centro, com determinadas \[AAcute]reas (",
+ Cell[BoxData[
+  FormBox["=", TraditionalForm]],ExpressionUUID->
+  "7cbc3c04-a1d9-4af2-85fd-300f2c80433c"],
+ " quantidade de elementos) distribu\[IAcute]das a determinados desvios-padr\
+\[ATilde]o de dist\[AHat]ncia do centro: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"34.13", "%"}], TraditionalForm]],ExpressionUUID->
+  "8a531796-f3b3-44a7-904b-15c03005d091"],
+ " a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "\[Sigma]"}], TraditionalForm]],ExpressionUUID->
+  "bed018c8-036b-4c79-b90f-d052458a260a"],
+ " de dist\[AHat]ncia, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"+", "13.59"}], "%"}], TraditionalForm]],ExpressionUUID->
+  "0d0e2aff-9ecd-46b5-8150-fdd21211401a"],
+ " a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"2", "\[Sigma]"}], TraditionalForm]],ExpressionUUID->
+  "4e00b770-52f3-43ea-adf6-75f7d42f6e50"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"+", "2.15"}], "%"}], TraditionalForm]],ExpressionUUID->
+  "7704d3d1-99b3-4e91-acbe-cf16bf239f79"],
+ " a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"3", "\[Sigma]"}], TraditionalForm]],ExpressionUUID->
+  "b39790d5-a7fa-486e-a554-8e5439837c5f"],
+ ". Ent\[ATilde]o, cada dist\[AHat]ncia em desvios-padr\[ATilde]o da m\
+\[EAcute]dia cont\[EAcute]m ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],ExpressionUUID->
+  "3f75e97b-05ec-43f3-b943-408f53b45c36"],
+ " porcento de elementos, e isso \[EAcute] predefinido na curva modal: de ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Mu]", "-", 
+    RowBox[{"\[Sigma]", "(", "x", ")"}]}], TraditionalForm]],ExpressionUUID->
+  "572a1b13-0082-4fa9-9aa2-67499a34b055"],
+ " a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"u", "+", 
+    RowBox[{"\[Sigma]", "(", "x", ")"}]}], TraditionalForm]],ExpressionUUID->
+  "29f672d1-3d30-4449-8a5f-63b60df617f6"],
+ ", 68.26%; de ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Mu]", "-", 
+    RowBox[{"2", 
+     RowBox[{"\[Sigma]", "(", "x", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"c006b17d-425f-40ae-bdb1-9462a41c267d"],
+ " a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Mu]", "+", 
+    RowBox[{"2", 
+     RowBox[{"\[Sigma]", "(", "x", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"2ecd5bff-5285-492c-87b9-a28f75cbc64d"],
+ ", 95.44%; e de ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Mu]", "-", 
+    RowBox[{"3", 
+     RowBox[{"\[Sigma]", "(", "x", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"3fab938f-6ce6-49a0-af3d-c5c6682a4b83"],
+ " a ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"u", "+", 
+    RowBox[{"3", 
+     RowBox[{"\[Sigma]", "(", "x", ")"}]}]}], TraditionalForm]],
+  ExpressionUUID->"16e654a6-13eb-4093-90ee-dc55f173796f"],
+ ", 99.74%. Usada nos c\[AAcute]lculos de distribui\[CCedilla]\[ATilde]o de \
+probabilidade."
+}], "Text",ExpressionUUID->"4fef9ffd-6ae9-4c9e-b849-e98f8aaab56e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Coeficiente de varia\[CCedilla]\[ATilde]o", "Subsection",ExpressionUUID->"b79c5383-65ff-4fbb-88ec-f5d2225eaaa9"],
+
+Cell["\<\
+Para comparar vari\[AHat]ncia e desvio padr\[ATilde]o de s\[EAcute]ries, \
+\[EAcute] necess\[AAcute]rio que as m\[EAcute]dias sejam iguais. Se \
+n\[ATilde]o forem \[EAcute] usado o coeficiente de \
+varia\[CCedilla]\[ATilde]o, que \[EAcute] a rela\[CCedilla]\[ATilde]o do \
+desvio com a m\[EAcute]dia (uma medida de dispers\[ATilde]o relativa, ou \
+abstrata, ao contr\[AAcute]rio da vari\[AHat]ncia e desvio padr\[ATilde]o, \
+que s\[ATilde]o absolutos).\
+\>", "Text",ExpressionUUID->"a5a2a560-9f09-4320-9d42-901104b04307"],
+
+Cell[TextData[{
+ "Para popula\[CCedilla]\[ATilde]o ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"CV", "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"\[Sigma]", "(", "x", ")"}], "\[Mu]"], "\[CenterDot]", "100"}],
+      "%"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"bf7e8561-6f3a-4b66-a0a4-d79a6bb6fb38"],
+ ", para amostra ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"CV", "(", "x", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      FractionBox[
+       RowBox[{"s", "(", "x", ")"}], 
+       OverscriptBox["x", "_"]], "\[CenterDot]", "100"}], "%"}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"42fee026-b062-4cb0-b46b-77715ed41a91"],
+ ". Ou seja percentagem relativa do ratio desvio \
+padr\[ATilde]o/m\[EAcute]dia. \[CapitalEAcute] o quanto o desvio \
+padr\[ATilde]o representa da m\[EAcute]dia. Quanto maior, maior dispers\
+\[ATilde]o. A s\[EAcute]rie com maior \[EAcute] mais dispersa relativamente."
+}], "Text",ExpressionUUID->"91ea3b82-293d-402a-83bc-e5cf268f014c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["3 - Probabilidade", "Chapter",ExpressionUUID->"0b493115-4de7-4ce7-9917-604c068b77cd"],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 1 - Conceitos", "Subchapter",ExpressionUUID->"446ea4e4-037f-40b6-9b88-4e25e735f341"],
+
+Cell[CellGroupData[{
+
+Cell["Fen\[OHat]meno", "Subsection",ExpressionUUID->"9b0d064e-5eb7-4bda-ba69-38bc268871b5"],
+
+Cell["Determin\[IAcute]stico e aleat\[OAcute]rio.", "Text",ExpressionUUID->"d4eef83b-01ab-40cc-a443-f4d3005fb0b8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Espa\[CCedilla]o amostral", "Subsection",ExpressionUUID->"2dfb7f31-b360-44ea-ba18-b4edc07be0f3"],
+
+Cell[TextData[{
+ "Conjunto de todos poss\[IAcute]veis resultados. ",
+ Cell[BoxData[
+  FormBox["S", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"d2709083-9c5c-4743-b1d5-e492f34303c5"],
+ " e ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "S", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"ed0a9fa7-7677-4e29-82be-7bc2e2dade97"],
+ " \[EAcute] o n\[UAcute]mero de elementos. (Ver .tx; denoto elementos por \
+resultados etc.)"
+}], "Text",ExpressionUUID->"40c8fcb7-23e0-4f63-945d-7a1e9d34034b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Evento", "Subsection",ExpressionUUID->"9c214db4-f7fd-4eec-8571-b10ad2023785"],
+
+Cell[TextData[{
+ "Subconjunto do espa\[CCedilla]o amostral. ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"95ec8e57-18d5-45fd-b180-fbf48b753269"],
+ " e ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "(", "A", ")"}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"5782046b-d8e6-40ce-85fc-d300f46418f7"],
+ " o n\[UAcute]mero de elementos. Tipos de eventos (quantidade de elementos): \
+simples (um elemento), composto (mais de um elemento), imposs\[IAcute]vel \
+(zerado), certo (total, igual \[AGrave] amostra)."
+}], "Text",ExpressionUUID->"46ad0321-222a-4873-8975-6d25963dd5ea"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Opera\[CCedilla]\[OTilde]es com eventos", "Subsection",ExpressionUUID->"e28dee98-87c2-4b8d-9d6b-2d594823a8ff"],
+
+Cell[TextData[{
+ "Uni\[ATilde]o: ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "5dcbc2d2-7f54-4fed-ae18-e40759d6e519"],
+ " ou ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],ExpressionUUID->
+  "e1e2a2e2-442c-454b-8908-743762108deb"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "\[Union]", "B"}], TraditionalForm]],ExpressionUUID->
+  "9eee49b2-80fc-4b30-b536-66d1c33370f5"],
+ ". Intersec\[CCedilla]\[ATilde]o: ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "3f2b859c-6d7a-42ea-80e0-f117990218da"],
+ " e ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],ExpressionUUID->
+  "a2f93e76-64d7-43f9-95b5-e0716b61db85"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "\[Intersection]", "B"}], TraditionalForm]],ExpressionUUID->
+  "2ac0a1a3-bd39-44f5-9c80-8d707237cbbe"],
+ ". Subtra\[CCedilla]\[ATilde]o: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "-", "B"}], TraditionalForm]],ExpressionUUID->
+  "d5fd2726-842a-424a-89f4-098f4418d5b8"],
+ ".\nEventos mutuamente exclusivos, sem intersec\[CCedilla]\[ATilde]o."
+}], "Text",ExpressionUUID->"5de50fbc-04cc-415f-9d6a-9bcdabace227"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 2 - C\[AAcute]lculo de probabilidade", \
+"Subchapter",ExpressionUUID->"f1cd24bd-31d4-480d-b15c-799c86791983"],
+
+Cell[CellGroupData[{
+
+Cell["Probabilidade cl\[AAcute]ssica", "Subsection",ExpressionUUID->"88afdc45-adc4-4c4f-8896-0bb62168b283"],
+
+Cell[TextData[{
+ "Quociente entre casos favor\[AAcute]veis e casos poss\[IAcute]veis (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "/", "S"}], TraditionalForm]],ExpressionUUID->
+  "0b2d0686-f6eb-4bbd-b21f-39b2e932326c"],
+ "). ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"P", "(", "A", ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"n", "(", "A", ")"}], 
+      RowBox[{"n", "(", "S", ")"}]], "=", "p"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"4af11576-cb7f-4616-a65d-7a76cb209d6c"],
+ ". N\[ATilde]o ocorr\[EHat]ncia: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     OverscriptBox["P", "_"], "(", "A", ")"}], "=", 
+    RowBox[{"1", "-", 
+     RowBox[{"P", "(", "A", ")"}]}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"39c062c8-213a-4e01-a874-58c73af264a3"],
+ ". Nota: probabilidade cl\[AAcute]ssica quer dizer com resultados (supostos) \
+equiprov\[AAcute]veis (Freund)."
+}], "Text",ExpressionUUID->"67e15db4-c4e7-4318-9690-bfda9ccbac18"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Frequ\[EHat]ncia relativa", "Subsection",ExpressionUUID->"16ac1bfc-947e-4c4c-b171-b48d93429b43"],
+
+Cell[TextData[{
+ "Ou probabilidade avaliada ou probabilidade estimada. ",
+ StyleBox["(Bayes?)",
+  Background->RGBColor[1, 1, 0]],
+ " N\[UAcute]mero de ocorr\[EHat]ncias do evento sobre o n\[UAcute]mero de \
+observa\[CCedilla]\[OTilde]es/experimentos. Quando c\[AAcute]lculo da \
+probabilidade de ",
+ StyleBox["um evento",
+  FontWeight->"Bold"],
+ " n\[ATilde]o \[EAcute] poss\[IAcute]vel. Aproxima\[CCedilla]\[ATilde]o \
+pelos resultados. S\[OAcute] consider\[AAcute]vel com n\[UAcute]mero alto de \
+experimentos. \[CapitalEAcute] apenas a percentagem de vezes que o evento \
+ocorreu."
+}], "Text",ExpressionUUID->"d58ebaee-466c-4e46-8993-d8b53b5ab0c6"],
+
+Cell[TextData[{
+ "Somas. ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "5de691c1-e62d-4bad-bd34-59674c1948d1"],
+ " e ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],ExpressionUUID->
+  "a4580f7b-fd81-4873-a3a9-f906850a6aea"],
+ " mutuamente exclusivos: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"P", "(", 
+     RowBox[{"A", "\[Union]", "B"}], ")"}], "=", 
+    RowBox[{
+     RowBox[{"P", "(", "A", ")"}], "+", 
+     RowBox[{"P", "(", "B", ")"}]}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"ca7359d5-5fa1-4477-857f-52a4df503504"],
+ ". ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],ExpressionUUID->
+  "b0b039da-0e38-465e-97be-bcd5823ad582"],
+ " e ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],ExpressionUUID->
+  "4ea053dc-4ddf-4a4c-8eda-89625baa50a1"],
+ " n\[ATilde]o mutuamente exclusivos: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"P", "(", 
+     RowBox[{"A", "\[Union]", "B"}], ")"}], "=", 
+    RowBox[{
+     RowBox[{"P", "(", "A", ")"}], "+", 
+     RowBox[{"P", "(", "B", ")"}], "-", 
+     RowBox[{"P", "(", 
+      RowBox[{"A", "\[Intersection]", "B"}], ")"}]}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"251164fb-33e8-43aa-aa7d-5d58ca033fad"],
+ "."
+}], "Text",ExpressionUUID->"24db2d56-48ef-48c9-897b-7d899d3bd512"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Se\[CCedilla]\[ATilde]o 3 - Distribui\[CCedilla]\[ATilde]o de \
+probabilidades", "Subchapter",ExpressionUUID->"21a97983-1248-457a-bd63-\
+f421ef97247a"],
+
+Cell["\<\
+Vari\[AAcute]vel aleat\[OAcute]ria: atribui\[CCedilla]\[ATilde]o de \
+n\[UAcute]meros para cada evento poss\[IAcute]vel. Uma \
+fun\[CCedilla]\[ATilde]o.\
+\>", "Text",ExpressionUUID->"ef708ee4-c455-4d2e-b461-61151e8d06ee"],
+
+Cell[TextData[{
+ "Exemplo. Experimento: dois lan\[CCedilla]amentos de uma moeda. \
+Vari\[AAcute]vel aleat\[OAcute]ria: quantas caras resultam nos dois lan\
+\[CCedilla]amentos. Resultados poss\[IAcute]veis (espa\[CCedilla]o amostral): \
+cara+cara, cara+coroa, coroa+cara, coroa+coroa. Valores assumidos pela vari\
+\[AAcute]vel nestes resultados (contagem): 2, 1, 1, 0. Atribui\[CCedilla]\
+\[ATilde]o de probabilidades (distribui\[CCedilla]\[ATilde]o): igual para \
+todos, ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "4"], TraditionalForm]],ExpressionUUID->
+  "f6ad8307-d1df-4a04-b4ff-ed96821a65a5"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "4"], TraditionalForm]],ExpressionUUID->
+  "7ee87ba4-d8e5-4522-bde2-c0553eec83fd"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "4"], TraditionalForm]],ExpressionUUID->
+  "3d8531b8-72ff-45ef-ac31-b416431c8faf"],
+ " e ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "4"], TraditionalForm]],ExpressionUUID->
+  "f2584fec-4891-4931-bee4-678406f0d5ee"],
+ ". Agrupar ",
+ StyleBox["valores",
+  FontWeight->"Bold"],
+ " iguais e somar as probabilidades: 2, 1, 0, com probabilidades, ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "4"], TraditionalForm]],ExpressionUUID->
+  "9b5b3e97-5093-4b07-88a8-45247961e838"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "2"], TraditionalForm]],ExpressionUUID->
+  "cfc0f0db-0079-437c-83c7-bc10e714e6a4"],
+ ", ",
+ Cell[BoxData[
+  FormBox[
+   FractionBox["1", "4"], TraditionalForm]],ExpressionUUID->
+  "90f075be-0aff-4bf3-b723-98acfd884936"],
+ "."
+}], "Text",ExpressionUUID->"3b7d1e1f-868c-45b9-bb9d-eef8ff376c78"],
+
+Cell["\<\
+Vari\[AAcute]veis discretas e cont\[IAcute]nuas (ex. resultados de dados, \
+medi\[CCedilla]\[OTilde]es de tempo). Binomial distribui\[CCedilla]\[ATilde]o \
+discreta e normal cont\[IAcute]nua.\
+\>", "Text",ExpressionUUID->"2954d95a-f352-4f6f-867e-b3eeab5c8fa7"],
+
+Cell[CellGroupData[{
+
+Cell["Distribui\[CCedilla]\[ATilde]o binomial", "Subsection",ExpressionUUID->"8cb23e4a-7abf-4993-8de9-599101e6e9e1"],
+
+Cell[TextData[{
+ "Calcula a probabilidade de certo n\[UAcute]mero sucessos na repeti\
+\[CCedilla]\[ATilde]o por ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"bd685eef-702d-42ef-8c6b-0ecf91b6bcd0"],
+ " vezes de um experimento de tipo sucesso/falha (discreta) com base nas \
+caracter\[IAcute]sticas da probabilidade de ",
+ StyleBox["um",
+  FontSlant->"Italic"],
+ " experimento: probabilidade de sucesso, probabilidade de falha, quantidade \
+de elementos (?) ",
+ StyleBox["(",
+  FontSize->24],
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["C", 
+    RowBox[{"n", ",", " ", "k"}]], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e26f7db2-d627-44d4-99dd-b197d4997cbe"],
+ StyleBox[")",
+  FontSize->24],
+ ", e os par\[AHat]metros da repeti\[CCedilla]\[ATilde]o: quantidade de \
+repeti\[CCedilla]\[OTilde]es e o n\[UAcute]mero de sucessos ",
+ StyleBox["(",
+  FontSize->24],
+ Cell[BoxData[
+  FormBox["k", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"22e5afc7-b164-4922-8be3-52653a5e65f7"],
+ StyleBox[")",
+  FontSize->24],
+ " a calcular a probabilidade."
+}], "Text",ExpressionUUID->"377068e0-a8d5-4d42-b8dd-1d150af715a9"]
+}, Open  ]],
+
+Cell["Distribui\[CCedilla]\[ATilde]o normal", "Subsection",ExpressionUUID->"621f83ea-1041-48d7-a3a5-2bf1d2b659a2"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["4 - Amostragem e c\[AAcute]lculo de estimativa", "Chapter",ExpressionUUID->"98e5f100-6032-43b2-a13b-20f4fe3d9657"],
+
+Cell["Se\[CCedilla]\[ATilde]o 1 - Conceitos", "Subchapter",ExpressionUUID->"0576f6f5-8507-4054-a5f8-e599480bce51"],
+
+Cell["Se\[CCedilla]\[ATilde]o 2 - Estimativas para a propor\[CCedilla]\
+\[ATilde]o populacional", "Subchapter",ExpressionUUID->"7ef739a8-2848-4d72-\
+bfce-a9e5f22dc7bf"],
+
+Cell["Se\[CCedilla]\[ATilde]o 3 - Estimativas para a m\[EAcute]dia \
+populacional", "Subchapter",ExpressionUUID->"120b81c6-c768-473b-8309-\
+ff23c4c37b7f"],
+
+Cell["Se\[CCedilla]\[ATilde]o 4 - ANOVA", "Subchapter",ExpressionUUID->"bc9b6388-6dd8-4d51-b346-93fea5d6a9be"]
+}, Open  ]]
+},
+WindowSize->{675, 692},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingPageRange->{Automatic, Automatic},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 108, 0, 67, "Chapter",ExpressionUUID->"7375e78e-5993-48d5-999d-896caa44e1f4"],
+Cell[CellGroupData[{
+Cell[713, 26, 133, 0, 64, "Subchapter",ExpressionUUID->"dcc11e11-954b-4563-98c2-92cf11029eab"],
+Cell[CellGroupData[{
+Cell[871, 30, 104, 0, 53, "Subsection",ExpressionUUID->"82284c95-1e78-4b88-a490-083b6e052d94"],
+Cell[978, 32, 93, 0, 34, "Text",ExpressionUUID->"a622335a-8663-4a4b-b73b-238ac39436b4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1108, 37, 85, 0, 53, "Subsection",ExpressionUUID->"fb9c43e2-058d-48d0-8c00-e5b894c348a0"],
+Cell[1196, 39, 170, 2, 34, "Text",ExpressionUUID->"e21e8be1-e97f-4a62-b0f5-697bafd99801"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1403, 46, 114, 0, 53, "Subsection",ExpressionUUID->"28fa17bf-b800-4735-b9b0-eaae96ea1726"],
+Cell[1520, 48, 567, 16, 58, "Text",ExpressionUUID->"fe33487f-e7fb-40ce-9a84-96cdd2fb21be"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2124, 69, 120, 0, 53, "Subsection",ExpressionUUID->"03cc6567-5ca5-4988-83aa-4e1922223761"],
+Cell[2247, 71, 272, 4, 56, "Text",ExpressionUUID->"c214a5ed-3b9c-42b5-85a9-8b026e34ffed"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2556, 80, 87, 0, 53, "Subsection",ExpressionUUID->"8deca6a2-2fea-44ca-b576-59119f1b5b21"],
+Cell[2646, 82, 557, 11, 104, "Text",ExpressionUUID->"07278e4f-1c1c-4902-b8e0-c64d838bf544"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3240, 98, 94, 0, 53, "Subsection",ExpressionUUID->"7d42074b-d333-48dd-8d47-f7a769f9ecab"],
+Cell[3337, 100, 238, 4, 56, "Text",ExpressionUUID->"c5360d3e-1a9f-4c60-8086-71f5b3889c35"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3612, 109, 82, 0, 53, "Subsection",ExpressionUUID->"8999a700-33c2-46b8-9274-5520fc76e2bd"],
+Cell[3697, 111, 516, 14, 80, "Text",ExpressionUUID->"99b73861-0a66-4aa0-b90d-92a4f50e9623"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4262, 131, 159, 2, 64, "Subchapter",ExpressionUUID->"8e7192b9-bd30-4c3f-9bdb-868d3bf67584"],
+Cell[CellGroupData[{
+Cell[4446, 137, 101, 0, 53, "Subsection",ExpressionUUID->"aa5332fa-7c4a-45b7-a26c-b89e709cb56c"],
+Cell[4550, 139, 1301, 34, 112, "Text",ExpressionUUID->"6e8a4457-2089-404e-8bdf-792bdab66d46"],
+Cell[5854, 175, 1616, 40, 130, "Text",ExpressionUUID->"6357fb41-e083-46ce-9df1-68bd7b8b63ca"],
+Cell[7473, 217, 634, 18, 56, "Text",ExpressionUUID->"404bc1df-76c5-4200-ac12-7101b47393d8"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8156, 241, 156, 2, 64, "Subchapter",ExpressionUUID->"47034a34-66a5-4844-9c0c-615a2514f5ab"],
+Cell[8315, 245, 437, 9, 80, "Text",ExpressionUUID->"487b6389-a6c6-4053-ba4f-785c183b7690"],
+Cell[8755, 256, 154, 2, 34, "Text",ExpressionUUID->"945a51f2-8f8a-4733-bb72-f7d4c5317503"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8958, 264, 134, 0, 67, "Chapter",ExpressionUUID->"71619580-ee0f-446e-945e-1ad7f0125c86"],
+Cell[CellGroupData[{
+Cell[9117, 268, 143, 1, 64, "Subchapter",ExpressionUUID->"8988c524-c77d-4a2c-9ba7-e2236c44ceda"],
+Cell[9263, 271, 1922, 57, 213, "Text",ExpressionUUID->"9d642324-109d-4ce3-ac8e-7044e9b30e99"],
+Cell[11188, 330, 1304, 36, 144, "Text",ExpressionUUID->"ea028d0f-5bd4-4854-bae0-405563460a4f"],
+Cell[12495, 368, 1406, 39, 144, "Text",ExpressionUUID->"211b071c-3986-48c0-814b-00fcce0ada88"],
+Cell[13904, 409, 683, 18, 95, "Text",ExpressionUUID->"c89ac2dc-91d3-45a1-b2aa-c88c281e6b14"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14624, 432, 133, 0, 64, "Subchapter",ExpressionUUID->"a155b41a-2430-4a50-9672-b7e7ebbf9666"],
+Cell[CellGroupData[{
+Cell[14782, 436, 92, 0, 53, "Subsection",ExpressionUUID->"73845ffa-dcc1-49fe-84ad-4b4b9a00b8c2"],
+Cell[14877, 438, 169, 2, 34, "Text",ExpressionUUID->"2d5f9de3-cba4-42b4-bf24-7dadbe11eea4"],
+Cell[15049, 442, 1343, 42, 105, "Text",ExpressionUUID->"db33d07c-b257-47e5-802b-19202d233ffc"],
+Cell[16395, 486, 1217, 38, 116, "Text",ExpressionUUID->"eae15469-7ae5-413f-889f-7d6d7a0ffb24"],
+Cell[17615, 526, 1234, 39, 86, "Text",ExpressionUUID->"abbde52a-a19c-482a-88d3-4c41838d2d5c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18886, 570, 98, 0, 53, "Subsection",ExpressionUUID->"df8b14e6-978b-48c2-9a46-a5908f47f03a"],
+Cell[18987, 572, 313, 5, 56, "Text",ExpressionUUID->"757c0435-7408-4971-bdd9-490f0202cc8f"],
+Cell[19303, 579, 544, 13, 80, "Text",ExpressionUUID->"e32b11ca-d627-4a8a-a5c6-bedabe5dc641"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19884, 597, 89, 0, 53, "Subsection",ExpressionUUID->"8b84930c-b461-44f8-bccc-0e2aee61fe37"],
+Cell[19976, 599, 2903, 86, 166, "Text",ExpressionUUID->"4fef9ffd-6ae9-4c9e-b849-e98f8aaab56e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22916, 690, 118, 0, 53, "Subsection",ExpressionUUID->"b79c5383-65ff-4fbb-88ec-f5d2225eaaa9"],
+Cell[23037, 692, 531, 8, 100, "Text",ExpressionUUID->"a5a2a560-9f09-4320-9d42-901104b04307"],
+Cell[23571, 702, 1044, 28, 137, "Text",ExpressionUUID->"91ea3b82-293d-402a-83bc-e5cf268f014c"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24676, 737, 91, 0, 67, "Chapter",ExpressionUUID->"0b493115-4de7-4ce7-9917-604c068b77cd"],
+Cell[CellGroupData[{
+Cell[24792, 741, 114, 0, 64, "Subchapter",ExpressionUUID->"446ea4e4-037f-40b6-9b88-4e25e735f341"],
+Cell[CellGroupData[{
+Cell[24931, 745, 91, 0, 53, "Subsection",ExpressionUUID->"9b0d064e-5eb7-4bda-ba69-38bc268871b5"],
+Cell[25025, 747, 114, 0, 34, "Text",ExpressionUUID->"d4eef83b-01ab-40cc-a443-f4d3005fb0b8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25176, 752, 102, 0, 53, "Subsection",ExpressionUUID->"2dfb7f31-b360-44ea-ba18-b4edc07be0f3"],
+Cell[25281, 754, 509, 12, 68, "Text",ExpressionUUID->"40c8fcb7-23e0-4f63-945d-7a1e9d34034b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25827, 771, 83, 0, 53, "Subsection",ExpressionUUID->"9c214db4-f7fd-4eec-8571-b10ad2023785"],
+Cell[25913, 773, 615, 13, 90, "Text",ExpressionUUID->"46ad0321-222a-4873-8975-6d25963dd5ea"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26565, 791, 116, 0, 53, "Subsection",ExpressionUUID->"e28dee98-87c2-4b8d-9d6b-2d594823a8ff"],
+Cell[26684, 793, 1128, 33, 56, "Text",ExpressionUUID->"5de50fbc-04cc-415f-9d6a-9bcdabace227"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27861, 832, 139, 1, 64, "Subchapter",ExpressionUUID->"f1cd24bd-31d4-480d-b15c-799c86791983"],
+Cell[CellGroupData[{
+Cell[28025, 837, 107, 0, 53, "Subsection",ExpressionUUID->"88afdc45-adc4-4c4f-8896-0bb62168b283"],
+Cell[28135, 839, 990, 27, 110, "Text",ExpressionUUID->"67e15db4-c4e7-4318-9690-bfda9ccbac18"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29162, 871, 102, 0, 53, "Subsection",ExpressionUUID->"16ac1bfc-947e-4c4c-b171-b48d93429b43"],
+Cell[29267, 873, 651, 13, 122, "Text",ExpressionUUID->"d58ebaee-466c-4e46-8993-d8b53b5ab0c6"],
+Cell[29921, 888, 1296, 40, 80, "Text",ExpressionUUID->"24db2d56-48ef-48c9-897b-7d899d3bd512"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31266, 934, 157, 2, 64, "Subchapter",ExpressionUUID->"21a97983-1248-457a-bd63-f421ef97247a"],
+Cell[31426, 938, 231, 4, 34, "Text",ExpressionUUID->"ef708ee4-c455-4d2e-b461-61151e8d06ee"],
+Cell[31660, 944, 1619, 46, 159, "Text",ExpressionUUID->"3b7d1e1f-868c-45b9-bb9d-eef8ff376c78"],
+Cell[33282, 992, 270, 4, 56, "Text",ExpressionUUID->"2954d95a-f352-4f6f-867e-b3eeab5c8fa7"],
+Cell[CellGroupData[{
+Cell[33577, 1000, 116, 0, 53, "Subsection",ExpressionUUID->"8cb23e4a-7abf-4993-8de9-599101e6e9e1"],
+Cell[33696, 1002, 1155, 31, 158, "Text",ExpressionUUID->"377068e0-a8d5-4d42-b8dd-1d150af715a9"]
+}, Open  ]],
+Cell[34866, 1036, 114, 0, 53, "Subsection",ExpressionUUID->"621f83ea-1041-48d7-a3a5-2bf1d2b659a2"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35029, 1042, 120, 0, 67, "Chapter",ExpressionUUID->"98e5f100-6032-43b2-a13b-20f4fe3d9657"],
+Cell[35152, 1044, 114, 0, 64, "Subchapter",ExpressionUUID->"0576f6f5-8507-4054-a5f8-e599480bce51"],
+Cell[35269, 1046, 168, 2, 85, "Subchapter",ExpressionUUID->"7ef739a8-2848-4d72-bfce-a9e5f22dc7bf"],
+Cell[35440, 1050, 154, 2, 48, "Subchapter",ExpressionUUID->"120b81c6-c768-473b-8309-ff23c4c37b7f"],
+Cell[35597, 1054, 110, 0, 48, "Subchapter",ExpressionUUID->"bc9b6388-6dd8-4d51-b346-93fea5d6a9be"]
+}, Open  ]]
+}
+]
+*)
+

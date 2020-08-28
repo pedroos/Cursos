@@ -1,0 +1,1366 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     58277,       1358]
+NotebookOptionsPosition[     50121,       1226]
+NotebookOutlinePosition[     52248,       1286]
+CellTagsIndexPosition[     51952,       1273]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Refer\[EHat]ncias", "Subsection",ExpressionUUID->"b118b9f4-d1d9-408b-8b83-f84cd6546467"],
+
+Cell[TextData[{
+ "Between 1902 and 1908 Bertrand Russell proposed various \
+\[OpenCurlyDoubleQuote]theories of type\[CloseCurlyDoubleQuote] in response \
+to his discovery that Gottlob Frege\[CloseCurlyQuote]s version of naive set \
+theory was afflicted with Russell\[CloseCurlyQuote]s paradox. By 1908 Russell \
+arrived at a \[OpenCurlyDoubleQuote]ramified\[CloseCurlyDoubleQuote] theory \
+of types together with an \[OpenCurlyDoubleQuote]axiom of reducibility\
+\[CloseCurlyDoubleQuote] both of which featured prominently in Whitehead and \
+Russell\[CloseCurlyQuote]s Principia Mathematica published between 1910 and \
+1913. They attempted to resolve Russell\[CloseCurlyQuote]s paradox by first \
+creating a hierarchy of types, then assigning each concrete mathematical (and \
+possibly other) entity to a type. Entities of a given type are built \
+exclusively from entities of those types that are lower in their hierarchy, \
+thus preventing an entity from being assigned to itself.",
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["1"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{"en", ".", "wikipedia", ".", "org"}], "/", "wiki"}], "/", 
+         "Type_theory"}]}]},ExpressionUUID->
+  "7577198b-bd67-4604-ad8e-36a47008db78"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"00002A70"]
+}], "Text",ExpressionUUID->"137ae53b-759f-4a04-95d3-d5f0df25b4b2"],
+
+Cell[TextData[{
+ "With Russell\[CloseCurlyQuote]s discovery (1901, 1902) of a paradox in \
+Gottlob Frege\[CloseCurlyQuote]s 1879 Begriffsschrift and Frege\
+\[CloseCurlyQuote]s acknowledgment of the same (1902), Russell tentatively \
+introduced his solution as \[OpenCurlyDoubleQuote]Appendix B: Doctrine of \
+Types\[CloseCurlyDoubleQuote] in his 1903 The Principles of Mathematics. This \
+contradiction can be stated as \[OpenCurlyDoubleQuote]the class of all \
+classes that do not contain themselves as elements\[CloseCurlyDoubleQuote]. \
+At the end of this appendix Russell asserts that his \
+\[OpenCurlyDoubleQuote]doctrine\[CloseCurlyDoubleQuote] would solve the \
+immediate problem posed by Frege, but \[OpenCurlyDoubleQuote]there is at \
+least one closely analogous contradiction which is probably not soluble by \
+this doctrine. The totality of all logical objects, or of all propositions, \
+involves, it would seem a fundamental logical difficulty. What the complete \
+solution of the difficulty may be, I have not succeeded in discovering; but \
+as it affects the very foundations of reasoning...\[CloseCurlyDoubleQuote]\n\n\
+By the time of his 1908 Mathematical logic as based on the theory of types \
+Russell had studied \[OpenCurlyDoubleQuote]the contradictions\
+\[CloseCurlyDoubleQuote] (among them the Epimenides paradox, the Burali-Forti \
+paradox, and Richard\[CloseCurlyQuote]s paradox) and concluded that \
+\[OpenCurlyDoubleQuote]In all the contradictions there is a common \
+characteristic, which we may describe as self-reference or reflexiveness\
+\[CloseCurlyDoubleQuote].\n\nIn 1903, Russell defined predicative functions \
+as those whose order is one more than the highest-order function occurring in \
+the expression of the function. While these were fine for the situation, \
+impredicative functions had to be disallowed:\n\nA function whose argument is \
+an individual and whose value is always a first-order proposition will be \
+called a first-order function. A function involving a first-order function or \
+proposition as apparent variable will be called a second-order function, and \
+so on. A function of one variable which is of the order next above that of \
+its argument will be called a predicative function; the same name will be \
+given to a function of several variables (etc).\n\nHe repeats this definition \
+in a slightly different way later in the paper (together with a subtle \
+prohibition that they would express more clearly in 1913):\nA predicative \
+function of x is one whose values are propositions of the type next above \
+that of x, if x is an individual or a proposition, or that of values of x if \
+x is a function. It may be described as one in which the apparent variables, \
+if any, are all of the same type as x or of lower type; and a variable is of \
+lower type than x if it can significantly occur as argument to x, or as \
+argument to an argument to x, and so forth.\n\nThis usage carries over to \
+Alfred North Whitehead and Russell\[CloseCurlyQuote]s 1913 Principia \
+Mathematica wherein the authors devote an entire subsection of their Chapter \
+II: \[OpenCurlyDoubleQuote]The Theory of Logical \
+Types\[CloseCurlyDoubleQuote] to subchapter I.",
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["2"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{
+             RowBox[{"en", ".", "wikipedia", ".", "org"}], "/", "wiki"}], "/",
+            "Axiom_of"}], "_reducibility"}]}]},ExpressionUUID->
+  "6d4c44e4-cf81-4e69-bade-0dd9e9641744"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"0000330F"]
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"07ea8b66-50f2-46c6-9a3e-2446ffa415b4"],
+
+Cell["\<\
+Russell\[CloseCurlyQuote]s paradox is the most famous of the logical or \
+set-theoretical paradoxes. Also known as the Russell-Zermelo paradox, the \
+paradox arises within na\[IDoubleDot]ve set theory by considering the set of \
+all sets that are not members of themselves. Such a set appears to be a \
+member of itself if and only if it is not a member of itself. Hence the \
+paradox.\
+\>", "Text",ExpressionUUID->"dd6329eb-7998-4268-962d-cdd25734b830"],
+
+Cell[TextData[{
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["3"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"Russell", "'"}], "s", " ", "Paradox", " ", 
+       RowBox[{"(", 
+         RowBox[{
+          "Stanford", " ", "Encyclopedia", " ", "of", " ", 
+           "Philosophy_Winter", " ", "2014", " ", "Edition"}], ")"}]}]},
+  ExpressionUUID->"c9dc4d2f-d4b4-49d7-b44d-8902a114f69c"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"000035AC"],
+ ": Central to any theory of sets is a statement of the conditions under \
+which sets are formed. In addition to\nsimply listing the members of a set, \
+it was initially assumed that any well-defined condition (or precisely\n\
+specified property) could be used to determine a set.\nMore precisely, na\
+\[IDoubleDot]ve set theory assumes the so-called na\[IDoubleDot]ve or \
+unrestricted Comprehension Axiom.\nBut from the assumption of this axiom, \
+Russell\[CloseCurlyQuote]s contradiction follows."
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"925bfd71-67f7-4639-95cb-2c1e439fcfc1"],
+
+Cell["\<\
+As Russell tells us, it was after he applied the same kind of reasoning found \
+in Cantor\[CloseCurlyQuote]s diagonal argument to a \
+\[OpenCurlyDoubleQuote]supposed class of all imaginable objects\
+\[CloseCurlyDoubleQuote] that he was led to the contradiction:\
+\>", "Text",ExpressionUUID->"cf09f762-c1bb-47c2-912f-15f664cad5c7"],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]The comprehensive class we are considering, which is \
+to embrace everything, must embrace itself as one of its members. In other \
+words, if there is such a thing as \[OpenCurlyDoubleQuote]everything,\
+\[CloseCurlyDoubleQuote] then, \[OpenCurlyDoubleQuote]everything\
+\[CloseCurlyDoubleQuote] is something, and is a member of the class \
+\[OpenCurlyDoubleQuote]everything.\[CloseCurlyDoubleQuote] But normally a \
+class is not a member of itself. Mankind, for example, is not a man. Form now \
+the assemblage of all classes which are not members of themselves. This is a \
+class: is it a member of itself or not? If it is, it is one of those classes \
+that are not members of themselves, i.e., it is not a member of itself. If it \
+is not, it is not one of those classes that are not members of themselves, \
+i.e. it is a member of itself. Thus of the two hypotheses \[Dash] that it is, \
+and that it is not, a member of itself \[Dash] each implies its \
+contradictory. This is a contradiction. (1919, 136)\[CloseCurlyDoubleQuote]\
+\>", "Text",ExpressionUUID->"3cd15f1f-cf76-4609-a0d4-0c3d340bd43b"],
+
+Cell["\<\
+Standard responses to the paradox attempt to limit in some way the conditions \
+under which sets are formed. The goal is usually both to eliminate R (and \
+similar contradictory sets) and, at the same time, to retain all other sets \
+needed for mathematics. This is often done by replacing the unrestricted \
+Comprehension Axiom with the more restrictive Separation Axiom.\
+\>", "Text",ExpressionUUID->"a621f453-0826-4946-b4ac-7ac5ea2c3493"],
+
+Cell["\<\
+Unlike Burali-Forti\[CloseCurlyQuote]s paradox, Russell\[CloseCurlyQuote]s \
+paradox does not involve either ordinals or cardinals, relying instead only \
+on the primitive notions of set and set inclusion.\
+\>", "Text",ExpressionUUID->"108c0ae8-d3de-4bb5-b311-f50c28dbec3a"],
+
+Cell["\<\
+The significance of Russell\[CloseCurlyQuote]s paradox can be seen once it is \
+realized that, using classical logic, all sentences follow from a \
+contradiction.\
+\>", "Text",ExpressionUUID->"72503a25-cb8e-4c31-bda6-a64c95780165"],
+
+Cell["\<\
+Because set theory underlies all branches of mathematics, many people began \
+to worry that the inconsistency of set theory would mean that no mathematical \
+proof could be completely trustworthy.  Only by eliminating Russell\
+\[CloseCurlyQuote]s paradox could mathematics as a whole regain its \
+consistency.\
+\>", "Text",ExpressionUUID->"33260290-78ef-4894-9da0-016f806c9b09"],
+
+Cell["\<\
+Russell\[CloseCurlyQuote]s paradox ultimately stems from the idea that any \
+condition or property may be used to determine a set.\
+\>", "Text",ExpressionUUID->"cab8014e-2453-4f33-a5be-622805986c34"],
+
+Cell["\<\
+Russell\[CloseCurlyQuote]s own response to the paradox came with his aptly \
+named theory of types. Believing that self-application lay at the heart of \
+the paradox, Russell\[CloseCurlyQuote]s basic idea was that we can avoid \
+commitment to R (the set of all sets that are not members of themselves) by \
+arranging all sentences (or, more precisely, all propositional functions, \
+functions which give propositions as their values) into a hierarchy. It is \
+then possible to refer to all objects for which a given condition (or \
+predicate) holds only if they are all at the same level or of the same \
+\[OpenCurlyDoubleQuote]type.\[CloseCurlyDoubleQuote]\
+\>", "Text",ExpressionUUID->"0dd25b25-ee9d-491b-ac97-815e178cc56e"],
+
+Cell["\<\
+This solution to Russell\[CloseCurlyQuote]s paradox is motivated in large \
+part by adoption of the so-called vicious circle
+principle. The principle in effect states that no propositional function can \
+be defined prior to specifying the function\[CloseCurlyQuote]s scope of \
+application. In other words, before a function can be defined, one must first \
+specify
+exactly those objects to which the function will apply (the function\
+\[CloseCurlyQuote]s domain). For example, before defining the predicate \
+\[OpenCurlyDoubleQuote]is a prime number,\[CloseCurlyDoubleQuote] one first \
+needs to define the collection of objects that might possibly satisfy this \
+predicate, namely the set, N, of natural numbers.\
+\>", "Text",ExpressionUUID->"e4ace99f-a6ca-44d8-be16-3499582efa35"],
+
+Cell["\<\
+As Whitehead and Russell explain, \[OpenCurlyDoubleQuote]An analysis of the \
+paradoxes to be avoided shows that they all result from a kind of vicious \
+circle. The vicious circles in question arise from supposing that a \
+collection of objects may contain members which can only be defined by means \
+of the collection as a whole. Thus, for example, the collection of \
+propositions will be supposed to contain a proposition stating that \
+\[OpenCurlyDoubleQuote]all propositions are either true or false.\
+\[CloseCurlyDoubleQuote] It would seem, however, that such a statement could \
+not be legitimate unless \[OpenCurlyDoubleQuote]all propositions\
+\[CloseCurlyDoubleQuote] referred to some already definite collection, which \
+it cannot do if new propositions are created by statements about \
+\[OpenCurlyDoubleQuote]all propositions.\[CloseCurlyDoubleQuote] We shall, \
+therefore, have to say that statements about \[OpenCurlyDoubleQuote]all \
+propositions\[CloseCurlyDoubleQuote] are meaningless. \[Ellipsis] The \
+principle which enables us to avoid illegitimate totalities may be stated as \
+follows: \[OpenCurlyDoubleQuote]Whatever involves all of a collection must \
+not be one of the collection\[CloseCurlyDoubleQuote]; or, conversely: \
+\[OpenCurlyDoubleQuote]If, provided a certain collection had a total, it \
+would have members only definable in terms of that total, then the said \
+collection has no total.\[CloseCurlyDoubleQuote] We shall call this the \
+\[OpenCurlyDoubleQuote]vicious-circle principle,\[CloseCurlyDoubleQuote] \
+because it enables us to avoid the vicious circles involved in the assumption \
+of illegitimate totalities.\[CloseCurlyDoubleQuote] (1910, 2nd edn 37)\
+\>", "Text",ExpressionUUID->"67d28485-2f2a-4060-9e77-251f301fe4a1"],
+
+Cell["\<\
+If Whitehead and Russell are right, it follows that no function\
+\[CloseCurlyQuote]s scope of application will ever be able to
+include any object presupposed by the function itself. As a result, \
+propositional functions (along with their
+corresponding propositions) will end up being arranged in a hierarchy of the \
+kind Russell proposes.\
+\>", "Text",ExpressionUUID->"8c62e6d5-0762-4e2a-9c42-55642730c4cd"],
+
+Cell["\<\
+Although Russell first introduced his theory of types in his 1903 Principles \
+of Mathematics, he recognized
+immediately that more work needed to be done since his initial account seemed \
+to resolve some but not all of the paradoxes. Among the alternatives he \
+considered was a so-called substitutional theory (Galaugher 2013). This in \
+turn led to type theory\[CloseCurlyQuote]s more mature expression five years \
+later in Russell\[CloseCurlyQuote]s 1908 article, \
+\[OpenCurlyDoubleQuote]Mathematical Logic as Based on the Theory of Types,\
+\[CloseCurlyDoubleQuote] and in the monumental work he co-authored with \
+Alfred North Whitehead, Principia Mathematica (1910, 1912, 1913). Russell\
+\[CloseCurlyQuote]s type theory thus appears in two versions: the \
+\[OpenCurlyDoubleQuote]simple theory\[CloseCurlyDoubleQuote] of 1903 and the \
+\[OpenCurlyDoubleQuote]ramified theory\[CloseCurlyDoubleQuote] of 1908. Both \
+versions have been criticized for being too ad hoc to eliminate the paradox \
+successfully.\
+\>", "Text",ExpressionUUID->"490411da-d568-4fa0-8e3c-5ec8d78ae68b"],
+
+Cell["\<\
+Russell\[CloseCurlyQuote]s paradox is sometimes seen as a negative \
+development \[Dash] as bringing down Frege\[CloseCurlyQuote]s Grundgesetze \
+and as one of the original conceptual sins leading to our expulsion from \
+Cantor\[CloseCurlyQuote]s paradise. (But) for one thing, although the matter \
+remains controversial, later research has revealed that the paradox does not \
+necessarily short circuit Frege\[CloseCurlyQuote]s derivation of arithmetic \
+from logic alone. Frege\[CloseCurlyQuote]s version of NC (his Axiom V) can \
+simply be abandoned. (For details, see the entry on Frege\[CloseCurlyQuote]s \
+Theorem.) For another, Church gives an elegant formulation of the simple \
+theory of types that has proven fruitful even in areas removed from the \
+foundations of mathematics. (For details, see the entry on Type Theory.) \
+Finally, the development of axiomatic (as opposed to na\[IDoubleDot]ve) set \
+theories which exhibit various ingenious and mathematically and \
+philosophically significant ways of dealing with Russell\[CloseCurlyQuote]s \
+paradox paved the way for stunning results in the metamathematics of set \
+theory. These results have included G\[ODoubleDot]del\[CloseCurlyQuote]s and \
+Cohen\[CloseCurlyQuote]s theorems on the independence of the axiom of choice \
+and Cantor\[CloseCurlyQuote]s continuum hypothesis.\
+\>", "Text",ExpressionUUID->"80aa4eb1-fd92-4ce5-bacd-eab65cebddea"],
+
+Cell["\<\
+Can someone recommend me an English-language version of the Begriffsschrift \
+in modern notation.
+It\[CloseCurlyQuote]d probably be best just to learn how to read it. Roy Cook \
+has a very thorough appendix to the recent translation of the Grundgesetze \
+which will teach you everything you need to know.\
+\>", "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"5a6cfbe5-eb72-448e-9f91-8002dcc1cf60"],
+
+Cell[TextData[{
+ "In Paris in 1900, I was impressed by the fact that, in all discussions, ",
+ StyleBox["Peano",
+  FontWeight->"Bold"],
+ " and his pupils had a precision which was not possessed by others. I \
+therefore asked him to give me his works, which he did. As soon as I had \
+mastered his notation, I saw that it extended the region of mathematical \
+precision backwards towards regions which had been given over to \
+philosophical vagueness. Basing myself on him, I invented a notation for \
+relations. Whitehead, fortunately, agreed as to the importance of the method, \
+and in a very short time we worked out together such matters as the \
+definitions of ",
+ StyleBox["series",
+  FontWeight->"Bold"],
+ ", ",
+ StyleBox["cardinals",
+  FontWeight->"Bold"],
+ ", and ",
+ StyleBox["ordinals",
+  FontWeight->"Bold"],
+ ", and the reduction of ",
+ StyleBox["arithmetic",
+  FontWeight->"Bold"],
+ " to logic. For nearly a year, we had a rapid series of quick successes. \
+Much of the work had already been done by ",
+ StyleBox["Frege",
+  FontWeight->"Bold"],
+ ", but at first ",
+ StyleBox["we did not know this",
+  FontWeight->"Bold"],
+ ". The work that ultimately became my contribution to Principia Mathematica \
+presented itself to me, at first, as a parenthesis in the refutation of Kant."
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"23faaf51-5695-4ddb-ab6c-e9c165ff4b67"],
+
+Cell["\<\
+(Nota: ele cita que foi um evento importante a visita ao Congresso \
+Internacional de Filosofia em Paris em 1900, onde encontrou Peano: \
+\[OpenCurlyDoubleQuote]Desde que iniciei Euclides aos 16, sempre me incomodei \
+com as funda\[CCedilla]\[OTilde]es da matem\[AAcute]tica; quando, mais tarde, \
+li filosofia, achei Kant e os empiricistas igualmente insatisfat\[OAcute]rios\
+\[CloseCurlyDoubleQuote]. Este \[EAcute] o contexto da refuta\[CCedilla]\
+\[ATilde]o a Kant.)\
+\>", "Text",ExpressionUUID->"27aab4da-52d2-4f6b-977d-89bbb20cdcd8"],
+
+Cell[TextData[{
+ "In June 1901, this period of honeymoon delight came to an end. ",
+ StyleBox["Cantor",
+  FontWeight->"Bold"],
+ " had a proof that there is no greates ",
+ StyleBox["cardinal",
+  FontWeight->"Bold"],
+ "; in applying this proof to the ",
+ StyleBox["universal class",
+  FontWeight->"Bold"],
+ ", ",
+ StyleBox["I was led to the contradiction about classes that are not members \
+of themselves",
+  FontWeight->"Bold"],
+ ". It soon became clear that this is only one of an infinite class of \
+contradictions. I wrote to Frege, who replied with the utmost gravity that \
+\[OpenCurlyQuote]die Arithmetik ist ins Schwanken geraten\[CloseCurlyQuote]. \
+At first, I hoped the matter was trivial and could be easily cleared up; but \
+early hopes were succeeded by something very near to despair. Throughout 1903 \
+and 1904, I pursued will-o\[CloseCurlyQuote]-the-wisps and made no progress. \
+At last, in the spring of 1905, a different problem, which proved soluble, \
+gave the first glimmer of hope. The problem was that of descriptions, and its \
+solution suggested a new technique."
+}], "Text",ExpressionUUID->"967434bd-aad6-49fe-b14e-e9f7fc3cab7c"],
+
+Cell[TextData[{
+ "(...) I had been a realist (...) I had thought that ",
+ StyleBox["cardinal integers",
+  FontWeight->"Bold"],
+ ", for instance, have a timeless being. When ",
+ StyleBox["integers were reduced to classes of classes",
+  FontWeight->"Bold"],
+ ", this being was transferred to classes. (...) ",
+ StyleBox["theory of descriptions",
+  FontWeight->"Bold"],
+ ". What was important in this theory was the discovery that, in analysing a \
+significant sentence, one must not assume that each separate word or phrase \
+has significance on its own account. \[OpenCurlyDoubleQuote]The golden \
+mountain\[CloseCurlyDoubleQuote] can be part of a significant sentence, but \
+is not significant in isolation. It soon appeared that ",
+ StyleBox["class symbols",
+  FontWeight->"Bold"],
+ " could be treated like ",
+ StyleBox["descriptions",
+  FontWeight->"Bold"],
+ ", i.e. as ",
+ StyleBox["non-significant parts of significant sentences",
+  FontWeight->"Bold"],
+ ". This made it possible to see, in a general way, how a solution of the \
+contradictions might be possible. The particular solution offered in Principa \
+Mathematica had various defects, but at any rate it showed that the logician \
+is not presented with a complete impasse."
+}], "Text",ExpressionUUID->"caf667bb-306e-4b05-a581-8782b015140b"],
+
+Cell[TextData[{
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["4"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{"hal", ".", "inria", ".", "fr"}], "/", "hal"}], "-", 
+         "00816699"}]}]},ExpressionUUID->
+  "f486790a-d6ec-491b-a49e-04bc6b82cf63"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"00002548"],
+ ": Most mathematical papers and textbooks do not explicitly specify a formal \
+axiomatic foundation, but can generally be viewed as relying on set theory \
+and classical logic. Many interactive theorem provers, however, use \
+alternative formal systems based on some form of type theory. Just as in the \
+domain of programming languages, ",
+ StyleBox["types",
+  FontWeight->"Bold"],
+ " help classify expressions passed to the checker (...). Coq is based on a \
+logical foundation known as the ",
+ StyleBox["Calculus of Inductive Constructions",
+  FontSlant->"Italic"],
+ ", a powerful and expressive version of ",
+ StyleBox["constructive dependent type theory",
+  FontWeight->"Bold"],
+ ".\nThe advantage to using dependent type theory is that types can express \
+complex specifications. (...) Thus, type inference can be used to discover \
+not only types, but also data and useful facts. Working with such an \
+elaborate type system in a proof assistant can be delicate, however, and \
+issues like the decidability of type checking impose severe restrictions on \
+the nature of the dependent types one can work with in practice."
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"cc4be9d8-6e09-4356-b4ef-096a27582021"],
+
+Cell[TextData[{
+ "(...) Every term or type has a computational interpretation, and the \
+ability to unfold definitions and normalize expressions is built in to the \
+underlying logic. Type inference and type checking can take advantage of this \
+computational behavior, as can proof checking, which is just an instance of \
+type checking. The price to pay for this powerful features is that Coq\
+\[CloseCurlyQuote]s ",
+ StyleBox["logic is constructive",
+  FontWeight->"Bold"],
+ ". In Coq many classical principles, such as the ",
+ StyleBox["law of the excluded middle",
+  FontWeight->"Bold"],
+ ", the ",
+ StyleBox["existence of choice functions",
+  FontWeight->"Bold"],
+ ", and ",
+ StyleBox["extensionality",
+  FontWeight->"Bold"],
+ " are not available the the level of the logic. These principles can be \
+recovered when they are provably valid, in the constructive sens, for \
+specific objects like finite domains, or they can be ",
+ StyleBox["postulated as axioms if needed",
+  FontWeight->"Bold"],
+ ". This formalization does not rely on any such axiom, however; we managed \
+to obtain a ",
+ StyleBox["completely constructive",
+  FontWeight->"Bold"],
+ " version of the proff and of the theories it requires."
+}], "Text",ExpressionUUID->"1637a16c-c0d8-4664-92e3-8909bd0be710"],
+
+Cell[TextData[{
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["5"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{
+             RowBox[{
+               RowBox[{"blog", ".", "stephenwolfram", ".", "com"}], "/", 
+               "2010"}], "/", "11"}], "/", "100"}], "-", "years", "-", 
+         "since", "-", "principia", "-", 
+         RowBox[{"mathematica", "/"}]}]}]},ExpressionUUID->
+  "60ed4047-0149-4e5d-8d8b-1bf254af89cd"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"000048BE"],
+ ": Considering Russell\[CloseCurlyQuote]s theory of types \
+\[OpenCurlyDoubleQuote]to be something of a hack\[CloseCurlyDoubleQuote] is \
+courageous. Following this thought to typed programming languages is even \
+more courageous, because in Mathematica every expression has to have a head, \
+which is it\[CloseCurlyQuote]s type in a way. But the good thing in \
+Mathematica is that one can change that type (head) into another type (head) \
+\[Dash] strongly typed programming languages usually try to prevent this \
+operation, allowing only for a few casts.\n\nBut what about physics? Here the \
+types are the units (m, kg, s, Kelvin, \[Ellipsis]) and the big deal is to \
+express the energy (or more precisely the action) in as many ways as \
+possible. If it does not work, one has to search for a new (universal) \
+constant. For example, Planck\[CloseCurlyQuote]s constant allows to express \
+the energy using a frequency \[Dash] pretty cool.\n\nDo you think units in \
+physics are a hack (because researchers did not yet find all universal \
+constants) and if yes, how would you formulate an action principle?"
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"4dbb4d3b-49d7-4524-9d53-bf8bc07711bf"],
+
+Cell[TextData[{
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["6"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{
+             RowBox[{"archive", ".", "org"}], "/", "details"}], "/", 
+           "settheorywithint00kura_"}], 
+         RowBox[{
+           RowBox[{"0", "/", "page"}], "/", "n7"}]}]}]},ExpressionUUID->
+  "6ae00ed7-68bc-46ba-9708-1b3b5bc3cfb5"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"00003F43"],
+ ": The creation of set theory can be traced back to the work of XIX century \
+mathematicians who tried to find a firm foundation for calculus. While the \
+early contributors to the subject (Bolzano, Du Bois Reymond, Dedekind) were \
+concerned with sets of numbers or of functions, the propert founder of set \
+theory, Georg Cantor, made a decisive step and started an investigation of \
+sets with arbitrary elements. The series of articles published by him in the \
+years 1871-1883 contains an almost modern exposition of the theory of \
+cardinals and of ordered and well-ordered sets. That step toward \
+generalizations which Cantor made was a difficult one was witnessed by \
+various contradictions (antinomies of set theory) discovered in set theory by \
+various authors around 1900. The crisis created by these antinomies was \
+overcome by Zermelo who formulated in 1904-1908 the first system of axios of \
+set theory. His axioms were sufficient to obtain all mathematically important \
+results of set theory and at the same time did not allow the reconstruction \
+of any known antinomy. Close ties between set theory and philosophy of \
+mathematics date back to discussions concerning the nature of anotinomies and \
+the axiomatization of set theory. The fundamental problems of philosophy of \
+mathematics such as the meaning of existence in mathematics, axiomatics \
+versus description of reality, the need of consistency proofs and means \
+admissible in such proofs were never better illustrated than in these \
+discussions."
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"fd01ead5-7009-4489-94eb-dd19eee84777"],
+
+Cell["\<\
+After an initial period of distrust the newly created set theory made a \
+triumphal inroad in all fields of mathematics. Its influence on mathamatics \
+of the present century is clearly visible in the choice of modern problems \
+and in the way these problems are solved. Applications of set theory are thus \
+immense. But set theory developed also problems of its own. These problems \
+and their solutions represent what is known as abstract set theory. Its \
+achievements are modest in comparison to the applications of set theoretical \
+methods in other branches of mathematics, some of which ower their very \
+existence to set theory. Sill, abstract set theory is a well-established part \
+of mathematics and the knowledge of its basic notions is required from every \
+mathematician.\
+\>", "Text",ExpressionUUID->"c71159d3-426a-44a5-aff8-74eea7af4f5a"],
+
+Cell[TextData[{
+ "(...) We intended to present the basic results of abstract set theory in \
+the traditional order which goes back still to Cantor: ",
+ StyleBox["algebra of sets, theory of cardinals, ordering and well-ordering \
+of sets.",
+  FontWeight->"Bold"]
+}], "Text",ExpressionUUID->"52f6696c-4000-45a6-aa10-7201360d8c9f"],
+
+Cell[TextData[{
+ "(Suppes predicates) ",
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["7"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{
+             RowBox[{
+               RowBox[{"www", ".", "researchgate", ".", "net"}], "/", 
+               "publication"}], "/", "227278484"}], "_A", "_Suppes", 
+           "_predicate", "_for", "_general", "_relativity", "_and", "_set"}], 
+         "-", 
+         RowBox[{"theoretically_generic", "_spacetimes"}]}]}]},ExpressionUUID->
+  "41b33aaf-27a4-4ba4-a02c-13226372c02d"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"0000608B"],
+ ": Suppes (1967) suggested that in order to axiomatize a theory--any \
+mathematically\nformulated theory--we must define a set-theoretic predicate. \
+A set-theoretic predicate is simply a predicate in the formal language of a \
+given axiomatic set theory. We thus have a nice and convenient recipe for the \
+construction of axiomatized versions for many theories in the realm of \
+natural science, granted that they can be given a precise mathematical \
+formulation, as all of everyday mathematics can be formulated within an \
+established axiomatic set theory such as the Zermelo-Fraenkel system. Da \
+Costa and Chuaqui (1988) related Suppes predicates to the Bourbaki (1957) \
+structure concept, and da Costa and Doria (1989b) gave a summary axiomatic \
+treatment for most of classical (or first-quantized) physics."
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"7ca7601a-192f-4de4-9b33-0dc740392c71"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Resumo", "Subsection",ExpressionUUID->"d87e256f-2927-4507-bc68-764b1ab8cc49"],
+
+Cell[TextData[{
+ StyleBox["L\[OAcute]gica de primeira ordem (first-order logic)",
+  FontWeight->"Bold"],
+ " \[EAcute] igual a ",
+ StyleBox["l\[OAcute]gica predicativa (predicate logic)",
+  FontWeight->"Bold"],
+ ". Tamb\[EAcute]m chamado de ",
+ StyleBox["first-order predicate logic",
+  FontWeight->"Bold"],
+ "."
+}], "Text",ExpressionUUID->"1c38ffbf-ff82-491a-a1a8-3ff5c7097124"],
+
+Cell[TextData[{
+ "Quantifica\[CCedilla]\[ATilde]o e vari\[AAcute]veis. Vari\[AAcute]vel \
+\[EAcute] o ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e5128999-f7a8-4ec9-bfe2-67b14a9bf4fc"],
+ " na proposi\[CCedilla]\[ATilde]o; ao inv\[EAcute]s de elementos concretos, \
+abstratos."
+}], "Text",ExpressionUUID->"01e5b9a3-f927-480a-9a61-7bc655cb7606"],
+
+Cell[TextData[{
+ StyleBox["L\[OAcute]gica propositiva",
+  FontWeight->"Bold"],
+ " ou ",
+ StyleBox["sentencial",
+  FontWeight->"Bold"],
+ " ou de ",
+ StyleBox["ordem zero",
+  FontWeight->"Bold"],
+ " n\[ATilde]o usa quantifica\[CCedilla]\[ATilde]o ou \
+rela\[CCedilla]\[OTilde]es (?). L\[OAcute]gica propositiva \[EAcute] a \
+\[OpenCurlyDoubleQuote]funda\[CCedilla]\[ATilde]o\[CloseCurlyDoubleQuote] da \
+de primeira e maior ordens."
+}], "Text",ExpressionUUID->"9fea92d2-25e7-45fa-9f15-8abfdca71ede"],
+
+Cell[TextData[{
+ "A l\[OAcute]gica propositiva n\[ATilde]o envolve objetos ",
+ StyleBox["n\[ATilde]o-l\[OAcute]gicos",
+  FontWeight->"Bold"],
+ ", ao contr\[AAcute]rio das de ordem ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->18,ExpressionUUID->"7bb4fc7f-1d43-4e8d-a328-3536a78a42eb"],
+ "."
+}], "Text",ExpressionUUID->"599b192b-9d02-4135-b1aa-390b6f543298"],
+
+Cell[TextData[{
+ "\[CapitalEAcute] a l\[OAcute]gica dos ",
+ StyleBox["conectores l\[OAcute]gicos",
+  FontWeight->"Bold"],
+ ": conjun\[CCedilla]\[ATilde]o, disjun\[CCedilla]\[ATilde]o, implica\
+\[CCedilla]\[ATilde]o e nega\[CCedilla]\[ATilde]o, e suas varia\[CCedilla]\
+\[OTilde]es. N\[ATilde]o necessariamente two-valued (law of the excluded \
+middle)."
+}], "Text",ExpressionUUID->"b4620535-2215-4203-9265-ab4837213810"],
+
+Cell["\<\
+Silogismo: deriva\[CCedilla]\[ATilde]o das conclus\[OTilde]es a partir das \
+afirma\[CCedilla]\[OTilde]es existentes, enquanto indu\[CCedilla]\[ATilde]o \
+deriva\[CCedilla]\[ATilde]o das conclus\[OTilde]es a partir de observa\
+\[CCedilla]\[OTilde]es repetidas.\
+\>", "Text",ExpressionUUID->"db31e89a-754b-4dc5-a6e4-9598a3378d9a"],
+
+Cell[TextData[{
+ "O silogismo (Arist\[OAcute]teles - Prior Analytics) permaneceu at\[EAcute] \
+o s\[EAcute]culo XI (com Kant afirmando em Logic - 1800 sua \
+\[OpenCurlyDoubleQuote]capacidade\[CloseCurlyDoubleQuote]), com inclus\
+\[ATilde]o de disjun\[CCedilla]\[OTilde]es e condicionais, mas o \
+\[OpenCurlyDoubleQuote]c\[AAcute]lculo\[CloseCurlyDoubleQuote] somente foi \
+introduzido pelo ",
+ StyleBox["Bregriffsschrift",
+  FontWeight->"Bold"],
+ " de Frege, com quantificadores e vari\[AAcute]veis. E, antes, por Bolzano \
+(Wissenschaftslehre - 1837), cr\[IAcute]tica de Kant. O trabalho de ",
+ StyleBox["Bolzano",
+  FontWeight->"Bold"],
+ " (somente analisado contemporaneamente) desenvolveu rapidamente a \
+l\[OAcute]gica sentencial e a l\[OAcute]gica predicativa de primeira ordem \
+(ou seja, as l\[OAcute]gicas de ordens ",
+ StyleBox["zero e um",
+  FontWeight->"Bold"],
+ "), ultrapassando a silog\[IAcute]stica."
+}], "Text",ExpressionUUID->"70431fa5-ad97-4554-aab9-dd6ec0aa5083"],
+
+Cell[TextData[{
+ StyleBox["Boole\[CloseCurlyQuote]s acceptance of Aristotle",
+  FontWeight->"Bold"],
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["8"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{"en", ".", "wikipedia", ".", "org"}], "/", "wiki"}], "/", 
+         "Syllogism"}]}]},ExpressionUUID->
+  "14aa2bf3-c2e6-42b6-bf10-8b51479a739c"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"00002997"]
+}], "Text",
+ CellFrame->{{0, 0}, {
+   0, 0.5}},ExpressionUUID->"b46be68d-3ac6-4c6b-bcb2-bc9044998ee7"],
+
+Cell["\<\
+Boole\[CloseCurlyQuote]s goals were \[OpenCurlyDoubleQuote]to go under, over, \
+and beyond\[CloseCurlyDoubleQuote] Aristotle\[CloseCurlyQuote]s logic by: (1) \
+providing it with mathematical foundations involving equations, (2) extending \
+the class of problems it could treat, as solving equations was added to \
+assessing validity, and (3) expanding the range of applications it could \
+handle, such as expanding propositions of only two terms to those having \
+arbitrarily many.\
+\>", "Text",ExpressionUUID->"25a107d3-658b-4cda-b072-ba80742cc784"],
+
+Cell["\<\
+More specifically, Boole agreed with what Aristotle said; Boole\
+\[CloseCurlyQuote]s \[OpenCurlyQuote]disagreements\[CloseCurlyQuote], if they \
+might be called that, concern what Aristotle did not say. First, in the realm \
+of foundations, Boole reduced Aristotle\[CloseCurlyQuote]s four propositional \
+forms to one form, the form of equations, which by itself was a revolutionary \
+idea. Second, in the realm of logic\[CloseCurlyQuote]s problems, Boole\
+\[CloseCurlyQuote]s addition of equation solving to logic\[LongDash]another \
+revolutionary idea\[LongDash]involved Boole\[CloseCurlyQuote]s doctrine that \
+Aristotle\[CloseCurlyQuote]s rules of inference (the \
+\[OpenCurlyDoubleQuote]perfect syllogisms\[CloseCurlyDoubleQuote]) must be \
+supplemented by rules for equation solving. Third, in the realm of \
+applications, Boole\[CloseCurlyQuote]s system could handle multi-term \
+propositions and arguments, whereas Aristotle could handle only two-termed \
+subject-predicate propositions and arguments. For example, Aristotle\
+\[CloseCurlyQuote]s system could not deduce: \[OpenCurlyDoubleQuote]No \
+quadrangle that is a square is a rectangle that is a rhombus\
+\[CloseCurlyDoubleQuote] from \[OpenCurlyDoubleQuote]No square that is a \
+quadrangle is a rhombus that is a rectangle\[CloseCurlyDoubleQuote] or from \
+\[OpenCurlyDoubleQuote]No rhombus that is a rectangle is a square that is a \
+quadrangle\[CloseCurlyDoubleQuote].\
+\>", "Text",
+ CellFrame->{{0, 0}, {
+   0.5, 0}},ExpressionUUID->"23dd4ebd-2daf-4382-82d7-01e2b4d53a12"],
+
+Cell["\<\
+Um silogismo s\[ATilde]o duas premissas \[LongDash] uma maior e uma menor \
+\[LongDash] e uma conclus\[ATilde]o que segue. As premissas t\[EHat]m um term \
+em comum. Exemplo: \[OpenCurlyDoubleQuote]Todos homens s\[ATilde]o mortais. \
+Todos os gregos s\[ATilde]o homens. Todos os gregos s\[ATilde]o mortais\
+\[CloseCurlyDoubleQuote].\
+\>", "Text",ExpressionUUID->"9bdea307-e04b-4a80-9e90-ebf8d0c97b54"],
+
+Cell["\<\
+Premissa maior: Todos M s\[ATilde]o P.
+Premissa menor: Todos S s\[ATilde]o M.
+Conclus\[ATilde]o: Todos S s\[ATilde]o P.
+Onde: M = middle, S = subject, P = predicate.\
+\>", "Text",ExpressionUUID->"4fbea012-ab59-47af-98ed-38a5456ea049"],
+
+Cell["\<\
+As premissas e conclus\[ATilde]o podem ser universais ou particulares (\
+\[OpenCurlyDoubleQuote]todos ou \[OpenCurlyDoubleQuote]nenhum\
+\[CloseCurlyDoubleQuote] s\[ATilde]o universais e \
+\[OpenCurlyDoubleQuote]algum\[CloseCurlyDoubleQuote] \[EAcute] particular) a \
+afirmativos ou negativos.\
+\>", "Text",ExpressionUUID->"16264c82-65a6-4627-bd18-eb8db570bed0"],
+
+Cell[TextData[{
+ "Quatro formas principais:\nTodo ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"39b5534f-b745-4ff9-8493-f62fea13f9c7"],
+ " \[EAcute] ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"14bf6c9a-a1c7-4a0c-88ff-996f58fbf648"],
+ ": ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[ForAll]", 
+     RowBox[{"x", ":", 
+      RowBox[{"A", "(", "x", ")"}]}]}], "\[Rule]", 
+    RowBox[{"B", "(", "x", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"baa523fc-e36a-43eb-94a0-c423a5e9944c"],
+ " ou ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Not]", 
+    RowBox[{"\[Exists]", 
+     RowBox[{"x", ":", 
+      RowBox[{
+       RowBox[{"A", "(", "x", ")"}], "\[And]", 
+       RowBox[{"\[Not]", 
+        RowBox[{"B", "(", "x", ")"}]}]}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"c9f4f983-daaa-45af-8b44-ee42a0bccb55"],
+ ".\nNenhum ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"ccf1b971-029c-443c-a52f-e51f5ad17838"],
+ " \[EAcute] ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"d81a36e8-0202-4fae-8618-3c844ff52872"],
+ ": ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[ForAll]", 
+     RowBox[{"x", ":", 
+      RowBox[{"A", "(", "x", ")"}]}]}], "\[Rule]", 
+    RowBox[{"\[Not]", 
+     RowBox[{"B", "(", "x", ")"}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"43a7af8f-9160-435e-bdd4-968aaa1e0bc0"],
+ " ou ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Not]", 
+    RowBox[{"\[Exists]", 
+     RowBox[{"x", ":", 
+      RowBox[{
+       RowBox[{"A", "(", "x", ")"}], "\[And]", 
+       RowBox[{"B", "(", "x", ")"}]}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"e0234d1d-9481-4415-9e6b-d2167d3152ba"],
+ ".\nAlgum ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"0322e02c-1bf1-403d-b1cf-28e428af7718"],
+ " \[EAcute] ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"8170ad29-54f9-4a13-ac5f-244da6064154"],
+ ": ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Exists]", 
+    RowBox[{"x", ":", 
+     RowBox[{
+      RowBox[{"A", "(", "x", ")"}], "\[And]", 
+      RowBox[{"B", "(", "x", ")"}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"1bbc53c2-49d2-46f7-96c5-7cda32054941"],
+ ".\nAlgum ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"355dcd35-d180-479d-9516-c7c114574c2f"],
+ " n\[ATilde]o \[EAcute] ",
+ Cell[BoxData[
+  FormBox["B", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"369e63e8-e9b1-4ff8-a1db-d279a1d1d58a"],
+ ": ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Exists]", 
+    RowBox[{"x", ":", 
+     RowBox[{
+      RowBox[{"A", "(", "x", ")"}], "\[And]", 
+      RowBox[{"\[Not]", 
+       RowBox[{"B", "(", "x", ")"}]}]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"80e5bf14-764c-423d-b373-89d2aa70d727"],
+ "."
+}], "Text",ExpressionUUID->"a2a5c811-8c11-4c36-aee0-92c5323aad9b"],
+
+Cell[TextData[{
+ "L\[OAcute]gica silog\[IAcute]stica: foco nos ",
+ StyleBox["termos",
+  FontWeight->"Bold"],
+ ". L\[OAcute]gica propositiva: foco nas ",
+ StyleBox["proposi\[CCedilla]\[OTilde]es",
+  FontWeight->"Bold"],
+ "."
+}], "Text",ExpressionUUID->"6df55460-cd41-4cfd-95e7-80a94e64aa0e"],
+
+Cell[TextData[{
+ "Voltando \[AGrave] l\[OAcute]gica propositiva... Foi melhorada pela ",
+ StyleBox["l\[OAcute]gica simb\[OAcute]lica",
+  FontWeight->"Bold"],
+ ", come\[CCedilla]ando com Leibniz no s\[EAcute]culo XIV, depois Boole, De \
+Morgan."
+}], "Text",ExpressionUUID->"3864853e-369a-4c1b-b60b-3dc407563669"],
+
+Cell["\<\
+Ordem de avan\[CCedilla]o l\[OAcute]gica silog\[IAcute]stica \[Rule] l\
+\[OAcute]gica propositiva (ordem 0) \[Rule] l\[OAcute]gica predicativa (ordem \
+1).\
+\>", "Text",ExpressionUUID->"3213c4ee-1d91-4fbe-837e-b0d5cb0cfcab"],
+
+Cell["\<\
+A l\[OAcute]gica predicativa/ordem 1/first-order logic de Frege foi um avan\
+\[CCedilla]o sobre a l\[OAcute]gica proposicional.\
+\>", "Text",ExpressionUUID->"2c135893-6112-4db6-8732-e446690c2821"],
+
+Cell[TextData[{
+ "Por\[EAcute]m, avan\[CCedilla]os na l\[OAcute]gica ",
+ StyleBox["propositiva ",
+  FontWeight->"Bold"],
+ "ainda seguiram sendo realizados, como: dedu\[CCedilla]\[ATilde]o natural, \
+\[AAcute]rvores- e tabelas-verdade."
+}], "Text",ExpressionUUID->"7fe16bd0-4976-469d-93fb-c6a8da9b7785"],
+
+Cell[TextData[{
+ "\[OpenCurlyDoubleQuote]Dedu\[CCedilla]\[ATilde]o natural\
+\[CloseCurlyDoubleQuote] foi uma rea\[CCedilla]\[ATilde]o ao Principia \
+Mathematica, e um estilo mais \[OpenCurlyDoubleQuote]natural\
+\[CloseCurlyDoubleQuote] de deduzir, oposto ao axiom\[AAcute]tico de Hilbert, \
+Frege e Russel, encampado pelo Jaskowski (d\[EAcute]cada de 20). (Mas \
+\[EAcute] um estilo de nota\[CCedilla]\[ATilde]o.) Gerou novas \
+nota\[CCedilla]\[OTilde]es, entre elas de ",
+ StyleBox["Suppes",
+  FontWeight->"Bold"],
+ " e ",
+ StyleBox["Lemmon",
+  FontWeight->"Bold"],
+ " (System L). Na dedu\[CCedilla]\[ATilde]o natural, as proposi\[CCedilla]\
+\[OTilde]es s\[ATilde]o deduzidas de cole\[CCedilla]\[OTilde]es de premissas \
+a partir da aplica\[CCedilla]\[ATilde]o repetida de regras de \
+infer\[EHat]ncia."
+}], "Text",ExpressionUUID->"58f444c0-2517-4fb7-9f17-64f6dfbca77d"],
+
+Cell["Voltando ao first-order logic...", "Text",ExpressionUUID->"25f2ab84-b706-449d-9505-316ab51f332c"],
+
+Cell[TextData[{
+ "\[OpenCurlyDoubleQuote]A theory about a topic is usually a first-order \
+logic together with a specified domain of discourse over which the quantified \
+variables range, finitely many functions from that domain to itself, finitely \
+many predicates defined on that domain, and a set of axioms believed to hold \
+for those things. Sometimes \[OpenCurlyDoubleQuote]theory\
+\[CloseCurlyDoubleQuote] is understood in a more formal sense, which is just \
+a set of sentences in first-order logic.\[CloseCurlyDoubleQuote]",
+ ButtonBox[Cell[TextData[StyleBox[ButtonBox["9"],
+  FontVariations->{"CompatibilityType"->"Superscript"}]], "Citation",
+  Editable->False,
+  TaggingRules->{NoteData -> RowBox[{
+       RowBox[{"https", ":"}], "//", 
+       RowBox[{
+         RowBox[{
+           RowBox[{
+             RowBox[{"en", ".", "wikipedia", ".", "org"}], "/", "wiki"}], "/",
+            "First"}], "-", "order_logic"}]}]},ExpressionUUID->
+  "aed19f2d-af62-4ffe-a882-02dc620ca827"],
+  BaseStyle->"Hyperlink",
+  ButtonData->"000031C3"],
+ "\n\[OpenCurlyDoubleQuote]In ",
+ StyleBox["first-order",
+  FontWeight->"Bold"],
+ " theories, ",
+ StyleBox["predicates",
+  FontWeight->"Bold"],
+ " are often associated with ",
+ StyleBox["sets",
+  FontWeight->"Bold"],
+ ". In interpreted ",
+ StyleBox["higher-order",
+  FontWeight->"Bold"],
+ " theories,\n",
+ StyleBox["predicates",
+  FontWeight->"Bold"],
+ " may be interpreted as ",
+ StyleBox["sets of sets",
+  FontWeight->"Bold"],
+ ".\[CloseCurlyDoubleQuote]"
+}], "Text",ExpressionUUID->"df931627-8a82-435d-9261-077d802aa7b8"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["1",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "en",
+ ".",
+ "wikipedia",
+ ".",
+ "org",
+ "/",
+ "wiki",
+ "/",
+ "Type_theory"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"00002A70",ExpressionUUID->"6f808b19-2d27-46f7-b6aa-6728ca6a46f6"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["2",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "en",
+ ".",
+ "wikipedia",
+ ".",
+ "org",
+ "/",
+ "wiki",
+ "/",
+ "Axiom_of",
+ "_reducibility"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"0000330F",ExpressionUUID->"6c17d9ba-11a9-45e5-8248-ab50c20af123"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["3",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "Russell",
+ "'",
+ "s",
+ " ",
+ "Paradox",
+ " ",
+ "(",
+ "Stanford",
+ " ",
+ "Encyclopedia",
+ " ",
+ "of",
+ " ",
+ "Philosophy_Winter",
+ " ",
+ "2014",
+ " ",
+ "Edition",
+ ")"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"000035AC",ExpressionUUID->"6a8dfae6-09a1-48e1-acc5-9f910656c823"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["4",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "hal",
+ ".",
+ "inria",
+ ".",
+ "fr",
+ "/",
+ "hal",
+ "-",
+ "00816699"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"00002548",ExpressionUUID->"4d8ebaff-6c20-4a30-a9ac-1fb84f32c0b7"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["5",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "blog",
+ ".",
+ "stephenwolfram",
+ ".",
+ "com",
+ "/",
+ "2010",
+ "/",
+ "11",
+ "/",
+ "100",
+ "-",
+ "years",
+ "-",
+ "since",
+ "-",
+ "principia",
+ "-",
+ "mathematica",
+ "/"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"000048BE",ExpressionUUID->"5a8c5b7e-eead-4fec-ae76-7dd04b5602c5"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["6",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "archive",
+ ".",
+ "org",
+ "/",
+ "details",
+ "/",
+ "settheorywithint00kura_",
+ "0",
+ "/",
+ "page",
+ "/",
+ "n7"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"00003F43",ExpressionUUID->"96d1af08-4c63-41d8-91f7-50b212dbd75e"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["7",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "www",
+ ".",
+ "researchgate",
+ ".",
+ "net",
+ "/",
+ "publication",
+ "/",
+ "227278484",
+ "_A",
+ "_Suppes",
+ "_predicate",
+ "_for",
+ "_general",
+ "_relativity",
+ "_and",
+ "_set",
+ "-",
+ "theoretically_generic",
+ "_spacetimes"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"0000608B",ExpressionUUID->"e3bba4ed-3a72-4823-acce-bb6b26e40db1"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["8",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "en",
+ ".",
+ "wikipedia",
+ ".",
+ "org",
+ "/",
+ "wiki",
+ "/",
+ "Syllogism"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"00002997",ExpressionUUID->"4a6d5204-c04a-4171-9f4a-0d1823f6c6cc"],
+
+Cell[TextData[{
+ "\t",
+ StyleBox["9",
+  FontVariations->{"CompatibilityType"->"Superscript"}],
+ "\t",
+ "https",
+ ":",
+ "//",
+ "en",
+ ".",
+ "wikipedia",
+ ".",
+ "org",
+ "/",
+ "wiki",
+ "/",
+ "First",
+ "-",
+ "order_logic"
+}], "Reference",
+ Editable->False,
+ TaggingRules->{ReferenceNoteData -> ""},
+ CellTags->"000031C3",ExpressionUUID->"557c19c1-cf88-4467-87b8-22f4270890fa"]
+}, Open  ]]
+},
+WindowSize->{766, 782},
+WindowMargins->{{Automatic, -7}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PageSize"->{595.2, 775.2},
+"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792},
+"PrintingMargins"->{{5.6692914, 5.6692914}, {22.6771656, 22.6771656}}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "00002A70"->{
+  Cell[46514, 992, 356, 20, 29, "Reference",ExpressionUUID->"6f808b19-2d27-46f7-b6aa-6728ca6a46f6",
+   CellTags->"00002A70"]},
+ "0000330F"->{
+  Cell[46873, 1014, 371, 21, 29, "Reference",ExpressionUUID->"6c17d9ba-11a9-45e5-8248-ab50c20af123",
+   CellTags->"0000330F"]},
+ "000035AC"->{
+  Cell[47247, 1037, 425, 27, 29, "Reference",ExpressionUUID->"6a8dfae6-09a1-48e1-acc5-9f910656c823",
+   CellTags->"000035AC"]},
+ "00002548"->{
+  Cell[47675, 1066, 348, 20, 29, "Reference",ExpressionUUID->"4d8ebaff-6c20-4a30-a9ac-1fb84f32c0b7",
+   CellTags->"00002548"]},
+ "000048BE"->{
+  Cell[48026, 1088, 448, 31, 29, "Reference",ExpressionUUID->"5a8c5b7e-eead-4fec-ae76-7dd04b5602c5",
+   CellTags->"000048BE"]},
+ "00003F43"->{
+  Cell[48477, 1121, 390, 23, 29, "Reference",ExpressionUUID->"96d1af08-4c63-41d8-91f7-50b212dbd75e",
+   CellTags->"00003F43"]},
+ "0000608B"->{
+  Cell[48870, 1146, 503, 31, 44, "Reference",ExpressionUUID->"e3bba4ed-3a72-4823-acce-bb6b26e40db1",
+   CellTags->"0000608B"]},
+ "00002997"->{
+  Cell[49376, 1179, 354, 20, 29, "Reference",ExpressionUUID->"4a6d5204-c04a-4171-9f4a-0d1823f6c6cc",
+   CellTags->"00002997"]},
+ "000031C3"->{
+  Cell[49733, 1201, 372, 22, 29, "Reference",ExpressionUUID->"557c19c1-cf88-4467-87b8-22f4270890fa",
+   CellTags->"000031C3"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"00002A70", 50658, 1243},
+ {"0000330F", 50800, 1246},
+ {"000035AC", 50943, 1249},
+ {"00002548", 51086, 1252},
+ {"000048BE", 51229, 1255},
+ {"00003F43", 51372, 1258},
+ {"0000608B", 51515, 1261},
+ {"00002997", 51658, 1264},
+ {"000031C3", 51801, 1267}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 94, 0, 53, "Subsection",ExpressionUUID->"b118b9f4-d1d9-408b-8b83-f84cd6546467"],
+Cell[677, 24, 1518, 26, 198, "Text",ExpressionUUID->"137ae53b-759f-4a04-95d3-d5f0df25b4b2"],
+Cell[2198, 52, 3820, 59, 779, "Text",ExpressionUUID->"07ea8b66-50f2-46c6-9a3e-2446ffa415b4"],
+Cell[6021, 113, 464, 7, 100, "Text",ExpressionUUID->"dd6329eb-7998-4268-962d-cdd25734b830"],
+Cell[6488, 122, 1140, 22, 163, "Text",ExpressionUUID->"925bfd71-67f7-4639-95cb-2c1e439fcfc1"],
+Cell[7631, 146, 340, 5, 56, "Text",ExpressionUUID->"cf09f762-c1bb-47c2-912f-15f664cad5c7"],
+Cell[7974, 153, 1133, 15, 188, "Text",ExpressionUUID->"3cd15f1f-cf76-4609-a0d4-0c3d340bd43b"],
+Cell[9110, 170, 451, 6, 100, "Text",ExpressionUUID->"a621f453-0826-4946-b4ac-7ac5ea2c3493"],
+Cell[9564, 178, 284, 4, 56, "Text",ExpressionUUID->"108c0ae8-d3de-4bb5-b311-f50c28dbec3a"],
+Cell[9851, 184, 241, 4, 56, "Text",ExpressionUUID->"72503a25-cb8e-4c31-bda6-a64c95780165"],
+Cell[10095, 190, 388, 6, 78, "Text",ExpressionUUID->"33260290-78ef-4894-9da0-016f806c9b09"],
+Cell[10486, 198, 209, 3, 56, "Text",ExpressionUUID->"cab8014e-2453-4f33-a5be-622805986c34"],
+Cell[10698, 203, 736, 10, 144, "Text",ExpressionUUID->"0dd25b25-ee9d-491b-ac97-815e178cc56e"],
+Cell[11437, 215, 793, 12, 144, "Text",ExpressionUUID->"e4ace99f-a6ca-44d8-be16-3499582efa35"],
+Cell[12233, 229, 1778, 24, 298, "Text",ExpressionUUID->"67d28485-2f2a-4060-9e77-251f301fe4a1"],
+Cell[14014, 255, 419, 7, 78, "Text",ExpressionUUID->"8c62e6d5-0762-4e2a-9c42-55642730c4cd"],
+Cell[14436, 264, 1092, 16, 188, "Text",ExpressionUUID->"490411da-d568-4fa0-8e3c-5ec8d78ae68b"],
+Cell[15531, 282, 1422, 19, 254, "Text",ExpressionUUID->"80aa4eb1-fd92-4ce5-bacd-eab65cebddea"],
+Cell[16956, 303, 419, 8, 87, "Text",ExpressionUUID->"5a6cfbe5-eb72-448e-9f91-8002dcc1cf60"],
+Cell[17378, 313, 1395, 34, 241, "Text",ExpressionUUID->"23faaf51-5695-4ddb-ab6c-e9c165ff4b67"],
+Cell[18776, 349, 549, 8, 100, "Text",ExpressionUUID->"27aab4da-52d2-4f6b-977d-89bbb20cdcd8"],
+Cell[19328, 359, 1156, 23, 210, "Text",ExpressionUUID->"967434bd-aad6-49fe-b14e-e9f7fc3cab7c"],
+Cell[20487, 384, 1302, 27, 210, "Text",ExpressionUUID->"caf667bb-306e-4b05-a581-8782b015140b"],
+Cell[21792, 413, 1708, 35, 273, "Text",ExpressionUUID->"cc4be9d8-6e09-4356-b4ef-096a27582021"],
+Cell[23503, 450, 1279, 28, 210, "Text",ExpressionUUID->"1637a16c-c0d8-4664-92e3-8909bd0be710"],
+Cell[24785, 480, 1869, 34, 317, "Text",ExpressionUUID->"4dbb4d3b-49d7-4524-9d53-bf8bc07711bf"],
+Cell[26657, 516, 2220, 39, 361, "Text",ExpressionUUID->"fd01ead5-7009-4489-94eb-dd19eee84777"],
+Cell[28880, 557, 865, 12, 188, "Text",ExpressionUUID->"c71159d3-426a-44a5-aff8-74eea7af4f5a"],
+Cell[29748, 571, 328, 6, 56, "Text",ExpressionUUID->"52f6696c-4000-45a6-aa10-7201360d8c9f"],
+Cell[30079, 579, 1665, 32, 207, "Text",ExpressionUUID->"7ca7601a-192f-4de4-9b33-0dc740392c71"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31781, 616, 83, 0, 53, "Subsection",ExpressionUUID->"d87e256f-2927-4507-bc68-764b1ab8cc49"],
+Cell[31867, 618, 378, 10, 56, "Text",ExpressionUUID->"1c38ffbf-ff82-491a-a1a8-3ff5c7097124"],
+Cell[32248, 630, 383, 8, 46, "Text",ExpressionUUID->"01e5b9a3-f927-480a-9a61-7bc655cb7606"],
+Cell[32634, 640, 497, 13, 56, "Text",ExpressionUUID->"9fea92d2-25e7-45fa-9f15-8abfdca71ede"],
+Cell[33134, 655, 427, 11, 38, "Text",ExpressionUUID->"599b192b-9d02-4135-b1aa-390b6f543298"],
+Cell[33564, 668, 420, 8, 56, "Text",ExpressionUUID->"b4620535-2215-4203-9265-ab4837213810"],
+Cell[33987, 678, 339, 5, 56, "Text",ExpressionUUID->"db31e89a-754b-4dc5-a6e4-9598a3378d9a"],
+Cell[34329, 685, 983, 19, 144, "Text",ExpressionUUID->"70431fa5-ad97-4554-aab9-dd6ec0aa5083"],
+Cell[35315, 706, 668, 17, 53, "Text",ExpressionUUID->"b46be68d-3ac6-4c6b-bcb2-bc9044998ee7"],
+Cell[35986, 725, 560, 8, 100, "Text",ExpressionUUID->"25a107d3-658b-4cda-b072-ba80742cc784"],
+Cell[36549, 735, 1550, 23, 241, "Text",ExpressionUUID->"23dd4ebd-2daf-4382-82d7-01e2b4d53a12"],
+Cell[38102, 760, 411, 6, 78, "Text",ExpressionUUID->"9bdea307-e04b-4a80-9e90-ebf8d0c97b54"],
+Cell[38516, 768, 244, 5, 100, "Text",ExpressionUUID->"4fbea012-ab59-47af-98ed-38a5456ea049"],
+Cell[38763, 775, 371, 6, 56, "Text",ExpressionUUID->"16264c82-65a6-4627-bd18-eb8db570bed0"],
+Cell[39137, 783, 3466, 107, 170, "Text",ExpressionUUID->"a2a5c811-8c11-4c36-aee0-92c5323aad9b"],
+Cell[42606, 892, 290, 8, 34, "Text",ExpressionUUID->"6df55460-cd41-4cfd-95e7-80a94e64aa0e"],
+Cell[42899, 902, 311, 6, 56, "Text",ExpressionUUID->"3864853e-369a-4c1b-b60b-3dc407563669"],
+Cell[43213, 910, 234, 4, 34, "Text",ExpressionUUID->"3213c4ee-1d91-4fbe-837e-b0d5cb0cfcab"],
+Cell[43450, 916, 206, 3, 34, "Text",ExpressionUUID->"2c135893-6112-4db6-8732-e446690c2821"],
+Cell[43659, 921, 302, 6, 56, "Text",ExpressionUUID->"7fe16bd0-4976-469d-93fb-c6a8da9b7785"],
+Cell[43964, 929, 871, 17, 122, "Text",ExpressionUUID->"58f444c0-2517-4fb7-9f17-64f6dfbca77d"],
+Cell[44838, 948, 103, 0, 34, "Text",ExpressionUUID->"25f2ab84-b706-449d-9505-316ab51f332c"],
+Cell[44944, 950, 1567, 40, 154, "Text",ExpressionUUID->"df931627-8a82-435d-9261-077d802aa7b8"],
+Cell[46514, 992, 356, 20, 29, "Reference",ExpressionUUID->"6f808b19-2d27-46f7-b6aa-6728ca6a46f6",
+ CellTags->"00002A70"],
+Cell[46873, 1014, 371, 21, 29, "Reference",ExpressionUUID->"6c17d9ba-11a9-45e5-8248-ab50c20af123",
+ CellTags->"0000330F"],
+Cell[47247, 1037, 425, 27, 29, "Reference",ExpressionUUID->"6a8dfae6-09a1-48e1-acc5-9f910656c823",
+ CellTags->"000035AC"],
+Cell[47675, 1066, 348, 20, 29, "Reference",ExpressionUUID->"4d8ebaff-6c20-4a30-a9ac-1fb84f32c0b7",
+ CellTags->"00002548"],
+Cell[48026, 1088, 448, 31, 29, "Reference",ExpressionUUID->"5a8c5b7e-eead-4fec-ae76-7dd04b5602c5",
+ CellTags->"000048BE"],
+Cell[48477, 1121, 390, 23, 29, "Reference",ExpressionUUID->"96d1af08-4c63-41d8-91f7-50b212dbd75e",
+ CellTags->"00003F43"],
+Cell[48870, 1146, 503, 31, 44, "Reference",ExpressionUUID->"e3bba4ed-3a72-4823-acce-bb6b26e40db1",
+ CellTags->"0000608B"],
+Cell[49376, 1179, 354, 20, 29, "Reference",ExpressionUUID->"4a6d5204-c04a-4171-9f4a-0d1823f6c6cc",
+ CellTags->"00002997"],
+Cell[49733, 1201, 372, 22, 29, "Reference",ExpressionUUID->"557c19c1-cf88-4467-87b8-22f4270890fa",
+ CellTags->"000031C3"]
+}, Open  ]]
+}
+]
+*)
+

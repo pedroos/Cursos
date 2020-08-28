@@ -1,0 +1,20 @@
+digraph {
+    rankdir="LR"
+    subgraph cluster {
+        label=X
+        style=rounded
+        subgraph cluster {
+            label=In
+            subgraph cluster {
+                label=A
+                a [shape=plain label=" a "]
+                b [shape=plain label=" b "]
+            }
+            c [shape=plain label=" c "]
+            d [shape=plain label=" d "]
+        }
+        e [shape=plain label="e"]
+    }
+    a -> c
+    b -> c
+}

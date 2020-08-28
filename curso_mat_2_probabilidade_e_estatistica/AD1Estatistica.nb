@@ -1,0 +1,291 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10277,        283]
+NotebookOptionsPosition[      7256,        221]
+NotebookOutlinePosition[      7596,        236]
+CellTagsIndexPosition[      7553,        233]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"3000", "+", 
+  RowBox[{"580", "*", "10"}], "+", 
+  RowBox[{"480", "*", "8"}], "+", 
+  RowBox[{"680", "*", "4"}], "+", 
+  RowBox[{"990", "*", "5"}], "+", "80", "+", "50"}]], "Input",
+ CellLabel->"In[1]:=",ExpressionUUID->"af03ed8a-5068-4d42-86b6-ef53d1ee3c28"],
+
+Cell[BoxData["20440"], "Output",
+ CellLabel->"Out[1]=",ExpressionUUID->"72ebd9dd-9cdb-4d40-95e8-7079757737e8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"N", "[", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"580", "*", "10"}], "+", 
+     RowBox[{"480", "*", "8"}], "+", 
+     RowBox[{"680", "*", "4"}], "+", 
+     RowBox[{"990", "*", "5"}]}], 
+    RowBox[{"580", "+", "480", "+", "680", "+", "990"}]], "]"}], 
+  "\n"}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"e9aae97f-6c69-43ae-9953-0b77f97af86c"],
+
+Cell[BoxData["6.34065934065934`"], "Output",
+ CellLabel->"Out[3]=",ExpressionUUID->"f7243902-4ecf-40dd-b677-a1fdd1796601"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"2058", "*", "0.47"}]], "Input",
+ CellLabel->"In[2]:=",ExpressionUUID->"857b3280-7f2a-4432-bc9e-ca2d618d229e"],
+
+Cell[BoxData["967.26`"], "Output",
+ CellLabel->"Out[2]=",ExpressionUUID->"f22542a8-34e0-4ff5-9c47-83738f4b2e10"]
+}, Open  ]],
+
+Cell[TextData[{
+ "5)Uma urna cont\[EAcute]m 50 bolas id\[EHat]nticas. Sendo bolas numeradas \
+de 1 a 50, determine a probabilidade de, em uma extra\[CCedilla]\[ATilde]o ao \
+acaso: ( Demonstrar os c\[AAcute]lculos).\n a)\tObtermos a bola de \
+n\[UAcute]mero 28; (0,5  pontos)\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"P", "(", "A", ")"}], "=", 
+    RowBox[{
+     FractionBox["1", "50"], "=", "0.02"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a331ff1d-671c-46ed-a727-568946302de7"],
+ "\n b)\tObtermos uma bola de n\[UAcute]mero par; (0,5 pontos).\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"P", "(", "A", ")"}], "=", 
+    RowBox[{
+     FractionBox["25", "50"], "=", "0.5"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"6e288e7a-cdce-46df-b553-071d7b8ac2b9"],
+ "\n c)\tObtermos uma bola de n\[UAcute]mero maior que 20; (0,5 pontos)\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"P", "(", "A", ")"}], "=", 
+    RowBox[{
+     FractionBox["30", "50"], "=", "0.6"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"04f1a016-41c0-45b4-9802-8bb6e55930f1"],
+ "\n d)\tObtermos uma bola de n\[UAcute]mero menor ou igual a 20.( 0,5 \
+pontos)\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"P", "(", "A", ")"}], "=", 
+    RowBox[{
+     FractionBox["20", "50"], "=", "0.4"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"abc19353-80ab-4035-b6d9-577c673f96f0"]
+}], "Text",ExpressionUUID->"a054f65e-d978-444e-8692-222a32f9da68"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"1", "/", "50"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",ExpressionUUID->"6a1a81be-73e6-4d88-b3f4-996dfe253a0d"],
+
+Cell[BoxData["0.02`"], "Output",
+ CellLabel->"Out[4]=",ExpressionUUID->"fe193139-4574-44f7-9c69-8abf6d0b0c44"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"1", "/", 
+   RowBox[{"(", 
+    RowBox[{"50", "-", "21"}], ")"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",ExpressionUUID->"6200d3f8-b728-4241-9901-32b379de0b0a"],
+
+Cell[BoxData["0.034482758620689655`"], "Output",
+ CellLabel->"Out[3]=",ExpressionUUID->"98eda7ad-7352-4796-bc3c-208e67c1917e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"3", "/", "5"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",ExpressionUUID->"e50b373d-6455-4e18-8932-5f0572e979e2"],
+
+Cell[BoxData["0.6`"], "Output",
+ CellLabel->"Out[4]=",ExpressionUUID->"d012f9c3-ccff-4b1c-8eaa-8b430095cf4b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"2", "/", "5"}], "]"}]], "Input",
+ CellLabel->"In[5]:=",ExpressionUUID->"3dfe8b3e-243c-4d61-91be-41d58c0b56d9"],
+
+Cell[BoxData["0.4`"], "Output",
+ CellLabel->"Out[5]=",ExpressionUUID->"fa58a02b-61ff-4955-ad02-dad3bbde6b0a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"36", "/", "15"}], "]"}]], "Input",
+ CellLabel->"In[7]:=",ExpressionUUID->"976c0787-bc4f-4a4f-bd71-0c747e0866f3"],
+
+Cell[BoxData["2.4`"], "Output",
+ CellLabel->"Out[7]=",ExpressionUUID->"0187eea6-081a-4b81-a19d-741a849848d5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"0.4772", "+", "0.4918"}]], "Input",
+ CellLabel->"In[8]:=",ExpressionUUID->"1541f27d-7c6d-4f10-9e59-7e7debfd5d06"],
+
+Cell[BoxData["0.9690000000000001`"], "Output",
+ CellLabel->"Out[8]=",ExpressionUUID->"f25dccd3-1ba0-41da-b9b4-063c2c92008f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"24", "/", "15"}], "]"}]], "Input",
+ CellLabel->"In[9]:=",ExpressionUUID->"1d473c7f-3a2f-4677-b0b0-d4b56236afda"],
+
+Cell[BoxData["1.6`"], "Output",
+ CellLabel->"Out[9]=",ExpressionUUID->"5217f195-6f2b-4532-a683-dc1194fbe5f2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"0.5", "-", "0.4452"}], "]"}]], "Input",
+ CellLabel->"In[10]:=",ExpressionUUID->"b0df39ad-607e-4998-9d93-8c9ebfdfd58a"],
+
+Cell[BoxData["0.054800000000000015`"], "Output",
+ CellLabel->"Out[10]=",ExpressionUUID->"bf6d8f34-c15a-442b-b065-784bb430bc54"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"36", "/", "15"}], "]"}]], "Input",
+ CellLabel->"In[11]:=",ExpressionUUID->"fbb7bcdd-ff11-4628-acb8-c138891a7ffa"],
+
+Cell[BoxData["2.4`"], "Output",
+ CellLabel->"Out[11]=",ExpressionUUID->"9f8c8a2a-38c3-4894-9629-b65da4d1f3c7"]
+}, Open  ]],
+
+Cell["\<\
+6)Em uma f\[AAcute]brica de cerveja, entre as possibilidades de envasamento, \
+a lata deve conter 350ml. Para verificar a obriga\[CCedilla]\[ATilde]o de \
+cumprimento das normas estabelecidas nos mercados, para respeitar os direitos \
+dos consumidores, esta quantidade deve ser garantida nos lotes de produ\
+\[CCedilla]\[ATilde]o. Para evitar desperd\[IAcute]cios, a empresa seleciona \
+um lote aleatoriamente e verifica as quantidades envasadas. Admitindo uma m\
+\[EAcute]dia 350 ml com desvio padr\[ATilde]o de 15 ml e admitindo uma \
+distribui\[CCedilla]\[ATilde]o de probabilidade. Desenvolver a \
+solu\[CCedilla]\[ATilde]o com c\[AAcute]lculos, adotar 2 casas ap\[OAcute]s a \
+virgula e representar graficamente a curva normal para cada item. (2 pontos)
+a) Qual a probabilidade de um lote escolhido aleatoriamente tenha entre 320 e \
+386 ml?
+b) Qual a probabilidade de um lote escolhido aleatoriamente tenha menos que \
+326 ml?
+c) Qual a probabilidade de um lote escolhido aleatoriamente tenha menos que \
+386 ml?\
+\>", "Text",ExpressionUUID->"4c52646e-c2a9-4fff-93ac-54b67a041258"]
+},
+WindowSize->{675, 692},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 283, 6, 28, "Input",ExpressionUUID->"af03ed8a-5068-4d42-86b6-ef53d1ee3c28"],
+Cell[866, 30, 110, 1, 32, "Output",ExpressionUUID->"72ebd9dd-9cdb-4d40-95e8-7079757737e8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1013, 36, 387, 11, 66, "Input",ExpressionUUID->"e9aae97f-6c69-43ae-9953-0b77f97af86c"],
+Cell[1403, 49, 122, 1, 32, "Output",ExpressionUUID->"f7243902-4ecf-40dd-b677-a1fdd1796601"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1562, 55, 133, 2, 28, "Input",ExpressionUUID->"857b3280-7f2a-4432-bc9e-ca2d618d229e"],
+Cell[1698, 59, 112, 1, 32, "Output",ExpressionUUID->"f22542a8-34e0-4ff5-9c47-83738f4b2e10"]
+}, Open  ]],
+Cell[1825, 63, 1490, 37, 300, "Text",ExpressionUUID->"a054f65e-d978-444e-8692-222a32f9da68"],
+Cell[CellGroupData[{
+Cell[3340, 104, 156, 3, 28, "Input",ExpressionUUID->"6a1a81be-73e6-4d88-b3f4-996dfe253a0d"],
+Cell[3499, 109, 110, 1, 32, "Output",ExpressionUUID->"fe193139-4574-44f7-9c69-8abf6d0b0c44"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3646, 115, 206, 5, 28, "Input",ExpressionUUID->"6200d3f8-b728-4241-9901-32b379de0b0a"],
+Cell[3855, 122, 126, 1, 32, "Output",ExpressionUUID->"98eda7ad-7352-4796-bc3c-208e67c1917e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4018, 128, 155, 3, 28, "Input",ExpressionUUID->"e50b373d-6455-4e18-8932-5f0572e979e2"],
+Cell[4176, 133, 109, 1, 32, "Output",ExpressionUUID->"d012f9c3-ccff-4b1c-8eaa-8b430095cf4b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4322, 139, 155, 3, 28, "Input",ExpressionUUID->"3dfe8b3e-243c-4d61-91be-41d58c0b56d9"],
+Cell[4480, 144, 109, 1, 32, "Output",ExpressionUUID->"fa58a02b-61ff-4955-ad02-dad3bbde6b0a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4626, 150, 157, 3, 28, "Input",ExpressionUUID->"976c0787-bc4f-4a4f-bd71-0c747e0866f3"],
+Cell[4786, 155, 109, 1, 32, "Output",ExpressionUUID->"0187eea6-081a-4b81-a19d-741a849848d5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4932, 161, 137, 2, 28, "Input",ExpressionUUID->"1541f27d-7c6d-4f10-9e59-7e7debfd5d06"],
+Cell[5072, 165, 124, 1, 32, "Output",ExpressionUUID->"f25dccd3-1ba0-41da-b9b4-063c2c92008f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5233, 171, 157, 3, 28, "Input",ExpressionUUID->"1d473c7f-3a2f-4677-b0b0-d4b56236afda"],
+Cell[5393, 176, 109, 1, 32, "Output",ExpressionUUID->"5217f195-6f2b-4532-a683-dc1194fbe5f2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5539, 182, 163, 3, 28, "Input",ExpressionUUID->"b0df39ad-607e-4998-9d93-8c9ebfdfd58a"],
+Cell[5705, 187, 127, 1, 32, "Output",ExpressionUUID->"bf6d8f34-c15a-442b-b065-784bb430bc54"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5869, 193, 158, 3, 28, "Input",ExpressionUUID->"fbb7bcdd-ff11-4628-acb8-c138891a7ffa"],
+Cell[6030, 198, 110, 1, 32, "Output",ExpressionUUID->"9f8c8a2a-38c3-4894-9629-b65da4d1f3c7"]
+}, Open  ]],
+Cell[6155, 202, 1097, 17, 254, "Text",ExpressionUUID->"4c52646e-c2a9-4fff-93ac-54b67a041258"]
+}
+]
+*)
+

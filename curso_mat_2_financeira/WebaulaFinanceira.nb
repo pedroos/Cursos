@@ -1,0 +1,812 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     28410,        804]
+NotebookOptionsPosition[     23485,        713]
+NotebookOutlinePosition[     23868,        729]
+CellTagsIndexPosition[     23825,        726]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Termos: Capital. Juros. Prazo. Montante. Taxa de juros. Per\[IAcute]odo.\
+\>", "Subsubsection",ExpressionUUID->"f86b4fa1-c91e-4b2f-bf04-a7a2ce9def0d"],
+
+Cell[TextData[{
+ "Capital (",
+ Cell[BoxData[
+  FormBox["C", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"d1eba1b4-c359-45ad-b8bc-199e6b270d2f"],
+ "): um valor em uma data. Montante (",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"42db1075-002f-43eb-a53c-da1eb3f38279"],
+ "): um capital + os juros. Juros (",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"83e3c234-2c1e-4289-90e0-6e7abc3e4159"],
+ "): raz\[ATilde]o entre o juro e o capital. (\[OpenCurlyDoubleQuote]A cada \
+taxa, deve vir anexado o per\[IAcute]odo a que ela se refere.\
+\[CloseCurlyDoubleQuote])"
+}], "Text",ExpressionUUID->"2aae5e5e-b6bc-4a9e-b843-e40bbf84b253"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Juros simples.", "Subsubsection",ExpressionUUID->"1ac2f493-ba3c-4eb4-be90-214e80937b09"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"J", "=", 
+    RowBox[{"C", "\[CenterDot]", "i", "\[CenterDot]", "n"}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"3193659e-07ca-423f-9908-e598cfc6fc1f"],
+ ". ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e387e1ea-cd58-4786-9b07-fda0d9915765"],
+ " per\[IAcute]odo."
+}], "Text",ExpressionUUID->"9a8aa59b-351e-4cd5-9629-541f2de69ba7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Montante.", "Subsubsection",ExpressionUUID->"bf3949c5-97b6-40be-8a55-bb83db4a1403"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "=", 
+    RowBox[{"C", "(", 
+     RowBox[{"1", "+", 
+      RowBox[{"i", "\[CenterDot]", "n"}]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"e5ed8f68-d83d-4d9b-8bb7-47705797cd71"],
+ "."
+}], "Text",ExpressionUUID->"7742865e-bc51-44cb-bd77-1d5019842666"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Taxas proporcionais.", "Subsubsection",ExpressionUUID->"0929e9b8-d8ad-4d35-a4c4-05ec0fffeb1f"],
+
+Cell[TextData[{
+ "No juro simples, linear, propor\[CCedilla]\[ATilde]o simples ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     SubscriptBox["i", "1"], 
+     SubscriptBox["i", "2"]], "=", 
+    FractionBox[
+     SubscriptBox["n", "1"], 
+     SubscriptBox["n", "2"]]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->36,ExpressionUUID->"d5ebc500-7749-4f0d-bc40-c32618e93b3e"],
+ "."
+}], "Text",ExpressionUUID->"d5c8d81e-68ec-49eb-8d54-e6cb328a6bb1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Juros simples exatos e comerciais/banc\[AAcute]rios.", "Subsubsection",ExpressionUUID->"c8d674e2-ebc9-4d98-b709-9df300291dec"],
+
+Cell[TextData[{
+ "Exato os meses e anos t\[EHat]m os dias reais, e comercial m\[EHat]s ",
+ StyleBox["30",
+  FontSize->24],
+ " e ano ",
+ StyleBox["360",
+  FontSize->24],
+ "."
+}], "Text",ExpressionUUID->"26e3ac5c-0ffb-4b6b-b9e7-84870a8bbbbd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Valor nominal e atual simples.", "Subsubsection",ExpressionUUID->"7c9d9883-24ef-4e7f-9083-a45475faa5e8"],
+
+Cell[TextData[{
+ "Nominal (",
+ Cell[BoxData[
+  FormBox["N", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"13583689-a554-437f-8be0-30c3818ceabb"],
+ ") \[EAcute] o valor ",
+ StyleBox["na",
+  FontSize->24,
+  FontWeight->"Bold"],
+ " data do vencimento; atual (",
+ Cell[BoxData[
+  FormBox["V", TraditionalForm]],
+  FontSize->24,ExpressionUUID->"9a2c287b-bbde-471c-826b-ab9f457deddc"],
+ ") \[EAcute] ",
+ StyleBox["antes",
+  FontSize->24],
+ " do vencimento.\nNo juro simples: nominal ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"N", "=", 
+    RowBox[{
+     RowBox[{"V", "+", "J"}], "=", 
+     RowBox[{
+      RowBox[{"V", "+", 
+       RowBox[{"V", "\[CenterDot]", "i", "\[CenterDot]", "n"}]}], "=", 
+      RowBox[{"V", " ", "\[CenterDot]", 
+       RowBox[{"(", 
+        RowBox[{"1", "+", "i"}], ")"}], "\[CenterDot]", "n"}]}]}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"9956f056-ab33-4757-ae01-c83281b5c5bf"],
+ ", atual ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    FractionBox["N", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", "i"}], ")"}], "\[CenterDot]", "n"}]]}], 
+   TraditionalForm]],
+  FontSize->36,ExpressionUUID->"75e73471-e5b7-43cc-bcfd-093273346e31"],
+ "."
+}], "Text",ExpressionUUID->"f805de4e-5f5c-4a00-ab3f-14f64caed248"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Equival\[EHat]ncia de capitais a juros simples.", "Subsubsection",ExpressionUUID->"17c8ef34-8a08-4f77-8d39-a57ce207595f"],
+
+Cell["...", "Text",ExpressionUUID->"0b063874-a56e-4a61-bcf3-1766ea24d1e9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Desconto simples. Nota promiss\[OAcute]ria, duplicata, letra de c\[AHat]mbio.\
+\>", "Subsubsection",ExpressionUUID->"9c03a067-5457-4982-a479-d19868c8ed45"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"d", "=", 
+    RowBox[{"N", "-", "V"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"e21ab2e3-7092-48c1-abeb-4f1187f7a7b4"],
+ ". \[CapitalEAcute] a ",
+ StyleBox["diferen\[CCedilla]a entre o valor atual e o no vencimento",
+  FontSize->18],
+ "."
+}], "Text",ExpressionUUID->"423dbfae-5351-4f26-a555-8b75cfd321a9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Desconto simples racional/por dentro e comercial/banc\[AAcute]rio. Valor \
+atual/de resgate. Rela\[CCedilla]\[ATilde]o desconto simples racional e \
+desconto simples comercial/banc\[AAcute]rio.\
+\>", "Subsubsection",ExpressionUUID->"33948e21-2f14-47c6-846c-c14c8fe4dc8c"],
+
+Cell[TextData[{
+ "Desconto simples racional/por dentro: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["d", "r"], "=", 
+    FractionBox[
+     RowBox[{"N", "\[CenterDot]", "i", "\[CenterDot]", "n"}], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "+", "i"}], ")"}], "\[CenterDot]", "n"}]]}], 
+   TraditionalForm]],
+  FontSize->36,ExpressionUUID->"3814d824-7e35-4d16-87fc-7c99b86591c6"],
+ ". Desconto simples banc\[AAcute]rio/comercial/por fora: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["d", "b"], "=", 
+    RowBox[{"N", "\[CenterDot]", "i", "\[CenterDot]", "n"}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"3e928cbe-b3d0-4e5f-8cbd-f5ccd7fa5273"],
+ ". O racional tem \[OpenCurlyDoubleQuote]corre\[CCedilla]\[ATilde]o\
+\[CloseCurlyDoubleQuote], o comercial n\[ATilde]o. ",
+ StyleBox["(?)",
+  Background->RGBColor[1, 1, 0]],
+ " Valor atual/de resgate: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    RowBox[{"N", "\[CenterDot]", 
+     RowBox[{"(", 
+      RowBox[{"1", "-", 
+       SubscriptBox["i", "b"]}], ")"}], "\[CenterDot]", "n"}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"c3e51edd-187c-44e6-b83b-ab9079c78ff5"],
+ ". p. 78: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["i", "b"], "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"526f4275-9c81-403a-aa9c-9c0a8ce54ab0"],
+ " taxa de desconto simples banc\[AAcute]rio. \[CapitalEAcute] apenas ",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "120ab796-bbc1-470a-9094-5fc4dc5f45fc"],
+ " com refer\[EHat]ncia a \[OpenCurlyDoubleQuote]banc\[AAcute]rio\
+\[CloseCurlyDoubleQuote]. Rela\[CCedilla]\[ATilde]o entre o racional e o banc\
+\[AAcute]rio: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["d", "b"], "=", 
+    RowBox[{
+     SubscriptBox["d", "r"], "\[CenterDot]", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", "i"}], ")"}], "\[CenterDot]", "n"}]}], 
+   TraditionalForm]],
+  FontSize->18,ExpressionUUID->"c1f99d6d-9b50-44cb-aaea-abe1d3b92381"],
+ ". Elementar."
+}], "Text",ExpressionUUID->"46adedf0-2535-4df1-9812-508a94a2cf68"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rela\[CCedilla]\[ATilde]o taxa de desconto simples e taxa de juros \
+simples.", "Subsubsection",ExpressionUUID->"e002537b-8493-4cf7-9b04-\
+99527a03b78a"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i", "=", 
+    FractionBox[
+     SubscriptBox["i", "b"], 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "-", 
+        SubscriptBox["i", "b"]}], ")"}], "\[CenterDot]", "n"}]]}], 
+   TraditionalForm]],
+  FontSize->36,ExpressionUUID->"65cce5b0-f49e-4526-81b7-40a7b53036b1"],
+ ". ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["i", "b"], TraditionalForm]],
+  FontSize->24,
+  Background->GrayLevel[0.5],ExpressionUUID->
+  "eec1123e-015c-482c-a454-c7935f43df28"],
+ StyleBox[".",
+  Background->GrayLevel[0.5]]
+}], "Text",ExpressionUUID->"3e24e5f8-3269-40e7-8771-fce20974f492"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Montante juros compostos; capital juros compostos; taxa juros compostos; \
+prazo juros compostos.\
+\>", "Subsubsection",ExpressionUUID->"8d2c852f-8f25-4c67-b113-e1c25437d5fd"],
+
+Cell[TextData[{
+ "Montante juros compostos: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "=", 
+    SuperscriptBox[
+     RowBox[{"C", "(", 
+      RowBox[{"1", "+", "i"}], ")"}], "n"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"a824c151-1ad3-436d-ba72-437c1afb0bae"],
+ ". B\[AAcute]sico. Obter o capital: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"C", "=", 
+    FractionBox["M", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", "i"}], ")"}], "n"]]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"ddf8b9ff-8c2f-4655-bf18-96e09a795538"],
+ ". Obter a taxa: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i", "=", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["M", "C"], ")"}], 
+      FractionBox["1", "n"]], "-", "1"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->36,ExpressionUUID->"1951e4eb-aefe-4540-bcf1-4baf05deaaad"],
+ ". Obter o prazo: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", 
+    FractionBox[
+     RowBox[{"ln", "(", 
+      FractionBox["M", "C"], ")"}], 
+     RowBox[{"ln", " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "+", "i"}], ")"}]}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->36,ExpressionUUID->"f045ceb5-2e3c-4683-a0ea-c837232a4f1a"],
+ "."
+}], "Text",ExpressionUUID->"725230e2-7179-468c-ad5f-d35b3e0d9d37"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conven\[CCedilla]\[ATilde]o exponencial e linear.", "Subsubsection",ExpressionUUID->"b0f13e7c-9e88-4c97-9579-eeb07aa6ba4a"],
+
+Cell[TextData[{
+ "Exponencial: o montante \[EAcute] calculado a juros compostos durante todo \
+o per\[IAcute]odo (parte inteira + fracion\[AAcute]ria). ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "=", 
+    SuperscriptBox[
+     RowBox[{"C", "(", 
+      RowBox[{"1", "+", "i"}], ")"}], 
+     RowBox[{"n", "+", 
+      FractionBox["p", "q"]}]]}], TraditionalForm]],
+  FontSize->36,ExpressionUUID->"c93d8c68-f7df-4dfc-a8df-b66b046fdb30"],
+ ", onde ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", " "}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"6ea2504a-7520-44bc-8984-1f3c623773fc"],
+ "per\[IAcute]odo inteiro, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["p", "q"], "=", " "}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"fa075764-c2fd-4a01-bbc5-e6fda6462551"],
+ "per\[IAcute]odo fracion\[AAcute]rio.\nLinear: o montante \[EAcute] \
+calculado a juros compostos durante a parte inteira do per\[IAcute]odo e a \
+juros simples durante o per\[IAcute]odo fracion\[AAcute]rio. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "=", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"C", "(", 
+       RowBox[{"1", "+", "i"}], ")"}], "n"], "\[CenterDot]", 
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       RowBox[{
+        FractionBox["p", "q"], "\[CenterDot]", "i"}]}], ")"}]}]}], 
+   TraditionalForm]],
+  FontSize->24,ExpressionUUID->"2aaac3e0-6b65-4137-aee5-aae933a10af5"],
+ "."
+}], "Text",ExpressionUUID->"1d50abcf-7cfc-45cf-8aa6-1b63a7bb02a7"],
+
+Cell["\<\
+O PORQUE DO C\[CapitalAAcute]LCULO PELA CONVEN\[CapitalCCedilla]\
+\[CapitalATilde]O LINEAR No passado pessoas ligadas ao mercado \
+econ\[OHat]mico/financeiro descobriram que no c\[AAcute]lculo de juros em que \
+tenha o per\[IAcute]odo (prazo) n\[ATilde]o inteiro poderiam lucrar mais se \
+cobrassem a parte inteira na forma exponencial e a fracionaria (decimal) \
+atrav\[EAcute]s do c\[AAcute]lculo linear. E esta pr\[AAcute]tica \[EAcute] t\
+\[ATilde]o comumente utilizada no mercado financeiro, que nas calculadoras \
+HP12C para a \[AAcute]rea espec\[IAcute]fica financeira j\[AAcute] vem \
+programada para fazer este tipo de c\[AAcute]lculo.\
+\>", "CodeText",ExpressionUUID->"5404d4a2-48aa-4750-9983-04d893c0f339"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Valor nominal e atual composto.", "Subsubsection",ExpressionUUID->"ed0e0bf4-3dc3-414a-b64c-12c07f99984c"],
+
+Cell[TextData[{
+ "B\[AAcute]sico. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"N", "=", 
+    SuperscriptBox[
+     RowBox[{"V", "(", 
+      RowBox[{"1", "+", "i"}], ")"}], "n"]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"1a3d9a76-2a65-4b40-9ba2-fe4ea4202a19"],
+ " e ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    FractionBox["N", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", "i"}], ")"}], "n"]]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"f4f5b49a-5af5-4815-b979-cbf6e56e188f"],
+ "."
+}], "Text",ExpressionUUID->"42809a9a-3cfb-4d46-9059-fd27f9d5dbb7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Taxas equivalentes compostas.", "Subsubsection",ExpressionUUID->"994fef81-0cdb-4ff3-b096-c8ac46edfb3c"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       SubscriptBox["i", "1"]}], ")"}], 
+     SubscriptBox["n", "1"]], "=", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"1", "+", 
+       SubscriptBox["i", "2"]}], ")"}], 
+     SubscriptBox["n", "2"]]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"5fc40e6e-64ec-4941-a078-c063460799c3"],
+ " (trocado). 20% a.a. = 1.5309% a.m.."
+}], "Text",ExpressionUUID->"91164509-c8de-4ea1-baf9-482b25c436d0"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Taxas nominal/aparente e efetiva.", "Subsubsection",ExpressionUUID->"cec58ecc-5ca8-4a79-b856-7b99aadb7ad2"],
+
+Cell["\<\
+Taxa nominal/aparente \[EAcute] quando o per\[IAcute]odo de capitaliza\
+\[CCedilla]\[ATilde]o n\[ATilde]o coincide com o per\[IAcute]odo da taxa \
+(geralmente anual).\
+\>", "Text",ExpressionUUID->"e334dce2-bc20-420d-95c7-8af05a9f0a42"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["i", "K"], "=", 
+    FractionBox["i", "K"]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"10ffb5c2-017f-4e4e-b2f0-06a1146985f9"],
+ ". Taxa efetiva: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["i", "f"], "=", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        FractionBox["i", "K"]}], ")"}], "K"], "-", "1"}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"f344b3dc-5589-492d-8541-e0082928b792"],
+ ", onde ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i", "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"3b4de8c3-d2f9-4e36-b233-7134dee95880"],
+ " taxa nominal, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["i", "f"], "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"c80aea28-8aed-402d-b110-0dfde851f5a2"],
+ " taxa efetiva, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"K", "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"80afc98a-0ad1-4d9a-87ed-8686ff02ec39"],
+ " n\[UAcute]mero de capitaliza\[CCedilla]\[OTilde]es para um per\[IAcute]odo \
+da taxa nominal, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["i", "k"], "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"144686f8-f66d-4847-b336-214edcca8306"],
+ " taxa por per\[IAcute]odo de capitaliza\[CCedilla]\[ATilde]o. Nota: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["i", "k"], "=", 
+    FractionBox["i", "k"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"a51fa06a-0b88-4c5e-a300-6e9e63482aa2"],
+ ". Calcular primeiro o ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["i", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"9418a015-9f36-463a-9823-326b04e31a8b"],
+ " depois substituir no ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["i", "f"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"8dc24029-8ffa-491a-a7ff-52c673c73e6e"],
+ "."
+}], "Text",ExpressionUUID->"175df0ef-1d76-4151-a60a-7b5bf0fa0fb8"],
+
+Cell[TextData[{
+ "Exemplos: \[OpenCurlyDoubleQuote]uma taxa de 24% a.a. \[EAcute] \
+capitalizada trimestralmente. Calcule a taxa efetiva anual.\
+\[CloseCurlyDoubleQuote] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"K", "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "cb7db687-4c0e-4836-9dea-f7c1f6f08c40"],
+ " 4 trimestres. \[OpenCurlyDoubleQuote]Qual o montante de uma aplica\
+\[CCedilla]\[ATilde]o de R$ 12.500 durante 2 anos a taxa nominal de 48% a.a. \
+com capitaliza\[CCedilla]\[ATilde]o mensal de juros?\[CloseCurlyDoubleQuote] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"K", "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "cc5f0e26-f92e-4d65-a9ec-c8ee6e1ba8af"],
+ " 12 meses. \[OpenCurlyDoubleQuote]Uma pessoa aplicou uma import\[AHat]ncua \
+de R$ 42.000 por 3 anos a uma taxa de 24% a.a. com capitaliza\[CCedilla]\
+\[ATilde]o semestral. Qual a taxa efetiva anual e o montante recebido:\
+\[CloseCurlyDoubleQuote] ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"K", "="}], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "75c1f526-6a3f-4a39-8085-f5165f277e67"],
+ " 2 semestres."
+}], "Text",ExpressionUUID->"7e3caa38-cb92-4f5c-8879-f37cd689bc44"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Desconto composto. Racional/por dentro e comercial/banc\[AAcute]rio/por fora. \
+Tipos de taxas de descontos.\
+\>", "Subsubsection",ExpressionUUID->"edfa04bb-20c2-4537-bd32-66ca42b31df4"],
+
+Cell["\<\
+Desconto composto \[EAcute] o abatimento obtido na quita\[CCedilla]\[ATilde]o \
+ou venda de um t\[IAcute]tulo em data anterior ao vencimento, observando os \
+crit\[EAcute]rios de capitaliza\[CCedilla]\[ATilde]o composta.\
+\>", "Text",ExpressionUUID->"2250d602-8eeb-4f81-aaec-92e9fa99c42c"],
+
+Cell[TextData[{
+ "Racional: diferen\[CCedilla]a do valor entre nominal e atual (quita\
+\[CCedilla]\[ATilde]o antes do vencimento). ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["D", "r"], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"N", " ", "-", "V"}], "\[Implies]", "V"}], "=", 
+     RowBox[{
+      RowBox[{
+       FractionBox["N", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "+", "i"}], ")"}], "n"]], "\[Implies]", 
+       SubscriptBox["D", "r"]}], "=", 
+      RowBox[{"N", "-", 
+       FractionBox["N", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "+", "i"}], ")"}], "n"]]}]}]}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"b948a3ed-2f35-4f29-89c6-88308a5ed2a6"],
+ ". Comercial: soma dos descontos comerciais simples, calculados isoladamente \
+em cada um dos per\[IAcute]odos que faltam para o vencimento. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["D", "c"], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"N", "-", "V"}], "\[Implies]", 
+      SubscriptBox["D", "c"]}], "=", 
+     RowBox[{"N", "-", 
+      SuperscriptBox[
+       RowBox[{"N", "(", 
+        RowBox[{"1", "-", "i"}], ")"}], "n"]}]}]}], TraditionalForm]],
+  FontSize->24,ExpressionUUID->"a86054e2-c06f-416e-a2a7-9b5a7da38ffa"],
+ ". Obter a taxa de desconto comercial composto: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i", "=", 
+    RowBox[{"1", "-", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox["V", "N"], ")"}], 
+      FractionBox["1", "n"]]}]}], TraditionalForm]],
+  FontSize->36,ExpressionUUID->"47a2ac72-d128-41da-9224-5134247e025f"],
+ ". Obter o prazo: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"n", "=", 
+    FractionBox[
+     RowBox[{"ln", "(", 
+      FractionBox["V", "N"], ")"}], 
+     RowBox[{"ln", " ", 
+      RowBox[{"(", 
+       RowBox[{"1", "-", "i"}], ")"}]}]]}], TraditionalForm]],
+  FontSize->36,ExpressionUUID->"0ec5063a-739f-4d9a-a07a-fffe6359e4d8"],
+ ". C\[AAcute]lculo do valor atual: ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"V", "=", 
+    SuperscriptBox[
+     RowBox[{"N", "(", 
+      RowBox[{"1", "-", "i"}], ")"}], "n"]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"3e612e22-9a2b-44ec-8e59-ef580fc55aae"],
+ "."
+}], "Text",ExpressionUUID->"1408cb7c-9f32-42f5-ab96-26817253b1aa"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Taxa de desconto composto racional/por dentro, comercial/banc\[AAcute]rio, \
+taxa de desconto comercial composto, prazo.\
+\>", "Subsubsection",ExpressionUUID->"bf84453c-c6aa-4f43-abec-050676e5ae9b"],
+
+Cell[TextData[{
+ "A taxa de desconto comercial (",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["i", "c"], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"f0e775a5-557c-48f6-a703-a3025dab54f2"],
+ ") \[EAcute] a \[OpenCurlyDoubleQuote]taxa utilizada para calcular este \
+desconto\[CloseCurlyDoubleQuote]. Taxa racional/efetiva \[EAcute] aplicada \
+sobre um valor atual em um per\[IAcute]odo resultando em um valor nominal. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["i", "f"], "=", 
+    FractionBox[
+     SubscriptBox["i", "c"], 
+     RowBox[{"1", "-", 
+      SubscriptBox["i", "c"]}]]}], TraditionalForm]],
+  FontSize->36,ExpressionUUID->"59db62b5-7da2-431a-b7e1-4c9081904576"],
+ "."
+}], "Text",ExpressionUUID->"af9c786a-a09f-4df0-8677-37e436849b4e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Equival\[EHat]ncia de capitais a juros compostos.", "Subsubsection",ExpressionUUID->"de185eed-e7b8-4095-ad5e-fa15a03902dd"],
+
+Cell[TextData[{
+ "Apenas aplicar a \[OpenCurlyDoubleQuote]corre\[CCedilla]\[ATilde]o\
+\[CloseCurlyDoubleQuote] sendo o valor nominal o valor atual sobre o juro \
+elevado ao per\[IAcute]odo de diferen\[CCedilla]a. ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"N", "=", 
+    FractionBox["V", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{"1", "+", "i"}], ")"}], "n"]]}], TraditionalForm]],
+  FormatType->"TraditionalForm",
+  FontSize->24,ExpressionUUID->"5c3f6d04-913b-4b06-8d9c-2a977a82cf71"],
+ "."
+}], "Text",ExpressionUUID->"bf66b61b-8f81-4a68-9993-d0fb8e0bcf91"]
+}, Open  ]],
+
+Cell["Valor atual de um conjunto de capitais.", "Subsubsection",ExpressionUUID->"48226438-e98a-488d-904d-52d70e1f7fbd"],
+
+Cell["\<\
+Equival\[EHat]ncia de dois conjuntos de capitais a juros compostos.\
+\>", "Subsubsection",ExpressionUUID->"75ad25da-3341-485e-b501-dba8dab17a15"]
+},
+WindowSize->{675, 692},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingPageRange->{Automatic, Automatic},
+FrontEndVersion->"11.3 for Microsoft Windows (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 160, 2, 44, "Subsubsection",ExpressionUUID->"f86b4fa1-c91e-4b2f-bf04-a7a2ce9def0d"],
+Cell[743, 26, 804, 19, 68, "Text",ExpressionUUID->"2aae5e5e-b6bc-4a9e-b843-e40bbf84b253"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1584, 50, 94, 0, 44, "Subsubsection",ExpressionUUID->"1ac2f493-ba3c-4eb4-be90-214e80937b09"],
+Cell[1681, 52, 476, 14, 46, "Text",ExpressionUUID->"9a8aa59b-351e-4cd5-9629-541f2de69ba7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2194, 71, 89, 0, 44, "Subsubsection",ExpressionUUID->"bf3949c5-97b6-40be-8a55-bb83db4a1403"],
+Cell[2286, 73, 359, 10, 46, "Text",ExpressionUUID->"7742865e-bc51-44cb-bd77-1d5019842666"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2682, 88, 100, 0, 44, "Subsubsection",ExpressionUUID->"0929e9b8-d8ad-4d35-a4c4-05ec0fffeb1f"],
+Cell[2785, 90, 477, 14, 75, "Text",ExpressionUUID->"d5c8d81e-68ec-49eb-8d54-e6cb328a6bb1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3299, 109, 132, 0, 44, "Subsubsection",ExpressionUUID->"c8d674e2-ebc9-4d98-b709-9df300291dec"],
+Cell[3434, 111, 240, 8, 46, "Text",ExpressionUUID->"26e3ac5c-0ffb-4b6b-b9e7-84870a8bbbbd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3711, 124, 110, 0, 44, "Subsubsection",ExpressionUUID->"7c9d9883-24ef-4e7f-9083-a45475faa5e8"],
+Cell[3824, 126, 1267, 41, 140, "Text",ExpressionUUID->"f805de4e-5f5c-4a00-ab3f-14f64caed248"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5128, 172, 127, 0, 44, "Subsubsection",ExpressionUUID->"17c8ef34-8a08-4f77-8d39-a57ce207595f"],
+Cell[5258, 174, 74, 0, 34, "Text",ExpressionUUID->"0b063874-a56e-4a61-bcf3-1766ea24d1e9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5369, 179, 165, 2, 44, "Subsubsection",ExpressionUUID->"9c03a067-5457-4982-a479-d19868c8ed45"],
+Cell[5537, 183, 371, 10, 46, "Text",ExpressionUUID->"423dbfae-5351-4f26-a555-8b75cfd321a9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5945, 198, 281, 4, 94, "Subsubsection",ExpressionUUID->"33948e21-2f14-47c6-846c-c14c8fe4dc8c"],
+Cell[6229, 204, 2165, 61, 188, "Text",ExpressionUUID->"46adedf0-2535-4df1-9812-508a94a2cf68"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8431, 270, 159, 2, 44, "Subsubsection",ExpressionUUID->"e002537b-8493-4cf7-9b04-99527a03b78a"],
+Cell[8593, 274, 628, 21, 75, "Text",ExpressionUUID->"3e24e5f8-3269-40e7-8771-fce20974f492"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9258, 300, 185, 3, 69, "Subsubsection",ExpressionUUID->"8d2c852f-8f25-4c67-b113-e1c25437d5fd"],
+Cell[9446, 305, 1394, 44, 124, "Text",ExpressionUUID->"725230e2-7179-468c-ad5f-d35b3e0d9d37"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10877, 354, 129, 0, 44, "Subsubsection",ExpressionUUID->"b0f13e7c-9e88-4c97-9579-eeb07aa6ba4a"],
+Cell[11009, 356, 1530, 42, 195, "Text",ExpressionUUID->"1d50abcf-7cfc-45cf-8aa6-1b63a7bb02a7"],
+Cell[12542, 400, 727, 10, 137, "CodeText",ExpressionUUID->"5404d4a2-48aa-4750-9983-04d893c0f339"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13306, 415, 111, 0, 44, "Subsubsection",ExpressionUUID->"ed0e0bf4-3dc3-414a-b64c-12c07f99984c"],
+Cell[13420, 417, 595, 19, 54, "Text",ExpressionUUID->"42809a9a-3cfb-4d46-9059-fd27f9d5dbb7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14052, 441, 109, 0, 44, "Subsubsection",ExpressionUUID->"994fef81-0cdb-4ff3-b096-c8ac46edfb3c"],
+Cell[14164, 443, 562, 17, 46, "Text",ExpressionUUID->"91164509-c8de-4ea1-baf9-482b25c436d0"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14763, 465, 113, 0, 44, "Subsubsection",ExpressionUUID->"cec58ecc-5ca8-4a79-b856-7b99aadb7ad2"],
+Cell[14879, 467, 245, 4, 56, "Text",ExpressionUUID->"e334dce2-bc20-420d-95c7-8af05a9f0a42"],
+Cell[15127, 473, 2201, 66, 126, "Text",ExpressionUUID->"175df0ef-1d76-4151-a60a-7b5bf0fa0fb8"],
+Cell[17331, 541, 1219, 27, 122, "Text",ExpressionUUID->"7e3caa38-cb92-4f5c-8879-f37cd689bc44"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18587, 573, 196, 3, 69, "Subsubsection",ExpressionUUID->"edfa04bb-20c2-4537-bd32-66ca42b31df4"],
+Cell[18786, 578, 299, 4, 56, "Text",ExpressionUUID->"2250d602-8eeb-4f81-aaec-92e9fa99c42c"],
+Cell[19088, 584, 2316, 69, 262, "Text",ExpressionUUID->"1408cb7c-9f32-42f5-ab96-26817253b1aa"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21441, 658, 208, 3, 69, "Subsubsection",ExpressionUUID->"bf84453c-c6aa-4f43-abec-050676e5ae9b"],
+Cell[21652, 663, 798, 20, 131, "Text",ExpressionUUID->"af9c786a-a09f-4df0-8677-37e436849b4e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22487, 688, 129, 0, 44, "Subsubsection",ExpressionUUID->"de185eed-e7b8-4095-ad5e-fa15a03902dd"],
+Cell[22619, 690, 570, 14, 76, "Text",ExpressionUUID->"bf66b61b-8f81-4a68-9993-d0fb8e0bcf91"]
+}, Open  ]],
+Cell[23204, 707, 119, 0, 44, "Subsubsection",ExpressionUUID->"48226438-e98a-488d-904d-52d70e1f7fbd"],
+Cell[23326, 709, 155, 2, 36, "Subsubsection",ExpressionUUID->"75ad25da-3341-485e-b501-dba8dab17a15"]
+}
+]
+*)
+

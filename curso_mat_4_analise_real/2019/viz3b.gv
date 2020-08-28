@@ -1,0 +1,11 @@
+digraph {
+    rankdir="LR"
+    subgraph cluster_0 {
+        label=A
+        style=rounded
+        a [shape=plain label="   a   "]
+        b [shape=plain label="   b   "]
+    }
+    a -> b
+    b -> b
+}

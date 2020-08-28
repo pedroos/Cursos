@@ -1,0 +1,35 @@
+Matemáticos presentes na História da Análise - Pedro Oliveira Sobota - 27/08/2019 (21:17)
+
+
+Newton e Leibniz: No fim do século XII, questões acerca do cálculo de variações e física matemática, como o problema da corda que vibra: dada uma condição inicial de posição da corda, qual o formato que a corda assumirá após ser solta em um momento?
+A solução depende da função da condição inicial, e algumas funções são de derivação simples, ou podem ser descritas como somas de funções de forma elementar: as trigonométricas, por exemplo.
+
+
+Porém, quais funções podem ser descritas desta forma? Esta resposta depende da formalização do conceito de função.
+
+
+Bernoulli anunciaria que qualquer função pode ser escrita desta forma, conquanto seu primeiro e último ponto sejam zero. Porém, surgiram objeções, e Euler condiciona este resultado a que a função seja periódica. (Para Euler, o significado de uma função era o de uma expressão escrevível como uma fórmula.) Porém, ele observa que uma função quadrática (parábola) em um intervalo entre dois pontos com mesmo zero da função e período descreve a mesma curva que a função trigonométrica, e, ao contrário desta, não é periódica.
+
+
+Joseph Fourier, ao se deparar com um problema equivalente ao da corda, desta vez com um problema de distribuição de temperatura em um material, propõe que todas as funções possam ser representadas como séries; porém, nunca o prova, realizando sua afirmação com base em exemplos.
+
+
+O primeiro teorema é apresentado por Dirichlet (1829), que apresenta o conceito atual de função, como uma correspondência, e estabelece a representatividade com base no número de máximos e mínimos locais da função, definindo uma classe de funções. Num caso especial, porém, de um "salto" na curva da função, a série de Fourier converge para o ponto central do salto, e neste caso não há convergência em todos os pontos.
+A busca pela definição precisa segue e Riemann apresenta o conceito formalizado de integral (Integral de Riemann).
+
+
+Em seguida, Cantor, estudando a convergência de séries trigonométricas, estabelece primeiramente o Teorema da Unicidade, depois o Teorema sobre o a única série trigonométrica que converge a 0 em todos os pontos (Teorema do Ponto Fraco). Segue, também, apresentando provas sobre a contabilidade dos números algébricos (em que define os números não-algébricos); e sobre os números reais como sequência de Cauchy de números racionais, apresentando o primeiro exemplo de um conjunto não-contável.
+
+
+Dedekind, à mesma época (e em correspondência com Cantor), também define os reais, como cortes nos números racionais.
+
+
+Por fim, na publicação referente aos "números algebraicos", onde define os números reais, Cantor também levanta a questão agora conhecida como a "hipótese do contínuo". A hipótese do contínuo foi demonstrada consistente com os demais axiomas da teoria dos conjuntos por Godël (anos 1930) e sua negação por Paul Cohen (por volta de 1963).
+
+ 
+
+A demonstração iniciou um novo período na história da teoria dos conjuntos; o método de Paul Cohen motivou uma revolução na área da teoria dos conjuntos.
+
+ 
+
+Fonte:"Walter B. Rudin: "Teoria dos Conjuntos: Uma Descendente da Análise". Canal do Departamento de Ciências Matemáticas de UW-Milwaukee no YouTube. Retirado de https://www.youtube.com/watch?v=hBcWRZMP6xs em 24/08/19.

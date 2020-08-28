@@ -1,0 +1,333 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12914,        325]
+NotebookOptionsPosition[     11646,        292]
+NotebookOutlinePosition[     11986,        307]
+CellTagsIndexPosition[     11943,        304]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Sequ\[EHat]ncia num\[EAcute]rica", "Subsubsection",ExpressionUUID->"3ce14edb-2993-4776-9f5e-092f38f4b745"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "seq", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"seq", "=", 
+       RowBox[{"Function", "[", 
+        RowBox[{
+         RowBox[{"{", "n", "}"}], ",", 
+         RowBox[{
+          RowBox[{"a", " ", 
+           SuperscriptBox["n", "b"]}], " ", "+", "c"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"seq", "[", "n", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "1", ",", "100"}], "}"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "350"}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1000"}], "}"}]}]}], "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1"}], "}"}], ",", "0", ",", "10", ",", "1"}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "1"}], "}"}], ",", "0", ",", "3", ",", ".1"}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"c", ",", "0"}], "}"}], ",", "0", ",", "1000", ",", "1"}], 
+    "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellLabel->"In[18]:=",ExpressionUUID->"e860ca35-7b79-4596-8b7b-8d823c9263bd"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 3, $CellContext`b$$ = 
+    1.2000000000000002`, $CellContext`c$$ = 190, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1}, 0, 10, 1}, {{
+       Hold[$CellContext`b$$], 1}, 0, 3, 0.1}, {{
+       Hold[$CellContext`c$$], 0}, 0, 1000, 1}}, Typeset`size$$ = {
+    350., {110., 115.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$52855$$ = 
+    0, $CellContext`b$52856$$ = 0, $CellContext`c$52857$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`b$$ = 
+        1, $CellContext`c$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$52855$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$52856$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$52857$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`seq$}, $CellContext`seq$ = 
+         Function[{$CellContext`n$}, $CellContext`a$$ \
+$CellContext`n$^$CellContext`b$$ + $CellContext`c$$]; Plot[
+          $CellContext`seq$[$CellContext`n], {$CellContext`n, 1, 100}, 
+          ImageSize -> 350, PlotRange -> {0, 1000}]], 
+      "Specifications" :> {{{$CellContext`a$$, 1}, 0, 10, 
+         1}, {{$CellContext`b$$, 1}, 0, 3, 0.1}, {{$CellContext`c$$, 0}, 0, 
+         1000, 1}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{401., {183., 190.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->"Out[18]=",ExpressionUUID->"448263c5-7abb-41e3-926f-95723ff06ac9"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Progress\[ATilde]o geom\[EAcute]trica", "Subsection",ExpressionUUID->"298f9482-5763-4a91-88e5-a1c1d2ceed03"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "seq", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"seq", "=", 
+       RowBox[{"Function", "[", 
+        RowBox[{
+         RowBox[{"{", "n", "}"}], ",", 
+         RowBox[{"a", " ", 
+          SuperscriptBox["b", "n"]}]}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"seq", "[", "n", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "1", ",", "100"}], "}"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "350"}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "100"}], "}"}]}]}], "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1"}], "}"}], ",", "0", ",", "20", ",", "1"}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"b", ",", "1"}], "}"}], ",", "0", ",", "3", ",", ".1"}], 
+    "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellLabel->"In[22]:=",ExpressionUUID->"9dbc6529-c70d-4c48-a0da-ff5a1edd5b00"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 1, $CellContext`b$$ = 1, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1}, 0, 20, 1}, {{
+       Hold[$CellContext`b$$], 1}, 0, 3, 0.1}}, Typeset`size$$ = {
+    350., {111., 118.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$63308$$ = 
+    0, $CellContext`b$63309$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`b$$ = 1}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$63308$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$63309$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`seq$}, $CellContext`seq$ = 
+         Function[{$CellContext`n$}, $CellContext`a$$ \
+$CellContext`b$$^$CellContext`n$]; Plot[
+          $CellContext`seq$[$CellContext`n], {$CellContext`n, 1, 100}, 
+          ImageSize -> 350, PlotRange -> {0, 100}]], 
+      "Specifications" :> {{{$CellContext`a$$, 1}, 0, 20, 
+         1}, {{$CellContext`b$$, 1}, 0, 3, 0.1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{401., {172., 179.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->"Out[22]=",ExpressionUUID->"512da701-21d7-484c-ad4a-e69f293e3693"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Progress\[ATilde]o aritm\[EAcute]tica", "Subsection",ExpressionUUID->"f42f95e1-06c5-4c4e-8de7-19ff6408ae8f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "seq", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"seq", "=", 
+       RowBox[{"Function", "[", 
+        RowBox[{
+         RowBox[{"{", "n", "}"}], ",", 
+         RowBox[{
+          RowBox[{"a", " ", "n"}], " ", "+", "c"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"seq", "[", "n", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "1", ",", "100"}], "}"}], ",", 
+        RowBox[{"ImageSize", "\[Rule]", "350"}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1000"}], "}"}]}]}], "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", "1"}], "}"}], ",", "0", ",", "20", ",", "1"}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"c", ",", "0"}], "}"}], ",", "0", ",", "1000", ",", "1"}], 
+    "}"}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellLabel->"In[13]:=",ExpressionUUID->"89134060-3cfe-4dcc-a8b3-4df3d5717217"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 11, $CellContext`c$$ = 317, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`a$$], 1}, 0, 20, 1}, {{
+       Hold[$CellContext`c$$], 0}, 0, 1000, 1}}, Typeset`size$$ = {
+    350., {110., 115.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$33443$$ = 
+    0, $CellContext`c$33444$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 1, $CellContext`c$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$33443$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$33444$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`seq$}, $CellContext`seq$ = 
+         Function[{$CellContext`n$}, $CellContext`a$$ $CellContext`n$ + \
+$CellContext`c$$]; Plot[
+          $CellContext`seq$[$CellContext`n], {$CellContext`n, 1, 100}, 
+          ImageSize -> 350, PlotRange -> {0, 1000}]], 
+      "Specifications" :> {{{$CellContext`a$$, 1}, 0, 20, 
+         1}, {{$CellContext`c$$, 0}, 0, 1000, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{401., {170., 177.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellLabel->"Out[13]=",ExpressionUUID->"097785ec-bd23-4944-a8ab-3351a92e2f6a"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{944, 992},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 112, 0, 44, "Subsubsection",ExpressionUUID->"3ce14edb-2993-4776-9f5e-092f38f4b745"],
+Cell[CellGroupData[{
+Cell[717, 26, 1447, 40, 193, "Input",ExpressionUUID->"e860ca35-7b79-4596-8b7b-8d823c9263bd"],
+Cell[2167, 68, 2369, 45, 392, "Output",ExpressionUUID->"448263c5-7abb-41e3-926f-95723ff06ac9"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4585, 119, 114, 0, 53, "Subsection",ExpressionUUID->"298f9482-5763-4a91-88e5-a1c1d2ceed03"],
+Cell[CellGroupData[{
+Cell[4724, 123, 1240, 33, 174, "Input",ExpressionUUID->"9dbc6529-c70d-4c48-a0da-ff5a1edd5b00"],
+Cell[5967, 158, 2099, 42, 370, "Output",ExpressionUUID->"512da701-21d7-484c-ad4a-e69f293e3693"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8115, 206, 114, 0, 53, "Subsection",ExpressionUUID->"f42f95e1-06c5-4c4e-8de7-19ff6408ae8f"],
+Cell[CellGroupData[{
+Cell[8254, 210, 1254, 34, 162, "Input",ExpressionUUID->"89134060-3cfe-4dcc-a8b3-4df3d5717217"],
+Cell[9511, 246, 2107, 42, 366, "Output",ExpressionUUID->"097785ec-bd23-4944-a8ab-3351a92e2f6a"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
