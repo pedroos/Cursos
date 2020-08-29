@@ -494,6 +494,8 @@
     é uma cobertura do conjunto.
   </proposition*>
 
+  <hrule>
+
   <\question*>
     2.3. Seja uma função contínua em um ponto <math|a> de um conjunto
     <math|A> para os reais. Mostre que o módulo da função também é contínuo
@@ -566,7 +568,7 @@
   <math|\<delta\>\<gtr\>0> tal que <math|x\<in\>A,<around*|\||x-a|\|>\<less\>\<delta\>>
   implica <math|<around*|\||<around*|\||f<around*|(|x|)>|\|>-<around*|\||f<around*|(|a|)>|\|>|\|>\<less\>\<varepsilon\>>.
 
-  \;
+  <hrule>
 
   <\question*>
     2.2 a. Determine os pontos de fronteira de
@@ -644,6 +646,8 @@
 
   Então os pontos de fronteira são <math|A\<cup\>\<cal-C\>A\<cup\><around*|{|0,2|}>=<around*|[|0,2|]>>.
 
+  <hrule>
+
   <\question*>
     2.2 b. Determine o conjunto <math|S> solução de
     <math|x<rsup|2>-x-6\<gtr\>0> e determine <math|S<rprime|'>>. Escreva na
@@ -660,6 +664,8 @@
   >\<vee\><text| >x\<gtr\>3|}>>.
 
   <math|S<rprime|'>=<around*|{|x\<in\>\<bbb-R\><mid|\|>\<forall\>\<varepsilon\>\<gtr\>0:<around*|(|<around*|(|x-\<varepsilon\>|)>\<cup\><around*|(|x+\<varepsilon\>|)>|)>\<cap\>S\<neq\>\<varnothing\>|}>=<around*|(|-\<infty\>,-2|]>\<cup\><around*|[|3,\<infty\>|)>>.
+
+  <hrule>
 
   <\question*>
     2.2 c. Seja <math|B=<around*|{|<dfrac|1|n<rsup|2>>|}>,n\<in\>\<bbb-N\>>.
@@ -696,6 +702,8 @@
 
   <math|<wide|B|\<bar\>>=B>, então <math|B> é fechado.
 
+  <hrule>
+
   <\question*>
     1.2. Seja <math|A=<around*|{|x\<in\>\<bbb-N\>:<around*|\||5-6x|\|>\<leqslant\>9|}>>.
     Expresse formalmente os elementos e investigue a cardinalidade de
@@ -715,6 +723,8 @@
   </math>
 
   Inequação modular. Parsear o que é isto.
+
+  <hrule>
 
   <\question*>
     1.4. Dado <math|B=<below|<above|<big|cap>|\<infty\>>|n=1>X<rsub|n>>, onde
@@ -757,7 +767,7 @@
 
   <math|inf B=x<rsub|0>\<in\>\<bbb-R\><mid|\|><around*|(|x<rsub|0>\<less\>x,\<forall\>x\<in\>B|)>\<wedge\><around*|(|\<forall\>\<varepsilon\>\<gtr\>0:<around*|(|x<rsub|0>+\<varepsilon\>|)>\<cap\>B\<neq\>\<varnothing\>|)>=3>.
 
-  \;
+  <hrule>
 
   <subsection*|Referências>
 
