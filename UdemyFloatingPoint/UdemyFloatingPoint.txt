@@ -1,0 +1,13 @@
+Operations:
+- Multiplication
+- Addition
+- Division
+- Subtraction
+
+Numbers:
+- Normal numbers
+- Ranges of floating point numbers
+- How the floating point numbers map to the number line
+- Rounding
+- Truncation
+- Precision

@@ -1,0 +1,18 @@
+HOW DOES CFD WORK?
+
+Partial differential equations are discretized into a system of algebraic equations.
+
+Setting up the solver: for a given problem, you will need to:
+-Define material properties
+-Select appropriate physical models
+-Prescribe operating conditions
+-Prescribe boundary conditions at all boundary zones
+-Set up solver controls
+
+For complex problems, solving a simplified or 2D problem will provide valuable experience with the models and solver settings for your problem in a short amount of time.
+
+The discretized conservation equations are solved iteratively until convergence. Convergence is reached when changes in solution variables from one iteration to the next are negligible.
+
+LINKS
+
+https://www.simscale.com/docs/content/simwiki/fea/whatisfea.html
