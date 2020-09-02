@@ -457,6 +457,11 @@
     conjuntos cuja união contém um conjunto.
 
     Se é nos reais, não são vizinhanças de centro <math|1>?
+
+    <\proposition*>
+      Se um conjunto é intersecção de uma família de conjuntos, aquela
+      família é uma cobertura do conjunto.
+    </proposition*>
   </decorated>
 
   \;
@@ -489,10 +494,22 @@
 
   \;
 
-  <\proposition*>
-    Se um conjunto é intersecção de uma família de conjuntos, aquela família
-    é uma cobertura do conjunto.
-  </proposition*>
+  <math|A=<below|<big|cap>|n\<in\>\<bbb-N\>><around*|(|1-<frac|1|n>,1+<frac|1|n>|)>=<around*|{|1|}>>.
+
+  <math|<below|lim|n\<rightarrow\>\<infty\>>1-<frac|1|n>=1>.
+
+  <math|<below|lim|n\<rightarrow\>\<infty\>>1+<frac|1|n>=1>.
+
+  <math|<around*|[|1,1|]>> está contido em <math|A>, para todo
+  <math|n\<in\>\<bbb-N\>>.
+
+  <math|\<cal-C\>A=\<bbb-R\>-<around*|{|1|}>=<around*|(|-\<infty\>,1|)>\<cup\><around*|(|1,\<infty\>|)>>.
+
+  Como <math|\<cal-C\>A> é aberto, pois é união de abertos, o seu
+  complemento, <math|A>, é fechado.
+
+  <math|A> não é aberto pois não existe <math|\<varepsilon\>\<gtr\>0> tal que
+  <math|<around*|(|1-\<varepsilon\>,1+e|)>\<subset\>A>.
 
   <hrule>
 
@@ -564,9 +581,22 @@
   <math|<around*|\||f<around*|(|x|)>-f<around*|(|a|)>|\|>\<less\>\<varepsilon\>>.
 
   <math|<around*|\||f|\|>:A\<rightarrow\>\<bbb-R\>> é contínua em <math|a>
-  quando para todo <math|\<varepsilon\>\<gtr\>0> há um
+  quando para todo <math|\<varepsilon\>\<gtr\>0> há um\ 
+
   <math|\<delta\>\<gtr\>0> tal que <math|x\<in\>A,<around*|\||x-a|\|>\<less\>\<delta\>>
   implica <math|<around*|\||<around*|\||f<around*|(|x|)>|\|>-<around*|\||f<around*|(|a|)>|\|>|\|>\<less\>\<varepsilon\>>.
+
+  Pela propriedade\ 
+
+  <math|<around*|\||<around*|\||x|\|>-<around*|\||y|\|>|\|>\<leqslant\><around*|\||x-y|\|>>
+  e como\ 
+
+  <math|<around*|(|a\<leqslant\>b\<wedge\>b\<less\>c|)>\<Rightarrow\>a\<less\>c>,\ 
+
+  como <math|<around*|\||<around*|\||f<around*|(|x|)>|\|>-<around*|\||f<around*|(|a|)>|\|>|\|>\<leqslant\><around*|\||f<around*|(|x|)>-f<around*|(|a|)>|\|>>
+  então\ 
+
+  <math|<around*|\||f<around*|(|x|)>-f<around*|(|a|)>|\|>\<less\>\<varepsilon\>\<Rightarrow\><around*|\||<around*|\||f<around*|(|x|)>|\|>-<around*|\||f<around*|(|a|)>|\|>|\|>\<less\>\<varepsilon\>>.
 
   <hrule>
 
@@ -678,21 +708,30 @@
   Pontos de aderência; toda vizinhança (não-furada) intersecciona. Fecho.
 
   <\ornamented>
-    <\padded-center>
-      Diferença para ponto-limite é se o centro pertence ou não ao conjunto.
-      Se for uma vizinhança furada, o centro da vizinhança pode não pertencer
-      ao conjunto, sendo o supremo ou ínfimo. Se a vizinhança for não-furada,
-      se o centro da vizinhança não pertencer ao conjunto, haverá vizinhança
-      (a menor) sem intersecção com o conjunto.
+    Diferença para ponto-limite é se o centro pertence ou não ao conjunto. Se
+    for uma vizinhança furada, o centro da vizinhança pode não pertencer ao
+    conjunto, sendo o supremo ou ínfimo. Se a vizinhança for não-furada, se o
+    centro da vizinhança não pertencer ao conjunto, haverá vizinhança (a
+    menor) sem intersecção com o conjunto.
 
-      Ou seja, pontos de aderência pertencem ao conjunto; pontos-limite, não
-      necessariamente.
-    </padded-center>
+    Ou seja, pontos de aderência pertencem ao conjunto; pontos-limite, não
+    necessariamente.
 
     Por outro lado, o centro não-furado (ponto de aderência) permite que
     pontos de um conjunto discreto sejam pontos de aderência. O mesmo
     <with|font-series|bold|não> ocorre com pontos-limite. <marked|Verificar.>
+
+    De novo<text-dots> a diferença da vizinhança fechada é que se o centro
+    for não-contido (supremo ou ínfimo) (o conjunto é aberto) há intersecção.
+    Então o ponto-limite inclui o supremo e ínfimo. Se o ponto for
+    não-contido e for o supremo ou ínfimo, não haverá intersecção
+    <marked|(certo?)>.
+
+    <with|font-series|bold|Pontos-limite são o supremo e ínfimo + os pontos
+    interiores.>
   </ornamented>
+
+  O limite da sequência é zero.
 
   Para todo <math|x<rsub|1>\<in\>B>, <math|\<forall\><text|>\<varepsilon\>\<gtr\>0:<around*|(|x<rsub|1>-\<varepsilon\>,x<rsub|1>+\<varepsilon\>|)>\<cap\>B\<neq\>\<varnothing\>>.
   Então <math|x<rsub|1>\<in\><wide|B|\<bar\>>>.
@@ -701,6 +740,58 @@
   Então <math|x<rsub|2>\<nin\><wide|B|\<bar\>>>.
 
   <math|<wide|B|\<bar\>>=B>, então <math|B> é fechado.
+
+  <math|<wide|S|\<bar\>>> é o fecho, que são os pontos de
+  aderência<text-dots> <math|S<rprime|'>> são os pontos de acumulação, que
+  chamo de pontos-limite, que são \Ptoda vizinhança furada intersecciona\Q. O
+  problema pede o fecho, o professor pede o acumulação. Calcular o acumulação
+  e depois comparar o fecho de <math|B> com <math|B>.
+
+  Os pontos-limite de <math|B> não são os interiores, pois nenhumas de suas
+  vizinhanças furadas interseccionam <math|B>. Então
+  <math|B<rprime|'>=<around*|{|0|}>>.
+
+  <\framed>
+    <with|font-series|bold|O fecho são os pontos do conjunto + os
+    pontos-limite. Em um conjunto não-discreto, isto só será diferente dos
+    pontos-limite se o conjunto for aberto e os pontos-limite não pertencerem
+    ao conjunto.> Em um conjunto discreto, é só ver este exemplo.
+  </framed>
+
+  O fecho de <math|B> é <math|B\<cup\><below|lim|n\<rightarrow\>\<infty\>><dfrac|1|n<rsup|2>>=B\<cup\><around*|{|0|}>=<around*|{|<dfrac|1|n<rsup|2>>|}>\<cup\><around*|{|0|}>,n\<in\>\<bbb-N\>>.
+
+  O conjunto é diferente de seu fecho, <math|B\<neq\><wide|B|\<bar\>>>, então
+  <math|B> não é fechado.
+
+  Provas de ser fechado:
+
+  <\enumerate-numeric>
+    <item>O complementar ser aberto
+
+    <\enumerate-numeric>
+      <item>O complementar é aberto se for uma união de abertos
+    </enumerate-numeric>
+
+    <item>Sequência (p. 62): o limite da sequência não pertence ao conjunto e
+    toda vizinhança do limite intersecciona tanto o limite quanto a
+    sequência.
+
+    <item>p. 64: O conjunto é igual ao seu fecho.
+  </enumerate-numeric>
+
+  Provas de não ser fechado:
+
+  <\enumerate-numeric>
+    <item>Sequência (p. 62): o complementar não é aberto, porque nenhuma
+    vizinhança do limite está contida na sequência.
+  </enumerate-numeric>
+
+  Provas de não ser aberto:
+
+  <\enumerate-numeric>
+    <item>Sequência (p. 62): formada por pontos isolados, e nem toda
+    vizinhança não-furada contida.
+  </enumerate-numeric>
 
   <hrule>
 
@@ -753,11 +844,13 @@
 
   <math|<below|lim|n\<rightarrow\>\<infty\>>><math|<around*|(|4+<frac|1|n>|)>=4>.
 
-  Como <math|3\<gtr\>3-<frac|1|n>,\<forall\>n\<in\>\<bbb-N\>>, e
-  <math|4\<less\>4+<frac|1|n>,\<forall\>n\<in\>\<bbb-N\>>, então
-  <math|<around*|(|3,4|)>\<subset\><around*|(|3-<frac|1|n>,4+<frac|1|n>|)>,\<forall\>n\<in\>\<bbb-N\>>.
+  Como <math|3\<geqslant\>3-<frac|1|n>,\<forall\>n\<in\>\<bbb-N\>>, e
+  <math|4\<leqslant\>4+<frac|1|n>,\<forall\>n\<in\>\<bbb-N\>>, então
+  <math|<around*|[|3,4|]>\<subset\><around*|(|3-<frac|1|n>,4+<frac|1|n>|)>,\<forall\>n\<in\>\<bbb-N\>>.
 
-  <math|B=<around*|(|3,4|)>>.
+  <math|B=<around*|[|3,4|]>>.
+
+  \;
 
   \;
 
@@ -778,7 +871,7 @@
 
 <\initial>
   <\collection>
-    <associate|font-base-size|9>
+    <associate|font-base-size|10>
     <associate|page-height|auto>
     <associate|page-medium|automatic>
     <associate|page-type|a3>
@@ -790,7 +883,7 @@
   <\collection>
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|?|1>>
-    <associate|auto-3|<tuple|?|6>>
+    <associate|auto-3|<tuple|1|6>>
   </collection>
 </references>
 
