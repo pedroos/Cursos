@@ -26,3 +26,10 @@ Numbers:
   - Level-index number systems
   - Fixed-slash, floating-slash number systems
   - 2-adic numbers
+  
+Compromise between
+ - Speed
+ - Accuracy
+ - Dynamic range
+ - Ease of use and implementation
+ - Memory cost
