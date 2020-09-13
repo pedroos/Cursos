@@ -862,6 +862,20 @@
     <\itemize-dot>
       <item>Operações (adição e multiplicação)
 
+      As propriedades das operações são:
+
+      <\itemize-dot>
+        <item>Associatividade: <math|a\<circ\><around*|(|b\<circ\>c|)>=<around*|(|a\<circ\>b|)>\<circ\>c>
+
+        <item>Comutatividade: <math|a\<circ\>b=b\<circ\>a>
+
+        <item>Elemento neutro: operado com <math|x> resulta <math|x>:
+        <math|0> (adição) e <math|1> (multiplicação)
+
+        <item>Elemento simétrico (adição) ou inverso (multiplicação): operado
+        com <math|x> resulta no elemento neutro
+      </itemize-dot>
+
       <item>Elemento inverso: outro elemento que forma um par sob uma
       operação
 
@@ -939,7 +953,37 @@
     dado do enunciado.
   </quote-env>
 
-  \;
+  Inverso multiplicativo (p. 28): <math|>existe <math|a> tal que <math|x
+  a=1>. <math|a> é escrito como <math|x<rsup|-1>>.
+
+  Em outras palavras, o inverso multiplicativo é o número que multiplicado
+  pelo número resulta em <math|1>. E este número é exatamente, para <math|x>,
+  <math|<frac|1|x>> ou <math|x<rsup|-1>>.
+
+  Então, o prof. está falando <math|<dfrac|a|b> <dfrac|c|d>=<around*|(|a
+  <dfrac|1|b>|)><around*|(|c <dfrac|1|d>|)>>.
+
+  O enunciado é <math|<dfrac|1|a b>=<dfrac|1|a> <dfrac|1|b>>.
+
+  <deleted|<math|<frac|1|a b>=1 <frac|1|a b>> (elemento neutro da
+  multiplicação)>
+
+  <deleted|<math|<frac|1|a b>=<around*|(|a b|)><rsup|-1>>>
+
+  <deleted|<math|<around*|(|a b|)><rsup|-1>=a<rsup|-1> b<rsup|-1> >>
+
+  <math|<dfrac|a|b> <dfrac|c|d>=<around*|(|a b<rsup|-1>|)><around*|(|c
+  d<rsup|-1>|)>> (inverso multiplicativo)
+
+  <math|=<around*|(|a c|)><around*|(|b<rsup|-1> d<rsup|-1>|)>>
+  (associatividade da multiplicação)
+
+  <math|=<around*|(|a c|)><around*|(|b d|)><rsup|-1>> (pelo enunciado)
+
+  <math|=<around*|(|a c|)><around*|(|<dfrac|1|b d>|)>> (inverso
+  multiplicativo)
+
+  <math|=<dfrac|a c|b d>> (elemento neutro da multiplicação).
 
   <hrule>
 
