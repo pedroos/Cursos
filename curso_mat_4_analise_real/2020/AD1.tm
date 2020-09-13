@@ -802,18 +802,144 @@
   </question*>
 
   <\math>
-    <around*|\||5-6x|\|>\<leqslant\>9\<Rightarrow\>
+    <around*|\||x|\|>=2\<Rightarrow\>
 
-    <around*|(|5-6x\<leqslant\>9|)>\<vee\><around*|(|-5-6x\<leqslant\>9|)>\<Rightarrow\>
-
-    <around*|(|-6x\<leqslant\>4|)>\<vee\><around*|(|-6x\<leqslant\>14|)>\<Rightarrow\>
-
-    -6x\<leqslant\>14\<Rightarrow\>
-
-    x\<leqslant\>-<frac|7|3><text|.>
+    x=2\<vee\>x=-2<text|.>
   </math>
 
-  Inequação modular. Parsear o que é isto.
+  <\math>
+    <around*|\||x|\|>\<leqslant\>2\<Rightarrow\>
+
+    x\<leqslant\>2\<wedge\>x\<geqslant\>-2<text|.>
+  </math>
+
+  <\math>
+    <around*|\||5-6x|\|>\<leqslant\>9\<Rightarrow\>
+
+    <around*|(|5-6x\<leqslant\>9|)>\<wedge\><around*|(|5-6x\<geqslant\>-9|)>\<Rightarrow\>
+
+    <around*|(|-6x\<leqslant\>4|)>\<wedge\><around*|(|-6x\<geqslant\>-14|)>\<Rightarrow\>
+
+    x\<geqslant\>-<frac|2|3>\<wedge\>x\<leqslant\><frac|7|3><text|.>
+
+    -<frac|2|3>=-0.<wide|6|\<bar\>>
+
+    <frac|7|3>=2.<wide|3|\<bar\>>
+
+    A=<around*|{|1,2|}><text|.>
+  </math>
+
+  <math|A> tem cardinalidade <math|2>.
+
+  <\math>
+    f:I<rsub|2>\<rightarrow\>\<bbb-N\>
+
+    1\<rightarrow\>1
+
+    2\<rightarrow\>2
+  </math>
+
+  Um módulo é uma conjunção sobre o inverso do campo (negativo/positivo). De
+  uma inequação é uma conjunção de inequações inversas.
+
+  <hrule>
+
+  <\question*>
+    1.3. Sabendo que <math|<around*|(|a \ b|)><rsup|-1>=a<rsup|-1>
+    b<rsup|-1>>, mostre que <math|<dfrac|a|b> <dfrac|c|d>=<dfrac|a c|b d>>.
+    Utilize as propriedades dos números reais.
+  </question*>
+
+  <\math>
+    <around*|(|a b|)><rsup|-1>=<dfrac|1|a b>
+
+    a<rsup|-1> b<rsup|-1>=<dfrac|1|a> <dfrac|1|b>=<dfrac|1 1|a b>
+  </math>
+
+  <\ornamented>
+    O campo define:
+
+    <\itemize-dot>
+      <item>Operações (adição e multiplicação)
+
+      <item>Elemento inverso: outro elemento que forma um par sob uma
+      operação
+
+      <item>Um subconjunto especial, denominado positivo, contendo:
+
+      <\itemize-dot>
+        <item>Todos os resultados das operações para todos os pares de
+        elementos
+
+        <item>Todos os inversos sob as duas operações
+
+        <item>Zero
+      </itemize-dot>
+    </itemize-dot>
+
+    Conter os resultados das operações é uma definição indutiva, pois os
+    resultados então têm de ter seus resultados quando operados com outros
+    elementos presentes: <math|a\<circ\>b\<in\>S\<Rightarrow\>a\<circ\><around*|(|a\<circ\>b|)>\<in\>S>.
+    <marked|Então, não parece que um campo possa ser finito.>
+
+    Em um campo, se <math|b-a> pertence ao conjunto dos positivos, então
+    <math|a\<less\>b>. Se <math|a-b> pertence aos positivos, então
+    <math|a\<gtr\>b>. (Se a soma de um elemento com o inverso de outro
+    pertence ao subconjunto dos positivos, o primeiro é maior que o segundo,
+    ou o segundo é menor que o primeiro.)
+
+    <deleted|Se isto é verdade para todo par de elementos no campo, então o
+    campo é <with|font-shape|italic|ordenado>.>
+
+    Dúvidas sobre isto:
+
+    <\itemize-dot>
+      <item>Poderia haver mais de um subconjunto dos positivos em um campo?
+      Provar que não.
+
+      <item>O quê define exatamente o campo ser ordenado? Para quais
+      elementos a afirmação acima deve ser verdade?
+    </itemize-dot>
+  </ornamented>
+
+  <math|<dfrac|1|a> <dfrac|1|b>=<dfrac|1 1|a b>\<Leftrightarrow\><dfrac|a|b>
+  <dfrac|c|d>=<dfrac|a c|b d><text|.>> O que isso diz é que multiplicar
+  <math|a> e <math|c> primeiro produz o mesmo resultado que dividir <math|a>
+  por <math|b> primeiro. Ou seja, <math|<around*|(|a/b|)><around*|(|c/d|)>=<around*|(|a
+  c|)>/<around*|(|b d|)>>. Como <math|x<rsup|-1>=<dfrac|1|x<rsup|>>>, então
+  <math|<around*|(|a c|)>/<around*|(|b d|)>=<around*|(|a c|)><around*|(|b
+  d|)><rsup|-1>=<around*|(|a c|)><around*|(|b<rsup|-1>
+  d<rsup|-1>|)>=<around*|(|a c|)><around*|(|<dfrac|1|b> <dfrac|1|d>|)>>
+
+  <math|x<rsup|-1>=<frac|1|x>> é o inverso da exponenciação.
+
+  Inverso da multiplicação: <math|x x<rsup|-1>=1>.
+
+  Talvez seja porque a divisão seja o dual da multiplicação, o que quer dizer
+  que <math|a b=<dfrac|a|<frac|1|b>>=<dfrac|a|b<rsup|-1>>>.
+
+  Então <math|<dfrac|a|b> <dfrac|c|d>=<dfrac|a|c<rsup|-1>>/<dfrac|b|d<rsup|-1>>=<dfrac|a|c<rsup|-1>>
+  <dfrac|d<rsup|-1>|b>><text-dots>
+
+  <math|a<rsup|-1> b<rsup|-1>=<frac|1|a> <frac|1|b>>.
+
+  <math|<frac|a|b>=a <frac|1|b>>.
+
+  <math|<around*|(|a b|)><rsup|-1>=<dfrac|1|a b>>.
+
+  Se <math|<around*|(|a b|)><rsup|-1>=a<rsup|-1> b<rsup|-1>>, então
+  <math|<around*|(|a b|)><rsup|1>=a<rsup|1> b<rsup|1>>. Então
+  <math|<dfrac|<around*|(|a c|)><rsup|1>|<around*|(|b
+  d|)><rsup|1>>=<dfrac|a<rsup|1> c<rsup|1>|b<rsup|1> d<rsup|1>>>.
+
+  <\quote-env>
+    <math|<dfrac|a|b> <dfrac|c|d>=<around*|(|a b<rsup|-1>|)><around*|(|c
+    d<rsup|-1>|)>>, apenas usei o inverso multiplicativo. Continuar a
+    igualdade usando associatividade e comutatividade e finalizar usando o
+    dado do enunciado.
+  </quote-env>
+
+  \;
 
   <hrule>
 
@@ -871,10 +997,10 @@
 
 <\initial>
   <\collection>
-    <associate|font-base-size|10>
+    <associate|font-base-size|8>
     <associate|page-height|auto>
     <associate|page-medium|automatic>
-    <associate|page-type|a3>
+    <associate|page-type|a4>
     <associate|page-width|auto>
   </collection>
 </initial>
@@ -883,7 +1009,7 @@
   <\collection>
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|?|1>>
-    <associate|auto-3|<tuple|1|6>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|8>>
   </collection>
 </references>
 
