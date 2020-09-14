@@ -857,6 +857,22 @@
   </math>
 
   <\ornamented>
+    Lei do corte: uma proposição implicação (formalmente
+    <math|a\<circ\>b=n\<wedge\>a\<circ\>c=n\<Rightarrow\>b=c>) propriedade de
+    uma relação que significa que cada par <math|<around*|(|a,i|)>> formado
+    de um elemento de um par do domínio e um elemento da imagem do operator
+    só tem um <math|b> que forma os pares comutativos
+    <math|<around*|(|a,b|)>,<around*|(|b,a|)>> no domínio relacionados a
+    <math|i> na imagem.
+
+    <\itemize>
+      <item>Não significa bijetividade pois
+      <math|<around*|(|1,3|)>\<rightarrow\>4> e
+      <math|<around*|(|2,2|)>\<rightarrow\>4>.
+
+      <item>Significa injetividade.
+    </itemize>
+
     O campo define:
 
     <\itemize-dot>
@@ -874,6 +890,8 @@
 
         <item>Elemento simétrico (adição) ou inverso (multiplicação): operado
         com <math|x> resulta no elemento neutro
+
+        <item>Lei do corte
       </itemize-dot>
 
       <item>Elemento inverso: outro elemento que forma um par sob uma
@@ -894,7 +912,8 @@
     Conter os resultados das operações é uma definição indutiva, pois os
     resultados então têm de ter seus resultados quando operados com outros
     elementos presentes: <math|a\<circ\>b\<in\>S\<Rightarrow\>a\<circ\><around*|(|a\<circ\>b|)>\<in\>S>.
-    <marked|Então, não parece que um campo possa ser finito.>
+    <marked|Então, não parece que um campo possa ser finito.> \PIn
+    particular, finite fields cannot be ordered.\Q [2]
 
     Em um campo, se <math|b-a> pertence ao conjunto dos positivos, então
     <math|a\<less\>b>. Se <math|a-b> pertence aos positivos, então
@@ -985,6 +1004,49 @@
 
   <math|=<dfrac|a c|b d>> (elemento neutro da multiplicação).
 
+  <\framed>
+    Observação: os naturais não são um corpo. As duas operações (adição e
+    multiplicação) descritas para os naturais são \Parbitrárias\Q.
+
+    Definição de operador: uma relação com domínio em um conjunto de funções
+    (ou outras estruturas, relações?) e codomínio em um tipo de elementos
+    arbitrário.
+
+    Um operador não é uma função pois relaciona muitos com muitos, é uma
+    relação.
+
+    <\itemize>
+      <item>O domínio é de pares <math|<around*|(|a,b|)>>
+
+      <item>Se for comutativo, <math|<around*|(|a,b|)>> e
+      <math|<around*|(|b,a|)>> têm a mesma imagem
+    </itemize>
+
+    Operadores nos naturais:
+
+    <\itemize-dot>
+      <item>Adição
+
+      <\itemize>
+        <item>Define a função sucessor: <math|s<around*|(|x|)>=x+1>.
+
+        <item>Tem elemento neutro, associatividade, comutatividade
+
+        <item>Distribui com a multiplicação
+
+        <item>Lei do corte
+      </itemize>
+
+      <item>Multiplicação
+
+      <\itemize>
+        <item>Tem elemento neutro, associatividade, comutatividade
+
+        <item>Lei do corte
+      </itemize>
+    </itemize-dot>
+  </framed>
+
   <hrule>
 
   <\question*>
@@ -1037,6 +1099,8 @@
   [1] \PHow can I show a supremum of a set is also its limit point?\Q,
   resposta de Xander Henderson. Mathematics Stack Exchange.
   <hlink|https://math.stackexchange.com/q/3027126|>
+
+  [2] https://en.wikipedia.org/wiki/Ordered_field
 </body>
 
 <\initial>
@@ -1053,7 +1117,7 @@
   <\collection>
     <associate|auto-1|<tuple|?|1>>
     <associate|auto-2|<tuple|?|1>>
-    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|8>>
+    <associate|auto-3|<tuple|<with|mode|<quote|math>|\<bullet\>>|11>>
   </collection>
 </references>
 
