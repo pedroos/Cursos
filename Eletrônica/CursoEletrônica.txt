@@ -1,4 +1,5 @@
 http://falstad.com/circuit/
+https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc_en.html
 
 Aula 1
 Conceitos básicos de eletrônica

@@ -13,6 +13,9 @@ For complex problems, solving a simplified or 2D problem will provide valuable e
 
 The discretized conservation equations are solved iteratively until convergence. Convergence is reached when changes in solution variables from one iteration to the next are negligible.
 
+- Capítulo 13 do livro do livro "Mathematics for 3D Game Programming and Computer Graphics-Charles River Media (2003)"
+
 LINKS
 
-https://www.simscale.com/docs/content/simwiki/fea/whatisfea.html
+- https://www.simscale.com/docs/content/simwiki/fea/whatisfea.html
+- https://www.coursera.org/learn/finite-element-method
