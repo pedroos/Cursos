@@ -35,3 +35,6 @@ Aula 4
 - Forma de ler um circuito
 - Multímetro
 - Leitura e identificação de grandezas no multímetro
+
+Série: corrente igual tensão diferente
+Paralelo: corrente diferente e tensão igual
