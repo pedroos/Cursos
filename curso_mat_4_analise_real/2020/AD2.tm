@@ -41,6 +41,8 @@
     </enumerate-alpha>
   </question>
 
+  Alternativa C.
+
   <\question>
     Seja <math|A> um subconjunto de <math|\<bbb-R\>> e <math|x\<in\>A>.
     <math|x> é um <with|font-shape|italic|ponto interior> de <math|A> se
@@ -55,13 +57,31 @@
     <\enumerate-alpha>
       <item><math|int X=<around*|[|a,b|]>> e <math|int Y=<around*|[|b,c|]>>
 
+      Falso. <math|int Y=<around*|[|b,c|]>>, mas <math|int
+      X\<neq\><around*|[|a,b|]>>.
+
       <item><math|int X\<cup\>int Y=int<around*|(|X\<cup\>Y|)>>
+
+      Falso. <math|int X\<cup\>int Y\<nsupset\>b>, mas
+      <math|int<around*|(|X\<cup\>Y|)>\<supset\>b>.
 
       <item><math|int X-int Y=<style-only*|\<varnothing\>>>
 
+      Falso. <math|int X\<neq\>int Y>.
+
       <item><math|int X\<cup\>Y\<subset\>int X\<cup\>int Y>
 
+      <math|int X\<cup\>Y=<around*|(|a,b|)>\<cup\><around*|[|b,c|]>=<around*|(|a,c|)>>.
+
+      <math|int X\<cup\>int Y=<around*|(|a,b|)>\<cup\><around*|(|b,c|)>>.
+
+      Falso. <math|b\<in\>int X\<cup\>Y\<nin\>int X\<cup\>int Y>.
+
       <item><math|int X\<cup\>int Y\<subset\>int <around*|(|X\<cup\>Y|)>>
+
+      <math|int<around*|(|X\<cup\>Y|)>=int<around*|(|a,c|)>=<around*|(|a,c|)>>.
+
+      Verdadeiro. <math|<around*|(|a,c|)>\<subset\><around*|(|a,b|)>\<cup\><around*|(|b,c|)>>.
     </enumerate-alpha>
   </question>
 
@@ -70,15 +90,14 @@
     <math|f> é derivável em <math|<around*|(|a,b|)>>, então existe um ponto
     <math|c\<in\><around*|(|a,b|)>> tal que
     <math|f<rprime|'><around*|(|c|)>=<dfrac|f<around*|(|b|)>-f<around*|(|a|)>|b-a>>.
-    Considere as asserções.
 
     <\enumerate-Roman>
       <item>Seja <math|f<around*|(|x|)>=sen x>. Pelo Teorema do Valor Médio,
-      <math|<around*|\||sen b-sen a|\|>\<leqslant\><around*|\||b-a|\|>
-      \<forall\>a,b\<in\>\<bbb-R\>>, porque\ 
+      <math|<around*|\||sen b-sen a|\|>\<leqslant\><around*|\||b-a|\|><text|,
+      >\<forall\>a,b\<in\>\<bbb-R\>>
 
       <item><math|f<around*|(|x|)>=sen x> é limitada: <math|<around*|\||sen
-      x|\|>\<leqslant\>1 \<forall\>x\<in\>\<bbb-R\>>.
+      x|\|>\<leqslant\>1<text|, >\<forall\>x\<in\>\<bbb-R\>>.
     </enumerate-Roman>
 
     Assinale a opção correta:
@@ -95,6 +114,21 @@
       <item>I e II são falsas
     </enumerate-alpha>
   </question>
+
+  <math|<around*|\||f<around*|(|b|)>-f<around*|(|a|)>|\|>\<leqslant\><around*|\||b-a|\|>>.
+  A diferença na imagem é menor ou igual à diferença no domínio. Só ocorrerá
+  se <math|<around*|\||f<around*|(|x|)>|\|>\<less\><around*|\||x|\|>>,
+  <math|\<forall\>x\<in\>\<bbb-R\>>, ou se <math|<around*|\||b-a|\|>>
+  <with|font-shape|italic|e> <math|<around*|\||f<around*|(|b|)>-f<around*|(|a|)>|\|>>
+  forem infinitesimais.
+
+  Suponha <math|f> contínua em <math|<around*|[|a,b|]>> e diferenciável em
+  <math|<around*|(|a,b|)>>. Então, existe um elemento <math|c> entre <math|a>
+  e <math|b> cuja derivada <math|f<rprime|'><around*|(|c|)>> é igual à razão
+  entre as diferenças na imagem e no domínio de <math|f> entre <math|a> e
+  <math|b>; ou o slope entre <math|a> e <math|b>; ou
+  <math|<dfrac|\<Delta\>f<around*|(|x|)>|\<Delta\>x>> entre <math|a> e
+  <math|b>; ou <math|<dfrac|f<around*|(|b|)>-f<around*|(|a|)>|b-a>>.
 
   <\question>
     Sobre derivadas:
@@ -131,5 +165,8 @@
   </question>
 </body>
 
-<initial|<\collection>
-</collection>>
+<\initial>
+  <\collection>
+    <associate|font-base-size|9>
+  </collection>
+</initial>

@@ -26,7 +26,7 @@ Base: menor conjunto de vetores linearmente independentes que germa o espaço ve
     \begin{bmatrix}0&0\\0&1\end{bmatrix}
 \right\}\)
 
-Transformação linear: função de um espaço vetorial para um espaço vetorial que satisfaz:
+Transformação linear: função de um espaço vetorial para um espaço vetorial que satisfaz (condições para *teste* de um espaço vetorial):
 
 - A transformação do vetor soma é a soma das transformações dos vetores
 - A transformação do vetor multiplicação escalar é a multiplicação escalar da transformação do vetor
