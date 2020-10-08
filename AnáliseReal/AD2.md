@@ -2,8 +2,8 @@
 
 Seja $f:\left[a,b\right]\rightarrow\mathbb{R}$ contínua. Se $f$ é derivável em $(a,b)$, então existe um ponto $c \in (a,b)$ tal que $f'(c)=\dfrac{f(b)-f(a)}{b-a}$.
 
-1. Seja $f(x)=sin(x)$. Pelo Teorema do Valor Médio, $\vert sin(b)-sin(a) \vert \leq \vert b-a \vert$, $\forall a, b \in \mathbb{R}$.
-2. $f(x)=sin(x)$ é limitada: $\vert sin(x) \vert\leq1$, $\forall x \in \mathbb{R}$.
+1. Seja $f(x)=sen(x)$. Pelo Teorema do Valor Médio, $\vert sen(b)-sen(a) \vert \leq \vert b-a \vert$, $\forall a, b \in \mathbb{R}$.
+2. $f(x)=sen(x)$ é limitada: $\vert sen(x) \vert\leq1$, $\forall x \in \mathbb{R}$.
 
 Assinale a opção correta:
 
@@ -23,3 +23,8 @@ Porém, 1) não advém do Teorema do Valor Médio; advém do fato de ser contín
 
 <img src="AD2_1.svg" alt="AD2_1" style="zoom:67%;" />
 
+Resposta:
+
+"A alternativa correta é *B*. Aqui é verdade com uso do Teorema do Valor Médio, sem ele não conseguirmos provar que ela é verdade. E o fato de $f(x) = sen(x)$ ser contínua é a hipótese do teorema, ou seja, $f(x) = sen(x)$ é contínua e então pelo Teorema do Valor Médio a desigualdade é verdadeira.
+
+Como $f(x) = sen(x)$ é contínua então existe $c$, tal que $f'(c)=\dfrac{f(b)-f(a)}{b-a}=\dfrac{sen(b)-sen(a)}{b-a}$. Então, $f'(c)=cos(c)$ e $\vert cos (c)\vert ≤ 1$ e $\dfrac{sen(b)-sen(a)}{b-a}=cos(c)$. Aplicando o módulo em ambos os lados sai a desigualdade."
