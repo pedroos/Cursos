@@ -15,7 +15,7 @@ Os elementos de um espaço escalar, embora sejam referidos geralmente por *vetor
 
 $0$ e $1$ em um espaço vetorial podem se referir aos vetores nulo e unitário ($0, 0, ...)$ e $(1, 1, ...)$, ao invés dos números $0$ e $1$.
 
-Base: menor conjunto de vetores linearmente independentes que germa o espaço vetorial ($\beta$).
+Base: menor conjunto de vetores linearmente independentes que gera o espaço vetorial ($\beta$).
 
 $\beta\text{ }\mathbb{R}^3\text{: }\left\{(1,0,0),(0,1,0),(0,0,1)\right\}$
 $\beta\text{ }\mathbb{R}^4\text{: }\left\{(1,0,0,0),(0,1,0,0),(0,0,1,0),(0,0,0,1)\right\}$
