@@ -4,7 +4,7 @@
 
    $$\begin{cases}
    a_1=-2 \\ 
-   a_n+1=a_n +1\text{, para }n\geq1\text{.}
+   a_{n+1}=a_n +1\text{, para }n\geq1\text{.}
    \end{cases}$$
 
    Determine:

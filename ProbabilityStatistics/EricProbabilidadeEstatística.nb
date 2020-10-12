@@ -1,0 +1,254 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9574,        246]
+NotebookOptionsPosition[      6442,        188]
+NotebookOutlinePosition[      6791,        203]
+CellTagsIndexPosition[      6748,        200]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Introdu\[CCedilla]\[ATilde]o", "Chapter",ExpressionUUID->"4cf86ab3-ca66-4d8e-b7c1-ee956faf6ad3"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Origem", "Subsection"]], "Subsubsection",ExpressionUUID->"184f4ad6-a1c2-43d2-ba91-39628d17cd17"],
+
+Cell["\<\
+Probabilidade (sorte, an\[AAcute]lise de observa\[CCedilla]\[OTilde]es com \
+erros), estat\[IAcute]stica (necessidade de informa\[CCedilla]\[ATilde]o do \
+governo + desenvolvimento t\[EAcute]cnica de an\[AAcute]lise).\
+\>", "ItemNumbered",ExpressionUUID->"7bc4f30a-15a7-4685-a0b2-3efae64925b6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Evento", "Subsubsection",ExpressionUUID->"a6035ad9-3833-4260-9512-3011669ee19a"],
+
+Cell[CellGroupData[{
+
+Cell["Determin\[IAcute]stico ou rand\[OHat]mico", "ItemNumbered",ExpressionUUID->"61782104-d272-4f18-8425-46daa037717e"],
+
+Cell[CellGroupData[{
+
+Cell["Determin\[IAcute]stico: certo", "SubitemNumbered",ExpressionUUID->"ce507d94-18ca-4376-aa8b-cd3f04fed4ae"],
+
+Cell["Rand\[OHat]mico: incerto", "SubitemNumbered",ExpressionUUID->"008fc415-76b9-4bb2-8a35-04ae0a50f790"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Probabilidade vs. estat\[IAcute]stica", "Subsubsection",ExpressionUUID->"3671df0a-3631-4724-8606-1902a1f0e813"],
+
+Cell[CellGroupData[{
+
+Cell["Probabilidade: mecanismo rand\[OHat]mico \[Rule] eventos \
+rand\[OHat]micos", "ItemNumbered",ExpressionUUID->"7ed67586-4272-4797-bc9c-\
+3aed27780417"],
+
+Cell["Estat\[IAcute]stica: eventos rand\[OHat]micos \[Rule] mecanismo rand\
+\[OHat]mico", "ItemNumbered",ExpressionUUID->"fff0cda2-b77c-4ea6-8f93-\
+9aa208f11c49"],
+
+Cell["Opera\[CCedilla]\[OTilde]es inversas", "ItemNumbered",ExpressionUUID->"77f6b12f-81ec-4b8e-8228-106903abd924"],
+
+Cell["Mendel\[CloseCurlyQuote]s Law probabil\[IAcute]stica inferida \
+estatisticamente", "ItemNumbered",ExpressionUUID->"a73f12e1-0513-46e1-91ee-\
+146be3ce457c"],
+
+Cell["\<\
+M\[EAcute]todo cient\[IAcute]fico: probabilidade e estat\[IAcute]stica (e ci\
+\[EHat]ncia da computa\[CCedilla]\[ATilde]o) como modus operandi + \
+\[OpenCurlyDoubleQuote]disciplina\[CloseCurlyDoubleQuote] (mat\[EAcute]ria) \
+cient\[IAcute]fica como material.\[LineSeparator]Hip\[OAcute]tese \[Rule] \
+experimento \[Rule] an\[AAcute]lise \[Rule] infer\[EHat]ncia \[Rule] an\
+\[AAcute]lise\
+\>", "ItemNumbered",ExpressionUUID->"85bf8f25-4ccc-4749-813a-22db27ce89fd"],
+
+Cell["M\[EAcute]todo cient\[IAcute]fico di\[AAcute]logo entre cientista e \
+estat\[IAcute]stico", "ItemNumbered",ExpressionUUID->"9099f857-6671-470e-8360-\
+33cb85a84df5"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conceitos matem\[AAcute]ticos pr\[EAcute]-requisitos", "Subsubsection",ExpressionUUID->"e89484ae-11bc-4dd6-a31d-4499ecc1253c"],
+
+Cell[CellGroupData[{
+
+Cell["Conjunto", "ItemNumbered",ExpressionUUID->"1ca3ad59-8b10-4db2-b177-d2b3cd2f86d8"],
+
+Cell["\<\
+Fun\[CCedilla]\[ATilde]o: conjunto dom\[IAcute]nio, conjunto imagem, todos \
+elementos do dom\[IAcute]nio \[Rule] um elemento na imagem.\
+\>", "ItemNumbered",ExpressionUUID->"5fff3782-6ebe-4cf4-a0b5-70f6aca68003"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ StyleBox["Fun\[CCedilla]\[ATilde]o de vari\[AAcute]vel real",
+  FontWeight->"Bold"],
+ " se dom\[IAcute]nio real"
+}], "SubitemNumbered",ExpressionUUID->"6ff56e2b-e778-454b-af9e-9defdea8dd8c"],
+
+Cell[TextData[{
+ StyleBox["Fun\[CCedilla]\[ATilde]o com valor real",
+  FontWeight->"Bold"],
+ " se imagem real"
+}], "SubitemNumbered",ExpressionUUID->"37d04320-9752-4963-a942-fa1f20f87d10"],
+
+Cell[TextData[{
+ StyleBox["Fun\[CCedilla]\[ATilde]o de conjuntos",
+  FontWeight->"Bold"],
+ " se dom\[IAcute]nio conjuntos"
+}], "SubitemNumbered",ExpressionUUID->"d5b27907-2031-4d24-8858-8d9fa2400849"]
+}, Open  ]],
+
+Cell[TextData[{
+ "Gr\[AAcute]fico da ",
+ StyleBox["fun\[CCedilla]\[ATilde]o com valor real",
+  FontWeight->"Bold"],
+ " e de ",
+ StyleBox["vari\[AAcute]vel real",
+  FontWeight->"Bold"],
+ ": conjunto ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"x", ",", "y"}], ")"}], ":", " ", "y"}], "=", 
+     RowBox[{"f", "(", "x", ")"}]}], "}"}], TraditionalForm]],
+  FontSize->24,
+  Background->RGBColor[1, 1, 0],ExpressionUUID->
+  "27ed304d-bcde-4e03-bb28-517492e48651"],
+ " em sistema de coordenadas bidimensional"
+}], "ItemNumbered",ExpressionUUID->"33ea302b-c90b-4b45-bd88-fbdbe72b2aa3"],
+
+Cell["\<\
+Conjunto infinito cont\[AAcute]vel: correspond\[EHat]ncia 1-a-1 com inteiros; \
+infinito incont\[AAcute]vel: correspond\[EHat]ncia 1-a-1 com reais\
+\>", "ItemNumbered",ExpressionUUID->"2550d82b-1121-4899-9889-e3bb412a76b4"],
+
+Cell[TextData[{
+ "Limite: ",
+ Cell[BoxData[
+  FormBox["y", TraditionalForm]],ExpressionUUID->
+  "044875b1-8938-4f45-ac5b-321a11ff9f81"],
+ " (valor real) ",
+ StyleBox["arbitrariamente pr\[OAcute]ximo",
+  FontWeight->"Bold"],
+ " a ",
+ Cell[BoxData[
+  FormBox["b", TraditionalForm]],ExpressionUUID->
+  "aae23f00-81bc-4a15-92c9-0be3a90e2094"],
+ " conforme ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],ExpressionUUID->
+  "b61df262-9583-4d22-b6ca-2ee4899150f3"],
+ " (vari\[AAcute]vel real) ",
+ StyleBox["suficientemente pr\[OAcute]xima",
+  FontWeight->"Bold"],
+ " a ",
+ Cell[BoxData[
+  FormBox["a", TraditionalForm]],ExpressionUUID->
+  "fe1488c0-512c-485e-9f8c-39349b93ebef"],
+ ". Finito e infinito"
+}], "ItemNumbered",ExpressionUUID->"841113fc-a4ff-4232-b2bc-a37977bc1b27"],
+
+Cell["Somat\[OAcute]ria de uma fun\[CCedilla]\[ATilde]o. Finita e infinita", \
+"ItemNumbered",ExpressionUUID->"1f404119-165f-40b2-94c8-c3d065f3287c"],
+
+Cell["\<\
+Integral da fun\[CCedilla]\[ATilde]o em um intervalo: \[AAcute]rea positiva - \
+\[AAcute]rea negativa\
+\>", "ItemNumbered",ExpressionUUID->"6b8c3967-9012-437b-94a9-02a28556b643"],
+
+Cell["Relacionados: c\[AAcute]lculo, topologia e measure theory", \
+"ItemNumbered",ExpressionUUID->"f484dbdd-ed33-44f3-9b64-045951f01426"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1080, 1847},
+WindowMargins->{{Automatic, -1088}, {Automatic, -228}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 102, 0, 67, "Chapter",ExpressionUUID->"4cf86ab3-ca66-4d8e-b7c1-ee956faf6ad3"],
+Cell[CellGroupData[{
+Cell[707, 26, 120, 0, 45, "Subsubsection",ExpressionUUID->"184f4ad6-a1c2-43d2-ba91-39628d17cd17"],
+Cell[830, 28, 304, 4, 31, "ItemNumbered",ExpressionUUID->"7bc4f30a-15a7-4685-a0b2-3efae64925b6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1171, 37, 86, 0, 44, "Subsubsection",ExpressionUUID->"a6035ad9-3833-4260-9512-3011669ee19a"],
+Cell[CellGroupData[{
+Cell[1282, 41, 120, 0, 31, "ItemNumbered",ExpressionUUID->"61782104-d272-4f18-8425-46daa037717e"],
+Cell[CellGroupData[{
+Cell[1427, 45, 111, 0, 26, "SubitemNumbered",ExpressionUUID->"ce507d94-18ca-4376-aa8b-cd3f04fed4ae"],
+Cell[1541, 47, 106, 0, 26, "SubitemNumbered",ExpressionUUID->"008fc415-76b9-4bb2-8a35-04ae0a50f790"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1708, 54, 117, 0, 44, "Subsubsection",ExpressionUUID->"3671df0a-3631-4724-8606-1902a1f0e813"],
+Cell[CellGroupData[{
+Cell[1850, 58, 156, 2, 31, "ItemNumbered",ExpressionUUID->"7ed67586-4272-4797-bc9c-3aed27780417"],
+Cell[2009, 62, 162, 2, 31, "ItemNumbered",ExpressionUUID->"fff0cda2-b77c-4ea6-8f93-9aa208f11c49"],
+Cell[2174, 66, 115, 0, 31, "ItemNumbered",ExpressionUUID->"77f6b12f-81ec-4b8e-8228-106903abd924"],
+Cell[2292, 68, 161, 2, 31, "ItemNumbered",ExpressionUUID->"a73f12e1-0513-46e1-91ee-146be3ce457c"],
+Cell[2456, 72, 474, 7, 51, "ItemNumbered",ExpressionUUID->"85bf8f25-4ccc-4749-813a-22db27ce89fd"],
+Cell[2933, 81, 170, 2, 31, "ItemNumbered",ExpressionUUID->"9099f857-6671-470e-8360-33cb85a84df5"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3152, 89, 132, 0, 44, "Subsubsection",ExpressionUUID->"e89484ae-11bc-4dd6-a31d-4499ecc1253c"],
+Cell[CellGroupData[{
+Cell[3309, 93, 87, 0, 31, "ItemNumbered",ExpressionUUID->"1ca3ad59-8b10-4db2-b177-d2b3cd2f86d8"],
+Cell[3399, 95, 223, 3, 31, "ItemNumbered",ExpressionUUID->"5fff3782-6ebe-4cf4-a0b5-70f6aca68003"],
+Cell[CellGroupData[{
+Cell[3647, 102, 207, 4, 26, "SubitemNumbered",ExpressionUUID->"6ff56e2b-e778-454b-af9e-9defdea8dd8c"],
+Cell[3857, 108, 188, 4, 26, "SubitemNumbered",ExpressionUUID->"37d04320-9752-4963-a942-fa1f20f87d10"],
+Cell[4048, 114, 200, 4, 26, "SubitemNumbered",ExpressionUUID->"d5b27907-2031-4d24-8858-8d9fa2400849"]
+}, Open  ]],
+Cell[4263, 121, 642, 20, 43, "ItemNumbered",ExpressionUUID->"33ea302b-c90b-4b45-bd88-fbdbe72b2aa3"],
+Cell[4908, 143, 233, 3, 31, "ItemNumbered",ExpressionUUID->"2550d82b-1121-4899-9889-e3bb412a76b4"],
+Cell[5144, 148, 774, 24, 31, "ItemNumbered",ExpressionUUID->"841113fc-a4ff-4232-b2bc-a37977bc1b27"],
+Cell[5921, 174, 149, 1, 31, "ItemNumbered",ExpressionUUID->"1f404119-165f-40b2-94c8-c3d065f3287c"],
+Cell[6073, 177, 188, 3, 31, "ItemNumbered",ExpressionUUID->"6b8c3967-9012-437b-94a9-02a28556b643"],
+Cell[6264, 182, 138, 1, 31, "ItemNumbered",ExpressionUUID->"f484dbdd-ed33-44f3-9b64-045951f01426"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
