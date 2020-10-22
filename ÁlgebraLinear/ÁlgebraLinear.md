@@ -1,3 +1,5 @@
+
+
 Alguns espaços vetoriais diferentes são espaços vetoriais de *dimensões* diferentes.
 
 Exemplos de espaços vetoriais:
@@ -54,3 +56,12 @@ Encontrando a matriz diagonalizada do operador:
 - As soluções do sistema de equações são os autovetores referentes ao autovalor
 - Os autovetores formam uma matriz $p$
 - $p$ entra na fórmula $c=p \times j \times p^{-1}$, em que somente $j$ é desconhecida e é a matriz diagonalizada
+
+<img src="Quadrantes.svg" style="zoom:67%;" />
+
+Escalonamento: Encontrar os vetores mínimos ou mais simplificados em uma matriz, eliminando os linearmente dependentes (LD).
+
+Determinante: Verificar se vetores em uma matriz são linearmente independentes (LI) ou não.
+
+Matriz transformação de base para base. A redução de dimensão está em quais bases são escolhidas.
+
