@@ -1,5 +1,3 @@
-
-
 Alguns espaços vetoriais diferentes são espaços vetoriais de *dimensões* diferentes.
 
 Exemplos de espaços vetoriais:
