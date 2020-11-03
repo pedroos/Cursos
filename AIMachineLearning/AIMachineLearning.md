@@ -17,3 +17,6 @@ Modern neural networks are typically overconfident.
 Hidden layer is a layer of nodes between input and output nodes.
 
 Multiple hidden layers are what "deep learning" refers to.
+
+> The GPT-f work from OpenAI about using transformers to do theorem proving on the Metamath corpus is relevant. There, they investigate whether deep neural networks can learn the properties of the proof-distribution space to help speed up automatic theorem proving, with some success.
+> https://arxiv.org/abs/2009.03393
