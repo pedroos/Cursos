@@ -1,0 +1,69 @@
+;This file was created by Graph (http://www.padowan.dk)
+;Do not change this file from other programs.
+[Graph]
+Version = 4.4.2.543
+MinVersion = 2.5
+OS = Windows NT 6.1 Service Pack 1
+
+[Axes]
+xMin = -6.12644927536232
+xMax = 10.0735507246377
+xTickUnit = 2
+xGridUnit = 2
+xShowGrid = 1
+yMin = -3.17990687609885
+yMax = 13.0200931239012
+yTickUnit = 2
+yGridUnit = 2
+yShowGrid = 1
+AxesColor = clBlue
+GridColor = 0x00FF9999
+ShowLegend = 1
+Radian = 1
+
+[Func1]
+FuncType = 0
+y = tanh(x-1.5*pi)+1
+Color = clRed
+Size = 3
+
+[Func2]
+FuncType = 0
+y = sech(x-2*pi)*2
+Color = clMaroon
+Size = 3
+
+[Func3]
+FuncType = 0
+y = sinh(x)
+Visible = 0
+Color = clSkyBlue
+Size = 3
+
+[Func4]
+FuncType = 0
+y = asech(x-2*pi)*2
+Visible = 0
+Color = clMaroon
+Size = 3
+
+[Func5]
+FuncType = 0
+y = 1/1+((x-1)/2)^4
+Color = clFuchsia
+Size = 3
+
+[Func6]
+FuncType = 0
+y = log(x)*-1
+Color = clFuchsia
+Size = 3
+
+[Data]
+TextLabelCount = 0
+FuncCount = 6
+PointSeriesCount = 0
+ShadeCount = 0
+RelationCount = 0
+OleObjectCount = 0
+

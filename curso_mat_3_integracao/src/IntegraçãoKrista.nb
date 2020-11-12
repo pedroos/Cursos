@@ -1,0 +1,419 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     23661,        411]
+NotebookOptionsPosition[     12850,        276]
+NotebookOutlinePosition[     13253,        292]
+CellTagsIndexPosition[     13210,        289]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["C\[AAcute]lculo 2", "Section",ExpressionUUID->"b1ae3cab-e13e-4bed-b778-e6ee8d9091f7"],
+
+Cell[CellGroupData[{
+
+Cell["Integrais", "Subsection",ExpressionUUID->"a3ef9cef-f88e-4e71-9f16-00775976933f"],
+
+Cell["Antiderivadas e integrais indefinidas", "Subsubsection",ExpressionUUID->"a977bd4e-1e70-4ef7-aac6-395b333b9a86"],
+
+Cell["Integrais definidas", "Subsubsection",ExpressionUUID->"7f0241e7-dae4-42e4-98aa-c0c6ab0a4e80"],
+
+Cell["Somas de Riemann", "Subsubsection",ExpressionUUID->"cc689190-a74d-4117-8351-88785b487dd6"],
+
+Cell["Outros m\[EAcute]todos de aproxima\[CCedilla]\[ATilde]o", \
+"Subsubsection",ExpressionUUID->"7a19c3fb-5776-481f-9b1c-356d89454e42"],
+
+Cell["Limites de erro", "Subsubsection",ExpressionUUID->"5fc4fcb6-e27e-4b21-ae00-007f10e8f26d"],
+
+Cell["Teorema fundamental do c\[AAcute]lculo", "Subsubsection",ExpressionUUID->"8d9236cd-014c-406c-a715-238a21a16548"],
+
+Cell[TextData[{
+ "Substitui\[CCedilla]\[ATilde]o por ",
+ Cell[BoxData[
+  FormBox["u", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "8b1491ca-d3fb-4e66-ad13-bef3d6df7465"]
+}], "Subsubsection",ExpressionUUID->"6ef718e1-4509-409d-9b44-4071df6c9e49"],
+
+Cell["Integra\[CCedilla]\[ATilde]o por partes", "Subsubsection",ExpressionUUID->"1b70c771-13fe-4e35-bfa1-e1f801ee33af"],
+
+Cell["Fra\[CCedilla]\[OTilde]es parciais", "Subsubsection",ExpressionUUID->"9377d350-3b66-4b06-8c16-385ef0957479"],
+
+Cell[TextData[StyleBox["Integrais trigonom\[EAcute]tricas", \
+"Subsubsection"]], "Subsubsection",ExpressionUUID->"757465bd-3203-427c-a83b-\
+dcf63f6b86a1"],
+
+Cell["Integrais hiperb\[OAcute]licas", "Subsubsection",ExpressionUUID->"e3050dd5-95c1-4865-95e7-20ecc2c6423f"],
+
+Cell["Substitui\[CCedilla]\[ATilde]o trigonom\[EAcute]trica", "Subsubsection",ExpressionUUID->"ae28c26a-c8b5-438e-a22f-4b9353860c8f"],
+
+Cell["Integrais impr\[OAcute]prias", "Subsubsection",ExpressionUUID->"15f896f3-3f58-4042-8833-7fa3d39065c8"],
+
+Cell["F\[OAcute]rmulas de redu\[CCedilla]\[ATilde]o", "Subsubsection",ExpressionUUID->"69a1cb03-0e06-49a7-9859-5fbbfad69380"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Aplica\[CCedilla]\[OTilde]es de integrais", "Subsection",ExpressionUUID->"7af7c11f-c0c4-44eb-a3c3-3e40863e3d86"],
+
+Cell["\[CapitalAAcute]rea entre curvas", "Subsubsection",ExpressionUUID->"2874b051-4a35-455c-94ae-7461997e2434"],
+
+Cell["Comprimento do arco", "Subsubsection",ExpressionUUID->"6aa81dc1-5958-4e70-8c7a-0c099b02fbfc"],
+
+Cell["Valor m\[EAcute]dio", "Subsubsection",ExpressionUUID->"64d75551-a051-4280-b172-44627ad27c4c"],
+
+Cell["\[CapitalAAcute]rea da superf\[IAcute]cie de \
+revolu\[CCedilla]\[ATilde]o", "Subsubsection",ExpressionUUID->"622424ff-8dea-\
+4043-8678-d526cb928022"],
+
+Cell["Volume da revolu\[CCedilla]\[ATilde]o", "Subsubsection",ExpressionUUID->"1cfd8e70-6e7e-4e61-b4d7-d5ee4648c9c8"],
+
+Cell["Trabalho", "Subsubsection",ExpressionUUID->"aa4e2fd5-7466-494a-993e-3c0d0ff86738"],
+
+Cell["F\[IAcute]sica", "Subsubsection",ExpressionUUID->"02c9cc44-eb23-441d-b09e-77812ccf5a5c"],
+
+Cell["Geometria", "Subsubsection",ExpressionUUID->"475b61cd-67b6-45b5-a0e0-c67d751a76ed"],
+
+Cell["Economia", "Subsubsection",ExpressionUUID->"718de4f8-6764-4c80-b142-34c2f6c08f6d"],
+
+Cell["Probabilidade", "Subsubsection",ExpressionUUID->"bc6d3fc9-62a7-4f54-9efe-f5ac4159ccb7"],
+
+Cell["Biologia", "Subsubsection",ExpressionUUID->"827aa4a6-e90f-4815-a463-26c50fe228e9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Polar e param\[EAcute]trico", "Subsection",ExpressionUUID->"bcbc3d0b-a72f-47a6-87f5-a50a66016618"],
+
+Cell["Curvas param\[EAcute]tricas", "Subsubsection",ExpressionUUID->"91f22bb5-505f-4a8f-825f-5a954dab60fd"],
+
+Cell["C\[AAcute]lculo com curvas param\[EAcute]tricas", "Subsubsection",ExpressionUUID->"b23e849d-3e2d-4785-ac9e-45f8608c07b2"],
+
+Cell["Curvas polares", "Subsubsection",ExpressionUUID->"f0770ead-f09d-42bb-ac31-3cf4c6a2063b"],
+
+Cell["C\[AAcute]lculo com curvas polares", "Subsubsection",ExpressionUUID->"3985cb25-d727-451f-8f08-d48cdf089814"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Sequ\[EHat]ncias e s\[EAcute]ries", "Subsection",ExpressionUUID->"96ef4f4e-8f4b-4eba-92cf-79f938a93bff"],
+
+Cell["Sequ\[EHat]ncias", "Subsubsection",ExpressionUUID->"0e1fd035-1aaf-4f4a-b5c7-0c5a41fc36a6"],
+
+Cell["Somas parciais", "Subsubsection",ExpressionUUID->"a696f445-6356-452d-99cb-91d3fb2a1b17"],
+
+Cell["S\[EAcute]ries geom\[EAcute]tricas", "Subsubsection",ExpressionUUID->"63b5ad6b-f1f5-4a1f-9728-56d1f332b4ba"],
+
+Cell["S\[EAcute]ries telesc\[OAcute]picas", "Subsubsection",ExpressionUUID->"7013c3b4-a8c9-4a97-8d1f-8213ccb9fd2b"],
+
+Cell["Testes de converg\[EHat]ncia b\[AAcute]sicos", "Subsubsection",ExpressionUUID->"6936f47e-94ae-4c5c-944f-c42f2d0aeec4"],
+
+Cell["Testes de compara\[CCedilla]\[ATilde]o", "Subsubsection",ExpressionUUID->"ebc5df2d-7f94-4cb3-8cd6-ea287c5769e6"],
+
+Cell["Testes de raz\[ATilde]o e ra\[IAcute]zes", "Subsubsection",ExpressionUUID->"915d6628-11d0-4abb-8026-4783e4d7c802"],
+
+Cell["Teste de s\[EAcute]ries alternadas", "Subsubsection",ExpressionUUID->"3292c95e-73db-48fa-8ebc-c9b6c197b383"],
+
+Cell["S\[EAcute]ries exponenciais", "Subsubsection",ExpressionUUID->"5d44d2c1-8a30-4f3c-b50a-46e620bb2d17"],
+
+Cell["Series de Taylor", "Subsubsection",ExpressionUUID->"66491961-adf1-433f-bfbe-220a28377162"],
+
+Cell["S\[EAcute]ries de Maclaurin", "Subsubsection",ExpressionUUID->"1b2873af-afbd-438e-b637-f9363272fabf"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["C\[AAcute]lculo 3", "Section",ExpressionUUID->"09c192c6-2641-4bd4-92db-91cca8759a39"],
+
+Cell[CellGroupData[{
+
+Cell["Derivadas parciais", "Subsection",ExpressionUUID->"bbb8000c-446f-4a44-a020-73841437a184"],
+
+Cell["Sistemas de coordenadas tridimensionais", "Subsubsection",ExpressionUUID->"7d61fbe2-8c93-48e4-a34e-831dfe810ecd"],
+
+Cell["Desenhando gr\[AAcute]ficos e curvas de n\[IAcute]veis", "Subsubsection",ExpressionUUID->"b7d9fa47-c667-428b-a860-73ee8dc25015"],
+
+Cell["Linhas e planos", "Subsubsection",ExpressionUUID->"9ca492eb-eaa8-41ce-b61b-dac9d74af9e6"],
+
+Cell["Cilindros e superf\[IAcute]cies qu\[AAcute]dricas", "Subsubsection",ExpressionUUID->"f49c35f9-5cb3-416f-850f-1d55636a85ef"],
+
+Cell["Limites e continuidade", "Subsubsection",ExpressionUUID->"55ec63f9-610d-4f65-a4d8-ed4015454127"],
+
+Cell["Derivadas parciais", "Subsubsection",ExpressionUUID->"46d844a8-6e54-446d-b02d-66a44a9cb7a9"],
+
+Cell["Diferenciais", "Subsubsection",ExpressionUUID->"75370908-ed4a-4d32-91b6-30860253381a"],
+
+Cell["Regra da cadeia", "Subsubsection",ExpressionUUID->"2ecb41b5-9d68-4aa3-8b77-d69f3fb9e865"],
+
+Cell["Diferencia\[CCedilla]\[ATilde]o impl\[IAcute]cita", "Subsubsection",ExpressionUUID->"6bdb7b69-fba3-41ac-b41e-43cea26be26e"],
+
+Cell["Derivadas direcionais", "Subsubsection",ExpressionUUID->"a9b40d66-33b9-44d0-95cb-cc3f63ae1b72"],
+
+Cell["Aproxima\[CCedilla]\[ATilde]o linear e lineariza\[CCedilla]\[ATilde]o", \
+"Subsubsection",ExpressionUUID->"a6957b38-e36e-420b-8f25-64988cb2f3f3"],
+
+Cell["Vetores gradientes", "Subsubsection",ExpressionUUID->"25915698-1692-4ccd-b1d8-91516cecbf9e"],
+
+Cell["Planos tangentes e linhas normais", "Subsubsection",ExpressionUUID->"9fc3cb71-3e04-4921-88d3-48c6711893eb"],
+
+Cell[TextData[StyleBox["Otimiza\[CCedilla]\[ATilde]o",
+ FontColor->RGBColor[1, 0, 0]]], "Subsubsection",ExpressionUUID->"0d3a16de-\
+5166-41ff-a921-7bf04c29ebac"],
+
+Cell["Otimiza\[CCedilla]\[ATilde]o aplicada", "Subsubsection",ExpressionUUID->"1c5632cf-db08-48f7-ba2e-fb13dfcac843"],
+
+Cell["Multiplicadores de Lagrange", "Subsubsection",ExpressionUUID->"8853bddc-d80d-4fd4-80e0-efd617fd8a1c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Integrais m\[UAcute]ltiplas", "Subsection",ExpressionUUID->"054d848d-66ec-4417-af0e-b03406d66c56"],
+
+Cell["Aproximando integrais duplas", "Subsubsection",ExpressionUUID->"99589c10-3e32-4bac-bb90-bf3088b31d1e"],
+
+Cell["Integrais duplas", "Subsubsection",ExpressionUUID->"7eae051d-07c3-4f16-8865-59e54df055d2"],
+
+Cell["Integrais duplas em coordenadas polares", "Subsubsection",ExpressionUUID->"3da197bd-3f40-4632-8d30-4c17622294c8"],
+
+Cell["Aplica\[CCedilla]\[OTilde]es das integrais duplas", "Subsubsection",ExpressionUUID->"68f0f84d-89d0-49a8-9cda-13540a176fc7"],
+
+Cell["Aproximando integrais triplas", "Subsubsection",ExpressionUUID->"1b092536-6392-4867-adeb-f5441f96efe2"],
+
+Cell["Integrais triplas", "Subsubsection",ExpressionUUID->"253a0078-de80-40ef-9ada-a224ac80afef"],
+
+Cell["Integrais triplas em coordenadas cil\[IAcute]ndricas", "Subsubsection",ExpressionUUID->"a2c76dbb-3d83-41a3-8d1b-5a740eb5ab8a"],
+
+Cell["Integrais triplas em coordenadas esf\[EAcute]ricas", "Subsubsection",ExpressionUUID->"378eb0df-9b3b-4940-886f-e5f3c495f76e"],
+
+Cell["Mudan\[CCedilla]a de vari\[AAcute]veis", "Subsubsection",ExpressionUUID->"b06be6e7-fbe8-4fde-a05f-082228708089"],
+
+Cell["Aplica\[CCedilla]\[OTilde]es das integrais triplas", "Subsubsection",ExpressionUUID->"0605a261-825f-427d-9d08-b49eb6b93661"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Vetores", "Subsection",ExpressionUUID->"5603a0ed-94e6-4b8e-b806-bf1964efef8f"],
+
+Cell["Introdu\[CCedilla]\[ATilde]o aos vetores", "Subsubsection",ExpressionUUID->"8c388654-94c4-4e72-ac52-a1ba3101f0cb"],
+
+Cell["Produto vetorial", "Subsubsection",ExpressionUUID->"56fbb72a-ca3f-49f3-a93d-be67c0838d4a"],
+
+Cell["Produto escalar", "Subsubsection",ExpressionUUID->"f7864af2-0ad5-4240-8673-5814f992580c"],
+
+Cell[TextData[StyleBox["Fun\[CCedilla]\[OTilde]es vetoriais e curvas no espa\
+\[CCedilla]o",
+ FontColor->RGBColor[1, 0, 0]]], "Subsubsection",ExpressionUUID->"3fa6d901-\
+0b5b-4a24-98d5-df68f6f58c14"],
+
+Cell["Derivadas e integrais de fun\[CCedilla]\[OTilde]es vetoriais", \
+"Subsubsection",ExpressionUUID->"3db350d7-19c0-4ed1-9e44-dbbdf8bb0ede"],
+
+Cell["Comprimento do arco e curvatura", "Subsubsection",ExpressionUUID->"1ffb3f6c-7e11-4501-bf01-0d79e73f2ebe"],
+
+Cell["Velocidade e acelera\[CCedilla]\[ATilde]o", "Subsubsection",ExpressionUUID->"57a94635-b4b8-48c9-b1c7-6f4800f74433"],
+
+Cell["Integrais de linhas", "Subsubsection",ExpressionUUID->"25643c2b-6b3e-4d81-902f-1a3e028260f9"],
+
+Cell["Teorema de Green", "Subsubsection",ExpressionUUID->"559356a1-b0f2-465a-8869-5df5e72b2f88"],
+
+Cell["Curva e diverg\[EHat]ncia", "Subsubsection",ExpressionUUID->"ac008976-4711-4889-a421-fc0418e8a672"],
+
+Cell["Superf\[IAcute]cies e \[AAcute]reas param\[EAcute]tricas", \
+"Subsubsection",ExpressionUUID->"0869db82-5bcb-4961-8c9e-21dd94ab6baf"],
+
+Cell["Integrais de superf\[IAcute]cie", "Subsubsection",ExpressionUUID->"c8740f63-6c91-40ef-9160-a77ead0128ee"],
+
+Cell["Teoremas de Stokes e diverg\[EHat]ncia", "Subsubsection",ExpressionUUID->"fdb5578d-00f9-4d2a-99cb-187cdb28925b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Equa\[CCedilla]\[OTilde]es diferenciais", "Subsection",ExpressionUUID->"7cd457d6-b9ce-4a0e-8988-c51e10be3bc0"],
+
+Cell["Introdu\[CCedilla]\[ATilde]o", "Subsubsection",ExpressionUUID->"8e23d366-b80e-4cc3-a681-5cb2d0dd1665"],
+
+Cell["O m\[EAcute]todo de Euler", "Subsubsection",ExpressionUUID->"206a5067-5d49-4d73-a12a-d304a13a2cdd"],
+
+Cell["Equa\[CCedilla]\[OTilde]es diferenciais separ\[AAcute]veis", \
+"Subsubsection",ExpressionUUID->"02796332-7bca-4674-8331-a77ca5b32ae8"],
+
+Cell["Modelos log\[IAcute]sticos", "Subsubsection",ExpressionUUID->"527176b6-593b-42dc-a296-0150674c5f7d"],
+
+Cell["Equa\[CCedilla]\[OTilde]es diferenciais exatas", "Subsubsection",ExpressionUUID->"6ee46817-1614-440e-b711-0bdaba9fcc30"],
+
+Cell["Equa\[CCedilla]\[OTilde]es diferenciais lineares", "Subsubsection",ExpressionUUID->"4f1a82a0-f866-45f9-96ae-d13c94187b36"],
+
+Cell["Homog\[EHat]neas de segunda ordem", "Subsubsection",ExpressionUUID->"0bddba48-e1f5-4284-8545-3a8b8950ef6b"],
+
+Cell["N\[ATilde]o-homog\[EHat]neas de segunda ordem", "Subsubsection",ExpressionUUID->"202c9b46-00ec-4841-a81e-d012c7e9097d"],
+
+Cell["Transforma\[CCedilla]\[OTilde]es de Laplace", "Subsubsection",ExpressionUUID->"0fc630d7-4c67-4365-b699-18b20629844c"],
+
+Cell["M\[EAcute]todos de transforma\[CCedilla]\[OTilde]es de Laplace", \
+"Subsubsection",ExpressionUUID->"f9d71df8-d4e3-4454-95e7-8ca600350e74"],
+
+Cell["Transforma\[CCedilla]\[OTilde]es de Laplace avan\[CCedilla]adas", \
+"Subsubsection",ExpressionUUID->"83c40506-d01e-47cb-bc2d-9e16ca65e37f"],
+
+Cell["", "Subsubsection",ExpressionUUID->"e54bd3c7-79db-406a-865c-f9b84947dbdd"]
+}, Open  ]],
+
+Cell["", "Subsection",ExpressionUUID->"f46ac598-1e1a-469f-ae50-50700c0760d3"]
+}, Open  ]]
+},
+WindowSize->{675, 692},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 8, 2019)",
+StyleDefinitions->FrontEnd`FileName[{"Book"}, "Textbook.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 91, 0, 57, "Section",ExpressionUUID->"b1ae3cab-e13e-4bed-b778-e6ee8d9091f7"],
+Cell[CellGroupData[{
+Cell[696, 26, 86, 0, 34, "Subsection",ExpressionUUID->"a3ef9cef-f88e-4e71-9f16-00775976933f"],
+Cell[785, 28, 117, 0, 20, "Subsubsection",ExpressionUUID->"a977bd4e-1e70-4ef7-aac6-395b333b9a86"],
+Cell[905, 30, 99, 0, 20, "Subsubsection",ExpressionUUID->"7f0241e7-dae4-42e4-98aa-c0c6ab0a4e80"],
+Cell[1007, 32, 96, 0, 20, "Subsubsection",ExpressionUUID->"cc689190-a74d-4117-8351-88785b487dd6"],
+Cell[1106, 34, 137, 1, 20, "Subsubsection",ExpressionUUID->"7a19c3fb-5776-481f-9b1c-356d89454e42"],
+Cell[1246, 37, 95, 0, 20, "Subsubsection",ExpressionUUID->"5fc4fcb6-e27e-4b21-ae00-007f10e8f26d"],
+Cell[1344, 39, 118, 0, 20, "Subsubsection",ExpressionUUID->"8d9236cd-014c-406c-a715-238a21a16548"],
+Cell[1465, 41, 271, 6, 21, "Subsubsection",ExpressionUUID->"6ef718e1-4509-409d-9b44-4071df6c9e49"],
+Cell[1739, 49, 119, 0, 20, "Subsubsection",ExpressionUUID->"1b70c771-13fe-4e35-bfa1-e1f801ee33af"],
+Cell[1861, 51, 114, 0, 20, "Subsubsection",ExpressionUUID->"9377d350-3b66-4b06-8c16-385ef0957479"],
+Cell[1978, 53, 154, 2, 20, "Subsubsection",ExpressionUUID->"757465bd-3203-427c-a83b-dcf63f6b86a1"],
+Cell[2135, 57, 110, 0, 20, "Subsubsection",ExpressionUUID->"e3050dd5-95c1-4865-95e7-20ecc2c6423f"],
+Cell[2248, 59, 133, 0, 20, "Subsubsection",ExpressionUUID->"ae28c26a-c8b5-438e-a22f-4b9353860c8f"],
+Cell[2384, 61, 108, 0, 20, "Subsubsection",ExpressionUUID->"15f896f3-3f58-4042-8833-7fa3d39065c8"],
+Cell[2495, 63, 125, 0, 20, "Subsubsection",ExpressionUUID->"69a1cb03-0e06-49a7-9859-5fbbfad69380"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2657, 68, 118, 0, 34, "Subsection",ExpressionUUID->"7af7c11f-c0c4-44eb-a3c3-3e40863e3d86"],
+Cell[2778, 70, 112, 0, 20, "Subsubsection",ExpressionUUID->"2874b051-4a35-455c-94ae-7461997e2434"],
+Cell[2893, 72, 99, 0, 20, "Subsubsection",ExpressionUUID->"6aa81dc1-5958-4e70-8c7a-0c099b02fbfc"],
+Cell[2995, 74, 99, 0, 20, "Subsubsection",ExpressionUUID->"64d75551-a051-4280-b172-44627ad27c4c"],
+Cell[3097, 76, 156, 2, 20, "Subsubsection",ExpressionUUID->"622424ff-8dea-4043-8678-d526cb928022"],
+Cell[3256, 80, 117, 0, 20, "Subsubsection",ExpressionUUID->"1cfd8e70-6e7e-4e61-b4d7-d5ee4648c9c8"],
+Cell[3376, 82, 88, 0, 20, "Subsubsection",ExpressionUUID->"aa4e2fd5-7466-494a-993e-3c0d0ff86738"],
+Cell[3467, 84, 94, 0, 20, "Subsubsection",ExpressionUUID->"02c9cc44-eb23-441d-b09e-77812ccf5a5c"],
+Cell[3564, 86, 89, 0, 20, "Subsubsection",ExpressionUUID->"475b61cd-67b6-45b5-a0e0-c67d751a76ed"],
+Cell[3656, 88, 88, 0, 20, "Subsubsection",ExpressionUUID->"718de4f8-6764-4c80-b142-34c2f6c08f6d"],
+Cell[3747, 90, 93, 0, 20, "Subsubsection",ExpressionUUID->"bc6d3fc9-62a7-4f54-9efe-f5ac4159ccb7"],
+Cell[3843, 92, 88, 0, 20, "Subsubsection",ExpressionUUID->"827aa4a6-e90f-4815-a463-26c50fe228e9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3968, 97, 104, 0, 34, "Subsection",ExpressionUUID->"bcbc3d0b-a72f-47a6-87f5-a50a66016618"],
+Cell[4075, 99, 107, 0, 20, "Subsubsection",ExpressionUUID->"91f22bb5-505f-4a8f-825f-5a954dab60fd"],
+Cell[4185, 101, 127, 0, 20, "Subsubsection",ExpressionUUID->"b23e849d-3e2d-4785-ac9e-45f8608c07b2"],
+Cell[4315, 103, 94, 0, 20, "Subsubsection",ExpressionUUID->"f0770ead-f09d-42bb-ac31-3cf4c6a2063b"],
+Cell[4412, 105, 114, 0, 20, "Subsubsection",ExpressionUUID->"3985cb25-d727-451f-8f08-d48cdf089814"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4563, 110, 110, 0, 34, "Subsection",ExpressionUUID->"96ef4f4e-8f4b-4eba-92cf-79f938a93bff"],
+Cell[4676, 112, 96, 0, 20, "Subsubsection",ExpressionUUID->"0e1fd035-1aaf-4f4a-b5c7-0c5a41fc36a6"],
+Cell[4775, 114, 94, 0, 20, "Subsubsection",ExpressionUUID->"a696f445-6356-452d-99cb-91d3fb2a1b17"],
+Cell[4872, 116, 114, 0, 20, "Subsubsection",ExpressionUUID->"63b5ad6b-f1f5-4a1f-9728-56d1f332b4ba"],
+Cell[4989, 118, 115, 0, 20, "Subsubsection",ExpressionUUID->"7013c3b4-a8c9-4a97-8d1f-8213ccb9fd2b"],
+Cell[5107, 120, 124, 0, 20, "Subsubsection",ExpressionUUID->"6936f47e-94ae-4c5c-944f-c42f2d0aeec4"],
+Cell[5234, 122, 118, 0, 20, "Subsubsection",ExpressionUUID->"ebc5df2d-7f94-4cb3-8cd6-ea287c5769e6"],
+Cell[5355, 124, 120, 0, 20, "Subsubsection",ExpressionUUID->"915d6628-11d0-4abb-8026-4783e4d7c802"],
+Cell[5478, 126, 114, 0, 20, "Subsubsection",ExpressionUUID->"3292c95e-73db-48fa-8ebc-c9b6c197b383"],
+Cell[5595, 128, 107, 0, 20, "Subsubsection",ExpressionUUID->"5d44d2c1-8a30-4f3c-b50a-46e620bb2d17"],
+Cell[5705, 130, 96, 0, 20, "Subsubsection",ExpressionUUID->"66491961-adf1-433f-bfbe-220a28377162"],
+Cell[5804, 132, 107, 0, 20, "Subsubsection",ExpressionUUID->"1b2873af-afbd-438e-b637-f9363272fabf"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5960, 138, 91, 0, 57, "Section",ExpressionUUID->"09c192c6-2641-4bd4-92db-91cca8759a39"],
+Cell[CellGroupData[{
+Cell[6076, 142, 95, 0, 34, "Subsection",ExpressionUUID->"bbb8000c-446f-4a44-a020-73841437a184"],
+Cell[6174, 144, 119, 0, 20, "Subsubsection",ExpressionUUID->"7d61fbe2-8c93-48e4-a34e-831dfe810ecd"],
+Cell[6296, 146, 134, 0, 20, "Subsubsection",ExpressionUUID->"b7d9fa47-c667-428b-a860-73ee8dc25015"],
+Cell[6433, 148, 95, 0, 20, "Subsubsection",ExpressionUUID->"9ca492eb-eaa8-41ce-b61b-dac9d74af9e6"],
+Cell[6531, 150, 129, 0, 20, "Subsubsection",ExpressionUUID->"f49c35f9-5cb3-416f-850f-1d55636a85ef"],
+Cell[6663, 152, 102, 0, 20, "Subsubsection",ExpressionUUID->"55ec63f9-610d-4f65-a4d8-ed4015454127"],
+Cell[6768, 154, 98, 0, 20, "Subsubsection",ExpressionUUID->"46d844a8-6e54-446d-b02d-66a44a9cb7a9"],
+Cell[6869, 156, 92, 0, 20, "Subsubsection",ExpressionUUID->"75370908-ed4a-4d32-91b6-30860253381a"],
+Cell[6964, 158, 95, 0, 20, "Subsubsection",ExpressionUUID->"2ecb41b5-9d68-4aa3-8b77-d69f3fb9e865"],
+Cell[7062, 160, 129, 0, 20, "Subsubsection",ExpressionUUID->"6bdb7b69-fba3-41ac-b41e-43cea26be26e"],
+Cell[7194, 162, 101, 0, 20, "Subsubsection",ExpressionUUID->"a9b40d66-33b9-44d0-95cb-cc3f63ae1b72"],
+Cell[7298, 164, 151, 1, 20, "Subsubsection",ExpressionUUID->"a6957b38-e36e-420b-8f25-64988cb2f3f3"],
+Cell[7452, 167, 98, 0, 20, "Subsubsection",ExpressionUUID->"25915698-1692-4ccd-b1d8-91516cecbf9e"],
+Cell[7553, 169, 113, 0, 20, "Subsubsection",ExpressionUUID->"9fc3cb71-3e04-4921-88d3-48c6711893eb"],
+Cell[7669, 171, 161, 2, 20, "Subsubsection",ExpressionUUID->"0d3a16de-5166-41ff-a921-7bf04c29ebac"],
+Cell[7833, 175, 117, 0, 20, "Subsubsection",ExpressionUUID->"1c5632cf-db08-48f7-ba2e-fb13dfcac843"],
+Cell[7953, 177, 107, 0, 20, "Subsubsection",ExpressionUUID->"8853bddc-d80d-4fd4-80e0-efd617fd8a1c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8097, 182, 104, 0, 34, "Subsection",ExpressionUUID->"054d848d-66ec-4417-af0e-b03406d66c56"],
+Cell[8204, 184, 108, 0, 20, "Subsubsection",ExpressionUUID->"99589c10-3e32-4bac-bb90-bf3088b31d1e"],
+Cell[8315, 186, 96, 0, 20, "Subsubsection",ExpressionUUID->"7eae051d-07c3-4f16-8865-59e54df055d2"],
+Cell[8414, 188, 119, 0, 20, "Subsubsection",ExpressionUUID->"3da197bd-3f40-4632-8d30-4c17622294c8"],
+Cell[8536, 190, 129, 0, 20, "Subsubsection",ExpressionUUID->"68f0f84d-89d0-49a8-9cda-13540a176fc7"],
+Cell[8668, 192, 109, 0, 20, "Subsubsection",ExpressionUUID->"1b092536-6392-4867-adeb-f5441f96efe2"],
+Cell[8780, 194, 97, 0, 20, "Subsubsection",ExpressionUUID->"253a0078-de80-40ef-9ada-a224ac80afef"],
+Cell[8880, 196, 132, 0, 20, "Subsubsection",ExpressionUUID->"a2c76dbb-3d83-41a3-8d1b-5a740eb5ab8a"],
+Cell[9015, 198, 130, 0, 20, "Subsubsection",ExpressionUUID->"378eb0df-9b3b-4940-886f-e5f3c495f76e"],
+Cell[9148, 200, 118, 0, 20, "Subsubsection",ExpressionUUID->"b06be6e7-fbe8-4fde-a05f-082228708089"],
+Cell[9269, 202, 130, 0, 20, "Subsubsection",ExpressionUUID->"0605a261-825f-427d-9d08-b49eb6b93661"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9436, 207, 84, 0, 34, "Subsection",ExpressionUUID->"5603a0ed-94e6-4b8e-b806-bf1964efef8f"],
+Cell[9523, 209, 120, 0, 20, "Subsubsection",ExpressionUUID->"8c388654-94c4-4e72-ac52-a1ba3101f0cb"],
+Cell[9646, 211, 96, 0, 20, "Subsubsection",ExpressionUUID->"56fbb72a-ca3f-49f3-a93d-be67c0838d4a"],
+Cell[9745, 213, 95, 0, 20, "Subsubsection",ExpressionUUID->"f7864af2-0ad5-4240-8673-5814f992580c"],
+Cell[9843, 215, 199, 3, 20, "Subsubsection",ExpressionUUID->"3fa6d901-0b5b-4a24-98d5-df68f6f58c14"],
+Cell[10045, 220, 142, 1, 20, "Subsubsection",ExpressionUUID->"3db350d7-19c0-4ed1-9e44-dbbdf8bb0ede"],
+Cell[10190, 223, 111, 0, 20, "Subsubsection",ExpressionUUID->"1ffb3f6c-7e11-4501-bf01-0d79e73f2ebe"],
+Cell[10304, 225, 121, 0, 20, "Subsubsection",ExpressionUUID->"57a94635-b4b8-48c9-b1c7-6f4800f74433"],
+Cell[10428, 227, 99, 0, 20, "Subsubsection",ExpressionUUID->"25643c2b-6b3e-4d81-902f-1a3e028260f9"],
+Cell[10530, 229, 96, 0, 20, "Subsubsection",ExpressionUUID->"559356a1-b0f2-465a-8869-5df5e72b2f88"],
+Cell[10629, 231, 105, 0, 20, "Subsubsection",ExpressionUUID->"ac008976-4711-4889-a421-fc0418e8a672"],
+Cell[10737, 233, 138, 1, 20, "Subsubsection",ExpressionUUID->"0869db82-5bcb-4961-8c9e-21dd94ab6baf"],
+Cell[10878, 236, 111, 0, 20, "Subsubsection",ExpressionUUID->"c8740f63-6c91-40ef-9160-a77ead0128ee"],
+Cell[10992, 238, 118, 0, 20, "Subsubsection",ExpressionUUID->"fdb5578d-00f9-4d2a-99cb-187cdb28925b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11147, 243, 116, 0, 34, "Subsection",ExpressionUUID->"7cd457d6-b9ce-4a0e-8988-c51e10be3bc0"],
+Cell[11266, 245, 108, 0, 20, "Subsubsection",ExpressionUUID->"8e23d366-b80e-4cc3-a681-5cb2d0dd1665"],
+Cell[11377, 247, 105, 0, 20, "Subsubsection",ExpressionUUID->"206a5067-5d49-4d73-a12a-d304a13a2cdd"],
+Cell[11485, 249, 140, 1, 20, "Subsubsection",ExpressionUUID->"02796332-7bca-4674-8331-a77ca5b32ae8"],
+Cell[11628, 252, 106, 0, 20, "Subsubsection",ExpressionUUID->"527176b6-593b-42dc-a296-0150674c5f7d"],
+Cell[11737, 254, 126, 0, 20, "Subsubsection",ExpressionUUID->"6ee46817-1614-440e-b711-0bdaba9fcc30"],
+Cell[11866, 256, 128, 0, 20, "Subsubsection",ExpressionUUID->"4f1a82a0-f866-45f9-96ae-d13c94187b36"],
+Cell[11997, 258, 113, 0, 20, "Subsubsection",ExpressionUUID->"0bddba48-e1f5-4284-8545-3a8b8950ef6b"],
+Cell[12113, 260, 125, 0, 20, "Subsubsection",ExpressionUUID->"202c9b46-00ec-4841-a81e-d012c7e9097d"],
+Cell[12241, 262, 123, 0, 20, "Subsubsection",ExpressionUUID->"0fc630d7-4c67-4365-b699-18b20629844c"],
+Cell[12367, 264, 144, 1, 20, "Subsubsection",ExpressionUUID->"f9d71df8-d4e3-4454-95e7-8ca600350e74"],
+Cell[12514, 267, 145, 1, 20, "Subsubsection",ExpressionUUID->"83c40506-d01e-47cb-bc2d-9e16ca65e37f"],
+Cell[12662, 270, 80, 0, 20, "Subsubsection",ExpressionUUID->"e54bd3c7-79db-406a-865c-f9b84947dbdd"]
+}, Open  ]],
+Cell[12757, 273, 77, 0, 34, "Subsection",ExpressionUUID->"f46ac598-1e1a-469f-ae50-50700c0760d3"]
+}, Open  ]]
+}
+]
+*)
+
