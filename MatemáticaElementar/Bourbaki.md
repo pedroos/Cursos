@@ -1,3 +1,5 @@
+https://www.math.columbia.edu/~woit/wordpress/?p=500&cpage=1
+
 > Without the triumph of formalism, string theory, inflation etc. would be inconceivable.
 
 > It’s amusing coming across some old K-6 math textbooks from the 1960’s which covered the “New Math” program of that era. “New Math” attempted to cover things like modular arithmetic (ie. clock math), set theory, groups, relations + functions, limits, base-n arithmetic (where n is a base other than 10), etc … to kids from kindergarten to grade 6 or 7. (Nowhere was there anything like multiplication times tables). The guys who came up with “New Math” must have caught the Bourbaki “virus”.
@@ -15,8 +17,6 @@ https://quantnet.com/threads/terry-tao-the-greatest-mathematician-in-the-world.2
 > "so you look back at your books, at first the sight of topics such as measure theory and group theory excite you - you have found structure again"
 >
 > Never liked group theory and measure because of lack of applications.
->
-> //
 >
 > What is a *group*? Algebraists teach that this is supposedly a set with two operations that satisfy a load of easily-forgettable axioms. This definition provokes a natural protest: why would any sensible person need such pairs of operations? "Oh, curse this maths" - concludes the student (who, possibly, becomes the Minister for Science in the future).
 >

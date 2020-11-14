@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    736699,      12546]
-NotebookOptionsPosition[    731702,      12459]
-NotebookOutlinePosition[    732051,      12474]
-CellTagsIndexPosition[    732008,      12471]
+NotebookDataLength[    736628,      12541]
+NotebookOptionsPosition[    731671,      12456]
+NotebookOutlinePosition[    732020,      12471]
+CellTagsIndexPosition[    731977,      12468]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10540,8 +10540,6 @@ escalares\!\(TraditionalForm\`\((a)\)\[CenterDot]\((b)\)\)\>\""}]}], "}"}],
   3.8131798206904507`*^9}},
  CellLabel->"In[37]:=",ExpressionUUID->"73d087d8-898d-4ae1-8e76-28695849b239"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"Column", "[", 
   RowBox[{
@@ -12426,8 +12424,7 @@ Only : www.wolfram.com", "Creation Time" ->
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Column"]], "Output",
  CellChangeTimes->{3.81319778974864*^9},
- CellLabel->"Out[39]=",ExpressionUUID->"681b9fe5-6eb6-4f75-8b12-42aeea038b5c"]
-}, {2}]],
+ CellLabel->"Out[39]=",ExpressionUUID->"681b9fe5-6eb6-4f75-8b12-42aeea038b5c"],
 
 Cell[TextData[{
  "O espa\[CCedilla]o dos produtos escalares entre vetores de tamanho ",
@@ -12540,12 +12537,10 @@ Cell[615593, 10495, 187, 3, 53, "Subsection",ExpressionUUID->"44ffeaf9-23b5-4af0
 Cell[615783, 10500, 439, 7, 34, "Text",ExpressionUUID->"99069e68-0b53-4b1f-9251-42b2a1431b9b"],
 Cell[616225, 10509, 1273, 31, 19, "Input",ExpressionUUID->"73d087d8-898d-4ae1-8e76-28695849b239",
  CellOpen->False],
-Cell[CellGroupData[{
-Cell[617523, 10544, 56510, 939, 78, InheritFromParent,ExpressionUUID->"753b7425-79c0-4bc1-a839-9cbef99a00b7"],
-Cell[674036, 11485, 56726, 943, 309, "Output",ExpressionUUID->"681b9fe5-6eb6-4f75-8b12-42aeea038b5c"]
-}, {2}]],
-Cell[730774, 12431, 589, 16, 46, "Text",ExpressionUUID->"2fcf204c-082c-4e96-bd0a-827915f2930b"],
-Cell[731366, 12449, 308, 6, 34, "Text",ExpressionUUID->"23f216b6-a644-49d7-b954-85be9c05725f"]
+Cell[617501, 10542, 56510, 939, 78, "Input",ExpressionUUID->"753b7425-79c0-4bc1-a839-9cbef99a00b7"],
+Cell[674014, 11483, 56726, 943, 309, "Output",ExpressionUUID->"681b9fe5-6eb6-4f75-8b12-42aeea038b5c"],
+Cell[730743, 12428, 589, 16, 46, "Text",ExpressionUUID->"2fcf204c-082c-4e96-bd0a-827915f2930b"],
+Cell[731335, 12446, 308, 6, 34, "Text",ExpressionUUID->"23f216b6-a644-49d7-b954-85be9c05725f"]
 }, Open  ]]
 }, Open  ]]
 }
