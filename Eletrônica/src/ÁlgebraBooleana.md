@@ -1,5 +1,7 @@
 ### Álgebra Booleana
 
+https://www.electronics-tutorials.ws/boolean
+
 Simplificar expressão booleana para reduzir o número de portas lógicas.
 
 Porta lógica: operação lógica em uma ou mais entradas binárias, produzindo uma única saída binária.
@@ -19,8 +21,3 @@ Conceito fundamental dos computadores. Fundação do design de circuitos digitai
 As leis de Boole podem ser usadas para provar expressões booleanas ou simplificar *circuitos digitais complexos*. [1]
 
 $\text{OR}$ e $\text{AND}$ representados como $+$ e $\cdot$. $A+B=A\text{ OR }B$ e $A\cdot B=A\text{ AND }B$.
-
-#### Referências
-
-1. https://www.electronics-tutorials.ws/boolean
-

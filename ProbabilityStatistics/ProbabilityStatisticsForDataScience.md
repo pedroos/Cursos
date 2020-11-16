@@ -1,10 +1,10 @@
-#### Basic probability theory
+### Basic probability theory
 
 1. Probability spaces
 2. Conditional probability
 3. Independence
 
-#### Random variables
+### Random variables
 
 1. Definition
 2. Discrete random variables
@@ -13,7 +13,7 @@
 5. Functions of random variables
 6. Generating random variables
 
-#### Multivariate random variables
+### Multivariate random variables
 
 1. Discrete random variables
 2. Continuous random variables
@@ -23,14 +23,14 @@
 6. Generating multivariate random variables
 7. Rejection sampling
 
-#### Expectation
+### Expectation
 
 1. Expectation operator
 2. Mean and variance
 3. Covariance
 4. Conditional expectation
 
-#### Random processes
+### Random processes
 
 1. Definition
 2. Mean and autocovariance functions
@@ -39,14 +39,14 @@
 5. Poisson process
 6. Random walk
 
-#### Convergence of random processes
+### Convergence of random processes
 
 1. Types of convergence
 2. Law of large numbers
 3. Central limit theorem
 4. Monte Carlo simulation
 
-#### Markov chains
+### Markov chains
 
 1. Time-homogenous discrete-time Markov chains
 2. Recurrence
@@ -54,7 +54,7 @@
 4. Convergence
 5. Markov-chain Monte Carlo
 
-#### Descriptive statistics
+### Descriptive statistics
 
 1. Histogram
 2. Sample mean and variance
@@ -62,7 +62,7 @@
 4. Sample covariance
 5. Sample covariance matrix
 
-#### Frequentist statistics
+### Frequentist statistics
 
 1. Independent identically-distributed sampling
 2. Mean square error
@@ -71,20 +71,20 @@
 5. Nonparametric model estimation
 6. Parametric model estimation
 
-#### Bayesian statistics
+### Bayesian statistics
 
 1. Bayesian parametric models
 2. Conjugate prior
 3. Bayesian estimators
 
-#### Hypothesis testing
+### Hypothesis testing
 
 1. The hypothesis-testing framework
 2. Parametric testing
 3. Nonparameteric testing: the permutation test
 4. Multiple testing
 
-#### Linear regression
+### Linear regression
 
 1. Linear models
 2. Least-squares estimation

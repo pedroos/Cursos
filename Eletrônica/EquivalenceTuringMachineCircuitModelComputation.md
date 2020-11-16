@@ -13,7 +13,7 @@ State: $S_i$ pointing at a place in the tape.
 
 Possible states $S_0,\cdots,S_k$.
 
-What happens t a particular state of the computation.
+What happens at a particular state of the computation.
 
 $S_i$ is a sequence of instructions concerning what the bit on the tape place is and what state and place the machine should be at the next step.
 

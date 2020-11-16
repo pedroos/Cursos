@@ -1,4 +1,4 @@
-Source: The Princeton Companion to Applied Mathematics, Nicholas J. Higham, Princeton University Press, 2015.
+The Princeton Companion to Applied Mathematics, Nicholas J. Higham, Princeton University Press, 2015.
 
 Second-order ODEs also arise in electrical networks. Consider the flow of electric current $\large{I(t)}$ in a simple RLC circuit composed of an inductor with inductance $\large{L}$, a resistor with resistance $\large{R}$, a capacitor with capacitance $\large{C}$, and a source with voltage $\large{v_s}$, as illustrated in figure 8.
 

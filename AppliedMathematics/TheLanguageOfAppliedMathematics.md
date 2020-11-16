@@ -1,6 +1,6 @@
-# The Language of Applied Mathematics
+# The language of applied mathematics
 
-Source: The Princeton Companion to Applied Mathematics, Nicholas J. Highham, Princeton University Press, 2015.
+Nicholas J. Highham, The Princeton Companion to Applied Mathematics, Princeton University Press, 2015.
 
 ### Notation
 

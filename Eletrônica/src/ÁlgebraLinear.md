@@ -1,4 +1,4 @@
-Fonte: Noções de Álgebra Linear, Salles e Wagner, Unisul Virtual, 2016.
+Noções de Álgebra Linear, Salles e Wagner, Unisul Virtual, 2016.
 
 Sistemas lineares também podem descrever o fluxo de corrente elétrica em um circuito elétrico. Uma bateria é um tipo de gerador de voltagem que faz com que uma corrente de elétrons percorra o circuito.
 
