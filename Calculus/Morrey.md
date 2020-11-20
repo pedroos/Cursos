@@ -45,5 +45,3 @@ Charles B. Morrey, Addison-Wesley, 1964
 ### Multiple integration
 
 ### Some common types of differential equations
-
-### 

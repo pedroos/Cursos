@@ -1,4 +1,4 @@
-#### Prerequisites
+### Prerequisites
 
 1. Real numbers: algebra essentials
 2. Exponents and scientific notation
@@ -7,7 +7,7 @@
 5. Factoring polynomials
 6. Rational expressions
 
-#### Equations and inequalities
+### Equations and inequalities
 
 1. The rectangular coordinate systems and graphs
 2. Linear equations in one variable
@@ -17,7 +17,7 @@
 6. Other types of equations
 7. Linear inequalities and absolute value inequalities
 
-#### Functions
+### Functions
 
 1. Functions and function notation
 2. Domain and range
@@ -27,13 +27,13 @@
 6. Absolute value functions
 7. Inverse functions
 
-#### Linear functions
+### Linear functions
 
 1. Linear functions
 2. Modeling with linear functions
 3. Fitting linear models to data
 
-#### Polynomial and rational functions
+### Polynomial and rational functions
 
 1. Quadratic functions
 2. Power functions and polynomial functions
@@ -44,7 +44,7 @@
 7. Inverses and radical functions
 8. Modeling using variation
 
-#### Exponential and logarithmic functions
+### Exponential and logarithmic functions
 
 1. Exponential functions
 2. Graphs of exponential functions
@@ -55,7 +55,7 @@
 7. Exponential and logarithmic models
 8. Fitting exponential models to data
 
-#### Systems of equations and inequalities
+### Systems of equations and inequalities
 
 1. Systems of linear equations: two variables
 2. Systems of linear equations: three variables
@@ -66,7 +66,7 @@
 7. Solving systems with inverses
 8. Solving systems with Cramer's rule
 
-#### Analytic geometry
+### Analytic geometry
 
 1. The ellipse
 2. The hyperbola
@@ -74,7 +74,7 @@
 4. Rotation of axis
 5. Conic sections in polar coordinates
 
-#### Sequences, probability and counting theory
+### Sequences, probability and counting theory
 
 1. Sequences and their notations
 2. Arithmetic sequences

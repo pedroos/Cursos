@@ -8,7 +8,7 @@ Francis W. Sears, Addison-Wesley, 1946.
 2. Charging by contact
 3. Conductors and insulators
 4. Quantity of charge
-5. Verification of Coulomb's la; Rutherford's nuclear atom
+5. Verification of Coulomb's law; Rutherford's nuclear atom
 6. Systems of units
 
 ### The electric field
