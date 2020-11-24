@@ -29,7 +29,7 @@ O conjunto dos quatérnios pode ser munido com duas operações: adição e mult
 
 A adição de dois quatérnios é um novo quatérnio obtido da soma das partes escalares e vetoriais, respectivamente, de cada quatérnio. Desta forma, a soma dos quatérnios 
 $$
-\large{p=p_0+\mathbf{p}=p_0+p_1\mathbf{i}+p_2\mathbf{j}+p_3\mathbf{k}}\text{ e}
+\large{p=p_0+\mathbf{p}=p_0+p_1\mathbf{i}+p_2\mathbf{j}+p_3\mathbf{k}}
 $$
 
 
@@ -113,7 +113,6 @@ A ação do operações $\large{L_q}$ sobre um vetor $\large{\mathbf{v}\in\mathb
 $$
 \large{\theta_{rot}=2 cos^{-1}(q_0)}
 $$
-e 
 $$
 \large{\text{eixo}_{rot}=\dfrac{\mathbf{q}}{\vert q\vert}}\text{.}
 $$
@@ -131,7 +130,6 @@ Quando a um vetor $\large{\mathbf{v}\in\mathbb{R}^3}$ aplica-se a uma matriz de 
 $$
 \large{\mathbf{w}=M \mathbf{v}}
 $$
-e 
 $$
 \large{\mathbf{w}=L_q \mathbf{V}}\text{.}
 $$
