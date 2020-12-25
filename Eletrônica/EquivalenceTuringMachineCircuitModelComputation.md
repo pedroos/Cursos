@@ -24,10 +24,3 @@ A state doesn't know which position the tape is in, it is very local.
 To know where it is, the information must be encoded in the state somehow, maybe by writing information on the tape.
 
 Example Turing machine which takes a string of ones and tells whether the number of ones is even or odd.
-
-==TODO==
-
-- Isso é para ver depois de complexidade de algoritmos
-
-- Circuit: definition from graph theory?
-- Boolean circuits: relation to machine learning?
