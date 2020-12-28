@@ -105,7 +105,7 @@ The missing cases didn't appear in our visual analysis. Let's analyze in more de
   - **SOR** is positive
 - **DBR**
   - **DBR** is taken to be in absolute; so it either is zero or positive
-  - If DBR is zero, the circles' radiuses are equal
+  - If **DBR** is zero, the circles' radiuses are equal
 - **DBC** and **SOR**
   - If the **DBC** equals **SOR**, we know the circles intersect in one point
   - If **DBC** is larger than **SOR**, there is a gap between the circles, or the circles are in each other's complement
@@ -177,6 +177,40 @@ Once again, the max (improper) chain is of size $\large{\text{sides}-1}$.
 - $\large{(4,3)\rightarrow(5,2)\rightarrow(6,1)\rightarrow(7,0)}$: ==?==
 - $\large{(4,4)\rightarrow(5,3)\rightarrow(6,2)\rightarrow(7,1)\rightarrow(8,0)}$: ==?==
 - $\large{(5,4)\rightarrow(6,3)\rightarrow(7,2)\rightarrow(8,1)\rightarrow(9,0)}$: ==?==
+
+### Pattern
+
+Let's try to identify a pattern of intersection for regular polygons.
+
+##### Definitions
+
+- An intersection is sized by the count of vertices included from each polygon into the other polygon
+- A side is an edge joining two vertices
+- A vertex is included in a polygon if its two sides are either properly of improperly included in the polygon
+- A side is properly included in a polygon if both its vertices are included in the polygon
+  - A side is improperly included in a polygon if one of its vertices is included in the polygon and the other is not
+  - A side is not included in a polygon if its two vertices are not included in the polygon
+
+##### Axioms for regular polygons
+
+- Let's define a $\large{\lt}$ binary order relation between regular polygons of same number of sides
+- Let's refer to $\large{A}$ and $\large{B}$ as regular polygons involved in an intersection
+
+##### More definitions
+
+- An intersection has some global properties
+  - In an intersection, sides from $\large{A}$ and $\large{B}$ cut each other
+  - A side from one polygon may be cut by any number of sides from the other polygon
+- ~~Let's define an "ideal" intersection.~~
+  - ~~An ideal intersection is one on which~~
+    - ~~A side from $\large{A}$ is cut by one side from $\large{B}$ in its half point only~~
+    - ~~A side from $\large{A}$ is cut by two sides from $\large{B}$ is its $\large{1/4}$ and $\large{3/4}$ points only~~
+    - ~~==This definition uses numbers and will need to be revised in terms of other points later on==~~
+    - This definition is dead wrong.
+
+##### Intersections based on collinearities (to do)
+
+![image-20201228002338139](../../../../Users/pedro/AppData/Roaming/Typora/typora-user-images/image-20201228002338139.png)
 
 ## References
 
