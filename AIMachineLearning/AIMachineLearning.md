@@ -20,3 +20,5 @@ Multiple hidden layers are what "deep learning" refers to.
 
 > The GPT-f work from OpenAI about using transformers to do theorem proving on the Metamath corpus is relevant. There, they investigate whether deep neural networks can learn the properties of the proof-distribution space to help speed up automatic theorem proving, with some success.
 > https://arxiv.org/abs/2009.03393
+
+Series of videos https://www.youtube.com/watch?v=RcgfwZ-FFBI simple Neural Networks

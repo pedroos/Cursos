@@ -314,3 +314,17 @@ Penultima lleva tilde termina en vocal
 voa = bla
 vei = ble
 bua = bla
+
+==========
+
+Meetings:
+
+Mientras         : enquanto
+Más temprano     : anteriormente
+Ayer             : ontem
+Soportar
+Hambre           : fome
+Pereza           : preguiça
+A un rato        : ?
+Le pasa es que   : o que acontece é que
+No deveria pasar : não deveria acontecer

@@ -210,7 +210,7 @@ Let's try to identify a pattern of intersection for regular polygons.
 
 ##### Intersections based on collinearities (to do)
 
-![image-20201228002338139](../../../../Users/pedro/AppData/Roaming/Typora/typora-user-images/image-20201228002338139.png)
+![image-20201228002338139](/images/image-20201228002338139.png)
 
 ## References
 
